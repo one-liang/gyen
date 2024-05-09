@@ -1,0 +1,5 @@
+@import url("./tailwind.css");
+
+body {
+  @apply bg-yellow-500 text-6xl;
+}
