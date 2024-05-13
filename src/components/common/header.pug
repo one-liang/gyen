@@ -1,0 +1,47 @@
+header
+  // topbar
+  div(class="relative flex items-center h-6 overflow-hidden bg-black lg:justify-center lg:h-8")
+    p(class="hidden text-white text-11 whitespace-nowrap lg:block") 橘焱胡同與您歡慶聖誕節開幕慶，大促～限量商品最高 50% off，每日整點
+      a(class="underline hover:no-underline" href="/") 限時開搶
+      | 中！！
+    // 手機版跑馬燈
+    marquee(class="text-white text-11 whitespace-nowrap lg:hidden") 橘焱胡同與您歡慶聖誕節開幕慶，大促～限量商品最高 50% off，每日整點
+      a(class="underline hover:no-underline" href="/") 限時開搶
+      | 中！！
+    button(class="absolute hidden -translate-y-1/2 top-1/2 right-5 lg:block" type="button")
+      img(src="./images/icon/close.svg", alt="")
+
+  nav(class="bg-white lg:h-[148px] h-[88px] flex items-center justify-between px-6 lg:px-12")
+    // menu PC
+    ul(class="hidden space-x-12 lg:flex lg:items-center")
+      li
+        button(class="text-sm text-black" type="button") 全部商品
+      li
+        button(class="text-sm text-black" type="button") 最新商品
+      li
+        button(class="text-sm text-black" type="button") 品牌旗艦館
+      li
+        button(class="text-sm text-black" type="button") 熱銷活動
+
+    // burger menu
+    div(class="flex items-center space-x-5 lg:hidden")
+      button(type="button")
+        img(src="./images/icon/menu.svg", alt="")
+      button(type="button")
+        img(src="./images/main/search.svg", alt="")
+
+    // logo
+    a(href="/")
+      img(class="lg:w-auto w-[58px]" src="./images/logo.png" alt="橘焱胡同")
+
+    // right side
+    div(class="flex items-center space-x-5")
+      div(class="relative hidden lg:block")
+        button(class="absolute -translate-y-1/2 left-3 top-1/2" type="button")
+          img(src="./images/main/search.svg", alt="")
+        input(type="text", placeholder="找商品  聖誕節 ", class="w-[169px] h-12 text-sm text-gray-400 border border-gray-200 rounded-full lg:pl-12 pr-7")
+      a(href="/")
+        img(src="./images/main/user.svg", alt="")
+      a(href="/")
+        img(src="./images/main/cart.svg", alt="")
+

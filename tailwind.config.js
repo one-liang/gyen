@@ -73,6 +73,12 @@ module.exports = {
         primary: "#87BE23",
       },
       fontSize: {
+        11: [
+          "11px",
+          {
+            lineHeight: "15px",
+          },
+        ],
         13: [
           "13px",
           {
