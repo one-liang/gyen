@@ -3,31 +3,74 @@ module.exports = {
   content: ["./src/**/*.{pug,js}"],
   theme: {
     extend: {
-      textColor: {
-        "gray-500": "#515151",
-        "gray-400": "#999999",
-        "gray-300": "#D7D7D7",
-        "gray-200": "#EEEEEE",
-        "gray-100": "#F2F2F2",
-        "gray-50": "#FCFCFC",
+      colors: {
+        yellow: {
+          900: "#AA580D",
+        },
+        gray: {
+          700: "#8D8D8D",
+          500: "#515151",
+          400: "#999999",
+          300: "#D7D7D7",
+          200: "#EEEEEE",
+          100: "#F2F2F2",
+          50: "#FCFCFC",
+        },
+        slate: {
+          400: "#9B9B9B",
+          200: "#EBEBEB",
+          50: "#F7F6F3",
+        },
+        red: {
+          500: "#FF0000",
+        },
       },
-      backgroundColor: {
-        "gray-500": "#515151",
-        "gray-400": "#999999",
-        "gray-300": "#D7D7D7",
-        "gray-200": "#EEEEEE",
-        "gray-100": "#F2F2F2",
-        "gray-50 ": "#FCFCFC",
-      },
-      borderColor: {
-        "gray-500": "#515151",
-        "gray-400": "#999999",
-        "gray-300": "#D7D7D7",
-        "gray-200": "#EEEEEE",
-        "gray-100": "#F2F2F2",
-        "gray-50 ": "#FCFCFC",
-      },
+      // textColor: {
+      //   "gray-700": "#8D8D8D",
+      //   "gray-500": "#515151",
+      //   "gray-400": "#999999",
+      //   "gray-300": "#D7D7D7",
+      //   "gray-200": "#EEEEEE",
+      //   "gray-100": "#F2F2F2",
+      //   "gray-50": "#FCFCFC",
+      //   "slate-400 ": "#9B9B9B",
+      //   "slate-200 ": "#EBEBEB",
+      //   "slate-50 ": "#F7F6F3",
+      //   "red-500 ": "#FF0000",
+      // },
+      // backgroundColor: {
+      //   "gray-700": "#8D8D8D",
+      //   "gray-500": "#515151",
+      //   "gray-400": "#999999",
+      //   "gray-300": "#D7D7D7",
+      //   "gray-200": "#EEEEEE",
+      //   "gray-100": "#F2F2F2",
+      //   "gray-50 ": "#FCFCFC",
+      //   "slate-400 ": "#9B9B9B",
+      //   "slate-200 ": "#EBEBEB",
+      //   "slate-50 ": "#F7F6F3",
+      //   "red-500 ": "#FF0000",
+      // },
+      // borderColor: {
+      //   "gray-700": "#8D8D8D",
+      //   "gray-500": "#515151",
+      //   "gray-400": "#999999",
+      //   "gray-300": "#D7D7D7",
+      //   "gray-200": "#EEEEEE",
+      //   "gray-100": "#F2F2F2",
+      //   "gray-50 ": "#FCFCFC",
+      //   "slate-400 ": "#9B9B9B",
+      //   "slate-200 ": "#EBEBEB",
+      //   "slate-50 ": "#F7F6F3",
+      //   "red-500 ": "#FF0000",
+      // },
       fontSize: {
+        10: [
+          "10px",
+          {
+            lineHeight: "13px",
+          },
+        ],
         11: [
           "11px",
           {
