@@ -4,6 +4,57 @@
 /* 1 */
 /***/ (function() {
 
+document.addEventListener("DOMContentLoaded", function () {
+  var navButtons = document.querySelectorAll("#navMenu button");
+  var menuList = document.querySelector("#menuList");
+  var menuListItems = document.querySelectorAll("#menuListItem a");
+  var header = document.querySelector("header");
+  var burgerMenu = document.querySelector("#burgerMenu");
+  navButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      var navValue = this.getAttribute("data-nav");
+
+      // 顯示 menuList
+      menuList.classList.add("!translate-y-0", "!opacity-100");
+
+      // 為對應的 menuListItem 添加 class
+      menuListItems.forEach(function (item) {
+        if (item.getAttribute("data-list") === navValue) {
+          item.classList.add("!border-black");
+        } else {
+          item.classList.remove("!border-black");
+        }
+      });
+    });
+  });
+
+  // 如果點擊的不是 header 或 menuList，則隱藏 menuList
+  document.addEventListener("click", function (event) {
+    if (!header.contains(event.target) && !menuList.contains(event.target)) {
+      menuList.classList.remove("!translate-y-0", "!opacity-100");
+    }
+  });
+
+  // 按下 esc 鍵，則隱藏 menuList
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      menuList.classList.remove("!translate-y-0", "!opacity-100");
+    }
+  });
+
+  // 手機版
+  burgerMenu.addEventListener("click", function () {
+    // 視窗寬度小於 1024px，則切換 menuList 的顯示狀態
+    if (window.innerWidth < 1024) {
+      menuList.classList.toggle("!translate-x-0");
+    }
+  });
+});
+
+/***/ }),
+/* 2 */
+/***/ (function() {
+
 // gotop
 var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
 document.addEventListener("DOMContentLoaded", function () {
@@ -112,52 +163,33 @@ var __webpack_exports__ = {};
 !function() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _gotop__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _gotop__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_gotop__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_header__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _gotop__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var _gotop__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_gotop__WEBPACK_IMPORTED_MODULE_1__);
 
-var navButtons = document.querySelectorAll("#navMenu button");
-var menuList = document.querySelector("#menuList");
-var menuListItems = document.querySelectorAll("#menuListItem a");
-var header = document.querySelector("header");
-var burgerMenu = document.querySelector("#burgerMenu");
-navButtons.forEach(function (button) {
-  button.addEventListener("click", function () {
-    var navValue = this.getAttribute("data-nav");
 
-    // 顯示 menuList
-    menuList.classList.add("!translate-y-0", "!opacity-100");
-
-    // 為對應的 menuListItem 添加 class
-    menuListItems.forEach(function (item) {
-      if (item.getAttribute("data-list") === navValue) {
-        item.classList.add("!border-black");
-      } else {
-        item.classList.remove("!border-black");
+document.addEventListener("DOMContentLoaded", function () {
+  // 主輪播
+  new Swiper(".swiper-main", {
+    slidesPerView: 1,
+    loop: true,
+    breakpoints: {
+      // when window width is >= 1024px
+      1024: {
+        slidesPerView: 1
       }
-    });
+    },
+    pagination: {
+      el: ".swiper-main-pagination",
+      type: "bullets",
+      clickable: true
+    },
+    navigation: {
+      nextEl: ".swiper-button-main-next",
+      prevEl: ".swiper-button-main-prev"
+    }
   });
-});
-
-// 如果點擊的不是 header 或 menuList，則隱藏 menuList
-document.addEventListener("click", function (event) {
-  if (!header.contains(event.target) && !menuList.contains(event.target)) {
-    menuList.classList.remove("!translate-y-0", "!opacity-100");
-  }
-});
-
-// 按下 esc 鍵，則隱藏 menuList
-document.addEventListener("keydown", function (event) {
-  if (event.key === "Escape") {
-    menuList.classList.remove("!translate-y-0", "!opacity-100");
-  }
-});
-
-// 手機版
-burgerMenu.addEventListener("click", function () {
-  // 視窗寬度小於 1024px，則切換 menuList 的顯示狀態
-  if (window.innerWidth < 1024) {
-    menuList.classList.toggle("!translate-x-0");
-  }
 });
 }();
 /******/ })()

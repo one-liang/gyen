@@ -3,9 +3,24 @@ include ../components/common/head.pug
 doctype html
 html(lang="zh-Hant-TW")
   +head("index")
+  head
+    link(rel="stylesheet" href="./css/swiper-bundle.min.css")
+    script(src="./js/swiper-bundle.min.js")
   body
     include ../components/common/header.pug
-    h1(class="text-3xl") Hello, World!
+    // 主輪播圖
+    section(class="w-full min-h-[320px] lg:max-h-[853px] max-h-[496px] lg:min-h-[480px] mx-auto overflow-hidden")
+      div(class="swiper swiper-main min-h-[320px] lg:max-h-[853px] max-h-[496px] lg:min-h-[480px] h-dvh")
+        div(class="swiper-wrapper lg:max-h-none max-h-[440px]")
+          each val in [1, 2, 3, 4, 5, 6]
+            a(class="relative swiper-slide" href="/")
+              picture
+                img(class="object-cover object-center w-full h-full" src=`./images/index/banner${val}.png` alt="")
+        div(class="swiper-pagination swiper-main-pagination")
+        div(class="swiper-button-prev swiper-button-main-prev bg-white bg-opacity-65 lg:!flex !hidden items-center justify-center !w-12 !h-[60px] !left-0")
+          img(src="./images/arrows/light_large_left.svg" alt="")
+        div(class="swiper-button-next swiper-button-main-next bg-white bg-opacity-65 lg:!flex !hidden items-center justify-center !w-12 !h-[60px] !right-0")
+          img(src="./images/arrows/light_large_right.svg" alt="")
 
     include ../components/common/gotop.pug
     include ../components/common/footer.pug
