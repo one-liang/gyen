@@ -12,11 +12,11 @@
   }
 
   #loading {
-    @apply bg-primary-light fixed z-[9999] inset-0 w-full h-full flex items-center justify-center;
+    @apply bg-white fixed z-[9999] inset-0 w-full h-full flex items-center justify-center;
   }
 
   .loader {
-    @apply text-primary w-3 h-3 rounded-full inline-block relative;
+    @apply text-gray-500 w-3 h-3 rounded-full inline-block relative;
     animation: spin 2s linear infinite;
   }
 
@@ -53,7 +53,7 @@
   }
 
   .button-active {
-    @apply text-white border bg-primary border-primary-dark;
+    @apply text-white border bg-gray-800;
   }
 
   .tag-button-default {

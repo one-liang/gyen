@@ -1,5 +1,1 @@
 @import url("./tailwind.css");
-
-body {
-  @apply text-6xl;
-}
