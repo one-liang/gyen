@@ -4,7 +4,8 @@
   @apply before:absolute before:inset-0 before:z-1 before:w-full before:h-full before:bg-black before:bg-opacity-[0.02];
 }
 
-.swiper-main-pagination {
+.swiper-main-pagination,
+.swiper-secondary-pagination {
   @apply items-center justify-center lg:!bottom-[17px] !bottom-9 !leading-none;
 }
 

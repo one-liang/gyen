@@ -23,7 +23,11 @@ module.exports = {
           50: "#F7F6F3",
         },
         red: {
+          600: "#CF0000",
           500: "#FF0000",
+        },
+        green: {
+          900: "185304",
         },
       },
       // textColor: {

@@ -6,12 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
   new Swiper(".swiper-main", {
     slidesPerView: 1,
     loop: true,
-    breakpoints: {
-      // when window width is >= 1024px
-      1024: {
-        slidesPerView: 1,
-      },
-    },
     pagination: {
       el: ".swiper-main-pagination",
       type: "bullets",
@@ -42,6 +36,20 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     scrollbar: {
       el: ".swiper-recommend-scrollbar",
+    },
+  });
+
+  // 次要輪播
+  new Swiper(".swiper-secondary", {
+    slidesPerView: 1,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+    },
+    pagination: {
+      el: ".swiper-secondary-pagination",
+      type: "bullets",
+      clickable: true,
     },
   });
 });
