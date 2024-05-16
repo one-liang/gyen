@@ -55,6 +55,22 @@ html(lang="zh-Hant-TW")
             div(class="flex justify-end lg:mt-12 m-[2px]")
               a(class="text-sm text-yellow-900 lg:text-xl" href="#") 更多 >>
 
+    // 全站分類熱銷推薦
+    section(class="bg-white lg:pt-16 pt-10 lg:pb-[35px] pb-10")
+      div(class="mx-auto max-w-screen-2xl")
+        p(class="text-base font-semibold text-center text-black lg:text-xl") 全站分類熱銷推薦
+        div(class="lg:!pl-10 !pl-6 !pb-[38px] !mt-[38px] swiper swiper-recommend")
+          div(class="swiper-wrapper")
+            each val in [1, 2, 3, 4, 5, 6]
+              a(class="lg:max-w-[320px] max-w-[270px] swiper-slide" href="/")
+                img(class="lg:max-w-[320px] max-w-[270px] lg:max-h-[380px] max-h-[320px] w-full h-full object-cover" src=`./images/index/recommend${val}.png`, alt="")
+                p(class="mt-8 text-base text-black") 全站熱銷商品第二件五折  >
+          div(class="2xl:max-w-[1300px] xl:max-w-[1000px] lg:max-w-[900px] md:max-w-[700px] max-w-[320px] !left-[51%] !bottom-0 !-translate-x-1/2 swiper-scrollbar swiper-recommend-scrollbar")
+          div(class="swiper-button-prev swiper-button-recommend-prev bg-white lg:!flex !hidden items-center justify-center !w-12 !h-[60px] !left-0 rotate-180")
+            img(src="./images/arrows/arrow_forward_24px.svg" alt="")
+          div(class="swiper-button-next swiper-button-recommend-next bg-white lg:!flex !hidden items-center justify-center !w-12 !h-[60px] !right-0")
+            img(src="./images/arrows/arrow_forward_24px.svg" alt="")
+
 
 
     include ../components/common/gotop.pug

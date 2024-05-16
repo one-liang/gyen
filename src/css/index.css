@@ -20,3 +20,15 @@
 .swiper-button-next:after {
   content: none !important;
 }
+
+.swiper-recommend .swiper-button-disabled {
+  @apply !opacity-0;
+}
+
+.swiper-recommend .swiper-scrollbar {
+  @apply !bg-gray-300;
+}
+
+.swiper-recommend .swiper-scrollbar-drag {
+  @apply !bg-gray-900;
+}

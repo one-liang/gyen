@@ -22,4 +22,26 @@ document.addEventListener("DOMContentLoaded", function () {
       prevEl: ".swiper-button-main-prev",
     },
   });
+
+  // 全站分類熱銷推薦
+  new Swiper(".swiper-recommend", {
+    slidesPerView: "auto",
+    spaceBetween: 16,
+    freeMode: true,
+    breakpoints: {
+      // when window width is >= 1024px
+      1024: {
+        freeMode: false,
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+    },
+    navigation: {
+      nextEl: ".swiper-button-recommend-next",
+      prevEl: ".swiper-button-recommend-prev",
+    },
+    scrollbar: {
+      el: ".swiper-recommend-scrollbar",
+    },
+  });
 });

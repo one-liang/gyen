@@ -8,6 +8,7 @@ module.exports = {
           900: "#AA580D",
         },
         gray: {
+          900: "#212121",
           700: "#8D8D8D",
           500: "#515151",
           400: "#999999",
@@ -90,8 +91,11 @@ module.exports = {
           },
         ],
       },
+      screens: {
+        "2xl": "1440px",
+      },
       maxWidth: {
-        "screen-xl": "1200px",
+        "screen-2xl": "1440px",
       },
       letterSpacing: {
         1: "1px",
