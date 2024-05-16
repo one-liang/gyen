@@ -72,14 +72,14 @@ html(lang="zh-Hant-TW")
             img(src="./images/arrows/arrow_forward_24px.svg" alt="")
 
     // 次要輪播
-    section(class="w-full min-h-[320px] lg:max-h-[853px] max-h-[496px] lg:min-h-[480px] mx-auto overflow-hidden")
-      div(class="swiper swiper-secondary min-h-[320px] lg:max-h-[853px] max-h-[496px] lg:min-h-[480px] h-dvh")
+    section(class="w-full min-h-[320px] lg:max-h-[853px] max-h-[440px] lg:min-h-[480px] mx-auto overflow-hidden")
+      div(class="swiper swiper-secondary min-h-[320px] lg:max-h-[853px] max-h-[440px] lg:min-h-[480px] h-dvh")
         div(class="swiper-wrapper lg:max-h-none max-h-[440px]")
           each val in [1, 2, 3, 4, 5, 6]
             a(class="relative swiper-slide" href="/")
               picture
                 img(class="object-cover object-center w-full h-full" src=`./images/index/secondary${val}.png` alt="")
-        div(class="swiper-pagination swiper-secondary-pagination")
+        div(class="lg:!block hidden swiper-pagination swiper-secondary-pagination")
 
 
 

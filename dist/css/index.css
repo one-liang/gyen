@@ -1615,6 +1615,10 @@ body {
     margin-top: 1.5rem;
   }
 
+  .lg\:\!block {
+    display: block !important;
+  }
+
   .lg\:block {
     display: block;
   }
