@@ -33,3 +33,8 @@
 .swiper-recommend .swiper-scrollbar-drag {
   @apply !bg-gray-900;
 }
+
+.swiper-recommend .swiper-button-recommend-next,
+.swiper-recommend .swiper-button-recommend-prev {
+  @apply top-[calc(50%-56px)];
+}
