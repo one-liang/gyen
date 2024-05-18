@@ -37,6 +37,7 @@ module.exports = {
         origin: {
           600: "#F25B17",
           500: "#FF5C00",
+          400: "#FD8442",
         },
       },
       // textColor: {
