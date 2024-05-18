@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var navButtons = document.querySelectorAll("#navMenu button");
   var menuList = document.querySelector("#menuList");
   var menuListItems = document.querySelectorAll("#menuListItem a");
+  var body = document.querySelector("body");
   var header = document.querySelector("header");
   var burgerMenu = document.querySelector("#burgerMenu");
   navButtons.forEach(function (button) {
@@ -46,6 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
   burgerMenu.addEventListener("click", function () {
     // 視窗寬度小於 1024px，則切換 menuList 的顯示狀態
     if (window.innerWidth < 1024) {
+      body.classList.toggle("overflow-hidden");
       menuList.classList.toggle("!translate-x-0");
     }
   });
