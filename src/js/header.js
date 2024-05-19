@@ -4,7 +4,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuListItems = document.querySelectorAll("#menuListItem a");
   const body = document.querySelector("body");
   const header = document.querySelector("header");
-  const burgerMenu = document.querySelector("#burgerMenu");
+  const burgerMenuButton = document.querySelector("#burgerMenuButton");
+  const searchInput = document.querySelector(".searchInput");
+  const searchMenuButton = document.querySelector("#searchMenuButton");
+  const searchList = document.querySelector("#searchList");
+  const searchIcon = document.querySelector(".searchIcon");
+  const searchCloseIcon = document.querySelector(".searchCloseIcon");
 
   navButtons.forEach((button) => {
     button.addEventListener("click", function () {
@@ -39,11 +44,29 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // 手機版
-  burgerMenu.addEventListener("click", function () {
+  burgerMenuButton.addEventListener("click", function () {
     // 視窗寬度小於 1024px，則切換 menuList 的顯示狀態
     if (window.innerWidth < 1024) {
       body.classList.toggle("overflow-hidden");
       menuList.classList.toggle("!translate-x-0");
+    }
+  });
+
+  // 手機版
+  searchMenuButton.addEventListener("click", function () {
+    // 視窗寬度小於 1024px，則切換 searchList 的顯示狀態
+    if (window.innerWidth < 1024) {
+      searchList.classList.toggle("!translate-y-0");
+    }
+  });
+
+  searchInput.addEventListener("input", function () {
+    if (searchInput.value) {
+      searchIcon.classList.add("hidden");
+      searchCloseIcon.classList.remove("hidden");
+    } else {
+      searchIcon.classList.remove("hidden");
+      searchCloseIcon.classList.add("hidden");
     }
   });
 });

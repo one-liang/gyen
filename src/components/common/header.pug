@@ -23,11 +23,11 @@ header(class="relative")
       li
         button(class="text-sm text-black" type="button" data-nav="4") 熱銷活動
 
-    // burger menu
-    div(id="burgerMenu" class="flex items-center space-x-5 lg:hidden")
-      button(type="button")
+    // burger & search menu
+    div(class="flex items-center space-x-5 lg:hidden")
+      button(id="burgerMenuButton" type="button")
         img(src="./images/icon/menu.svg", alt="")
-      button(type="button")
+      button(id="searchMenuButton" type="button")
         img(src="./images/main/search.svg", alt="")
 
     // logo
@@ -39,7 +39,7 @@ header(class="relative")
       div(class="relative hidden lg:block")
         button(class="absolute -translate-y-1/2 left-3 top-1/2" type="button")
           img(src="./images/main/search.svg", alt="")
-        input(type="text", placeholder="找商品  聖誕節 ", class="w-[169px] h-12 text-sm text-gray-400 border border-gray-200 rounded-full lg:pl-12 pr-7")
+        input(class="w-[169px] h-12 text-sm text-gray-400 border border-gray-200 rounded-full lg:pl-12 pr-7" type="text", placeholder="找商品  聖誕節")
       a(href="/")
         img(src="./images/main/user.svg", alt="")
       a(href="/")
@@ -74,3 +74,19 @@ header(class="relative")
       div(class="flex-[2_2_0%] w-full overflow-hidden lg:block hidden")
         img(class="object-cover w-full h-full" src="./images/header/banner.png", alt="")
     
+  // search list
+  div(id="searchList" class="absolute z-10 w-full px-6 pt-6 pb-[70px] duration-150 ease-out bg-white -translate-y-full")
+    div(class="relative") 
+      input(class="w-full h-12 pl-6 pr-8 text-sm text-gray-400 border border-gray-200 rounded-full searchInput" type="text", placeholder="找商品  聖誕節")
+      button(class="absolute -translate-y-1/2 right-3 top-1/2" type="button")
+        img(class="searchIcon" src="./images/main/search.svg", alt="")
+        img(class="hidden searchCloseIcon" src="./images/icon/close_black.svg", alt="")
+    div(class="flex flex-col mt-6 px-[13px]")
+      p(class="text-sm font-semibold text-black") 熱門搜尋
+      ul(class="flex flex-col mt-6 space-y-5")
+        li
+          a(class="text-sm text-black" href="/") 胡同裏的心港點
+        li
+          a(class="text-sm text-black" href="/") 聯名首發
+        li
+          a(class="text-sm text-black" href="/") 聖誕大餐烤雞
