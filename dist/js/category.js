@@ -193,7 +193,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _gotop__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_gotop__WEBPACK_IMPORTED_MODULE_1__);
 
 
-document.addEventListener("DOMContentLoaded", function () {});
+document.addEventListener("DOMContentLoaded", function () {
+  var dropdownButtons = document.querySelectorAll("#dropdownMenu .dropdownButton");
+  dropdownButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      var dropdownList = button.nextElementSibling;
+      var dropupIcon = button.querySelector(".dropupIcon");
+      var dropdownIcon = button.querySelector(".dropdwonIcon");
+      if (dropdownList && dropdownList.classList.contains("dropdownList")) {
+        dropdownList.classList.toggle("!flex");
+        dropupIcon.classList.toggle("hidden");
+        dropdownIcon.classList.toggle("hidden");
+      }
+    });
+  });
+});
 }();
 /******/ })()
 ;

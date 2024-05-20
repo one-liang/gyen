@@ -2,11 +2,24 @@ include ../components/common/head.pug
 
 doctype html
 html(lang="zh-Hant-TW")
-  +head("co-branded")
+  +head("category")
   body
     include ../components/common/header.pug
 
-    section(class="") co-branded
+    main(class="max-w-screen-2xl mx-auto px-12 pt-6 lg:pt-10 pb-[102px] lg:pb-[120px] flex lg:space-x-8")
+      section(class="flex-1 max-w-[182px]")
+        p(class="text-xl font-semibold text-slate-600") 低溫食品
+        ul(id="dropdownMenu" class="flex flex-col mt-10 space-y-4")
+          each val in [1, 2, 3, 4, 5]
+            li(class="relative")
+              button(class="flex items-center justify-between w-full text-base dropdownButton text-slate-600")
+                span= `胡同裏的心港點${val}`
+                img(class="dropdwonIcon" src="./images/arrows/light_small_down.svg", alt="")
+                img(class="hidden dropupIcon" src="./images/arrows/light_small_up.svg", alt="")
+              div(class="hidden flex-col mt-[10px] border-t border-b bg-neutral-50 border-neutral-200 dropdownList")
+                each item in [1, 2, 3, 4, 5, 6]
+                  a(class="px-5 py-4" href="#")= `港點${item}`
+      section(class="flex-1") category
     
     include ../components/common/gotop.pug
     include ../components/common/footer.pug
