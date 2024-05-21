@@ -6,8 +6,8 @@ html(lang="zh-Hant-TW")
   body
     include ../components/common/header.pug
 
-    main(class="max-w-screen-2xl mx-auto px-12 pt-6 lg:pt-10 pb-[102px] lg:pb-[120px] flex lg:space-x-8")
-      section(class="flex-1 max-w-[182px]")
+    main(class="max-w-screen-2xl mx-auto px-0 lg:px-12 pt-6 lg:pt-10 pb-[102px] lg:pb-[120px] flex lg:space-x-8")
+      section(class="flex-1 max-w-[182px] lg:block hidden")
         p(class="text-xl font-semibold text-slate-600") 低溫食品
         ul(id="dropdownMenu" class="flex flex-col mt-10 space-y-4")
           each val in [1, 2, 3, 4, 5]
@@ -19,7 +19,80 @@ html(lang="zh-Hant-TW")
               div(class="hidden flex-col mt-[10px] border-t border-b bg-neutral-50 border-neutral-200 dropdownList")
                 each item in [1, 2, 3, 4, 5, 6]
                   a(class="px-5 py-4" href="#")= `港點${item}`
-      section(class="flex-1") category
-    
+      section(class="flex-1")
+        // 麵包屑
+        ul(class="flex flex-wrap items-center px-6 space-x-1 lg:px-0")
+          li(class="breadCrumbLink")
+            a(class="text-sm text-slate-600" href="#") 商品
+          li(class="breadCrumbLink")
+            a(class="text-sm ext-slate-600" href="#") 低溫食品
+
+        // 分類標題
+        a(class="block mt-5 lg:mt-6" href="#") 
+          img(class="object-cover object-center w-full lg:h-[400px] h-[180px] lg:rounded" src="./images/category/categoryBanner.png" alt="")
+        
+        // 獨家商品
+        p(class="mt-10 text-xl font-semibold text-center text-slate-600 lg:mt-12") 胡同嚴選/ 獨家商品
+        div(class="flex justify-between mt-10 lg:px-0 px-[10px]")
+          each val in [1, 2, 3]
+            a(href="#") 
+              img(class="object-cover object-center w-full lg:h-[335px] h-[100px]" src=`./images/category/exclusive${val}.png` alt="")
+              p(class="lg:text-base text-xs text-slate-600 lg:px-[7px] lg:mt-6 mt-2 text-center lg:text-left") 胡同裏的心港點
+        
+        // 最新消息
+        div(class="mt-10 lg:mt-14")
+          a(class="" href="#")
+            img(class="" src="./images/category/news.png", alt="")
+
+        // 精選推薦
+        p(class="mt-10 text-xl font-semibold text-center text-slate-600 lg:mt-12") 精選推薦
+        div(class="grid grid-cols-2 gap-3 px-4 mt-10 lg:grid-cols-4 lg:gap-8 lg:px-0")
+          a(class="relative flex flex-col" href="#") 
+            div(class="relative")
+              img(class="object-cover object-center w-full lg:max-w-[262px] h-full lg:max-h-[280px] max-h-[273px]" src=`./images/category/recommended1.png` alt="")
+              // 第 1 種狀態
+              div(class="absolute left-3 bottom-[44px] bg-gray-800 w-14 h-14 rounded-sm flex items-center justify-center")
+                p(class="flex flex-col text-sm text-white left-[30px]") 
+                  span 東港
+                  span 名產
+            div(class="flex flex-col px-3 pb-4 mt-2 lg:pb-0 lg:px-0 lg:mt-4")
+              p(class="text-slate-400 lg:mt-6 lg:text-xs text-10") 胡同嚴選
+              p(class="mt-[5px] text-sm text-black lg:mt-3 lg:text-base") 胡同 元氣爆米花-原味 (短效期, 2024.03) / 200g/桶
+              div(class="flex lg:flex-col flex-col-reverse mt-[9px] lg:mt-[14px]")
+                div(class="flex lg:justify-normal justify-between space-y-2 xl:space-x-6 lg:space-x-4 lg:space-y-0 flex-row mt-[10px] lg:mt-0")
+                  p(class="flex flex-col font-semibold text-red-500 lg:space-x-2 lg:block")
+                    span(class="lg:text-xs text-10") 優惠價
+                    span(class="text-sm lg:text-base") NT$ 99
+                  p(class="font-semibold text-gray-700 line-through")
+                    span(class="text-sm lg:text-base") NT$ 129
+                // 3 種狀態
+                div(class="flex flex-wrap items-center lg:mt-2")
+                  p(class="px-2 py-1 mb-1 mr-3 text-white bg-red-400 rounded-sm text-10") 限量新品
+                  p(class="px-2 py-1 mb-1 mr-3 text-white bg-green-400 rounded-sm text-10") 常溫
+                  p(class="px-2 py-1 mb-1 mr-3 text-white bg-blue-400 rounded-sm text-10") 冷藏
+          a(class="relative flex flex-col" href="#") 
+            div(class="relative")
+              img(class="object-cover object-center w-full lg:max-w-[262px] h-full lg:max-h-[280px] max-h-[273px]" src=`./images/category/recommended1.png` alt="")
+              // 第 2 種狀態
+              div(class="absolute left-3 bottom-[44px] bg-gray-800 w-14 h-14 rounded-sm flex items-center justify-center")
+                p(class="flex flex-col text-sm text-white left-[30px]") 
+                  span 東港
+                  span 名產
+            div(class="flex flex-col px-3 pb-4 mt-2 lg:pb-0 lg:px-0 lg:mt-4")
+              p(class="text-slate-400 lg:mt-6 lg:text-xs text-10") 胡同嚴選
+              p(class="mt-[5px] text-sm text-black lg:mt-3 lg:text-base") 胡同 元氣爆米花-原味 (短效期, 2024.03) / 200g/桶
+              div(class="flex lg:flex-col flex-col-reverse mt-[9px] lg:mt-[14px]")
+                div(class="flex lg:justify-normal justify-between space-y-2 xl:space-x-6 lg:space-x-4 lg:space-y-0 flex-row mt-[10px] lg:mt-0")
+                  p(class="flex flex-col font-semibold text-red-500 lg:space-x-2 lg:block")
+                    span(class="lg:text-xs text-10") 優惠價
+                    span(class="text-sm lg:text-base") NT$ 99
+                  p(class="font-semibold text-gray-700 line-through")
+                    span(class="text-sm lg:text-base") NT$ 129
+                // 3 種狀態
+                div(class="flex flex-wrap items-center lg:mt-2")
+                  p(class="px-2 py-1 mb-1 mr-3 text-white bg-red-400 rounded-sm text-10") 限量新品
+                  p(class="px-2 py-1 mb-1 mr-3 text-white bg-green-400 rounded-sm text-10") 常溫
+                  p(class="px-2 py-1 mb-1 mr-3 text-white bg-blue-400 rounded-sm text-10") 冷藏
+
     include ../components/common/gotop.pug
     include ../components/common/footer.pug
