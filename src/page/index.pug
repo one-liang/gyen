@@ -9,13 +9,13 @@ html(lang="zh-Hant-TW")
   body
     include ../components/common/header.pug
     // 主輪播圖
-    section(class="w-full min-h-[320px] lg:max-h-[853px] max-h-[496px] lg:min-h-[480px] mx-auto overflow-hidden")
-      div(class="swiper swiper-main min-h-[320px] lg:max-h-[853px] max-h-[496px] lg:min-h-[480px] h-dvh")
-        div(class="swiper-wrapper lg:max-h-none max-h-[440px]")
+    section(class="w-full mx-auto overflow-hidden")
+      div(class="swiper swiper-main lg:!pb-0 !pb-[57px]")
+        div(class="swiper-wrapper")
           each val in [1, 2, 3, 4, 5, 6]
             a(class="relative swiper-slide" href="/")
               picture
-                img(class="object-cover object-center w-full h-full" src=`./images/index/banner${val}.png` alt="")
+                img(class="object-cover object-center w-full lg:h-[480px] h-[440px]" src=`./images/index/banner${val}.png` alt="")
         div(class="swiper-pagination swiper-main-pagination")
         div(class="swiper-button-prev swiper-button-main-prev bg-white bg-opacity-65 lg:!flex !hidden items-center justify-center !w-12 !h-[60px] !left-0")
           img(src="./images/arrows/light_large_left.svg" alt="")
@@ -29,8 +29,8 @@ html(lang="zh-Hant-TW")
           img(class="object-cover object-center w-full h-full rounded-tr-[50%]" src="./images/index/planning.png", alt="")
         div(class="flex lg:flex-row flex-col z-[2] lg:absolute relative lg:top-[162px] lg:right-[69px] mx-auto lg:mt-0 mt-[151px] lg:max-w-[904px] lg:max-h-[711px] lg:w-full w-[90%] h-full bg-white bg-opacity-95 lg:pt-[43px] pt-10 lg:pb-[46px] pb-[13px] lg:pl-[61px] lg:pr-10 px-8")
           div(class="flex-1 lg:mr-[111px]")
-            p(class="text-xs text-black lg:text-sm") 歡慶佳節企劃提案
-            p(class="mt-6 text-xl font-bold leading-snug text-black lg:text-3xl") 不想一個人過聖誕節
+            p(class="text-xs text-black lg:text-sm line-clamp line-clamp-1") 歡慶佳節企劃提案
+            p(class="mt-6 text-xl font-bold leading-snug text-black lg:text-3xl line-clamp line-clamp-3") 不想一個人過聖誕節
               br
               | 讓他（她）的心溫暖起來
             div(class="mt-6 space-y-6 lg:space-y-10")
@@ -72,13 +72,13 @@ html(lang="zh-Hant-TW")
             img(src="./images/arrows/arrow_forward_24px.svg" alt="")
 
     // 次要輪播
-    section(class="w-full min-h-[320px] lg:max-h-[853px] max-h-[440px] lg:min-h-[480px] mx-auto overflow-hidden")
-      div(class="swiper swiper-secondary min-h-[320px] lg:max-h-[853px] max-h-[440px] lg:min-h-[480px] h-dvh")
-        div(class="swiper-wrapper lg:max-h-none max-h-[440px]")
+    section(class="w-full mx-auto overflow-hidden")
+      div(class="swiper swiper-secondary")
+        div(class="swiper-wrapper")
           each val in [1, 2, 3, 4, 5, 6]
             a(class="relative swiper-slide" href="/")
               picture
-                img(class="object-cover object-center w-full h-full" src=`./images/index/secondary${val}.png` alt="")
+                img(class="object-cover object-center w-full lg:h-[480px] h-[440px]" src=`./images/index/secondary${val}.png` alt="")
         div(class="lg:!block hidden swiper-pagination swiper-secondary-pagination")
 
     // 限定區塊
@@ -109,7 +109,7 @@ html(lang="zh-Hant-TW")
           a(class="flex flex-col lg:flex-1 flex-[0_0_auto] relative" href="/") 
             div(class="relative")
               img(class="object-cover object-center w-full h-full lg:max-h-[380px] max-h-[273px]" src=`./images/index/limited2.png` alt="")
-              div(class="absolute bottom-0 flex justify-center w-full h-8 bg-origin-500")
+              div(class="absolute bottom-0 flex justify-center w-full h-8 px-1 bg-origin-500")
                 p(class="flex items-center font-bold text-white")
                   span(class="xl:text-sm text-11") 12.12 限定 熱銷商品破盤價 下殺 
                   span(class="xl:text-10 text-[9px]") $

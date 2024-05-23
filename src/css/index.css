@@ -6,11 +6,11 @@
 
 .swiper-main-pagination,
 .swiper-secondary-pagination {
-  @apply items-center justify-center lg:!bottom-[17px] !bottom-9 !leading-none;
+  @apply items-center justify-center lg:!bottom-[17px] !bottom-10 !leading-none;
 }
 
 .swiper-pagination-bullet {
-  @apply !bg-gray-300 lg:!opacity-50 !w-[5px] !h-[5px] !mx-[6px];
+  @apply !bg-gray-300 lg:!opacity-50 !opacity-100 !w-[5px] !h-[5px] !mx-[6px];
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
