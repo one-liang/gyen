@@ -11,6 +11,10 @@
     <script src="js/category.js" defer="defer"> </script>
     <title>category</title>
   </head>
+  <head>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <script src="./js/swiper-bundle.min.js"></script>
+  </head>
   <body>
     <header class="relative">
       <!-- topbar-->
@@ -96,100 +100,629 @@
         </div>
       </div>
     </header>
-    <main class="max-w-screen-2xl mx-auto px-0 lg:px-12 pt-6 lg:pt-10 pb-[102px] lg:pb-[120px] flex lg:space-x-8">
-      <section class="flex-1 max-w-[182px] lg:block hidden">
-        <p class="text-xl font-semibold text-slate-600">低溫食品</p>
-        <ul class="flex flex-col mt-10 space-y-4" id="dropdownMenu">
-          <li class="relative">
-            <button class="flex items-center justify-between w-full text-base dropdownButton text-slate-600"><span>胡同裏的心港點1</span><img class="dropdwonIcon" src="./images/arrows/light_small_down.svg" alt=""><img class="hidden dropupIcon" src="./images/arrows/light_small_up.svg" alt=""></button>
-            <div class="hidden flex-col mt-[10px] border-t border-b bg-neutral-50 border-neutral-200 dropdownList"><a class="px-5 py-4" href="#">港點1</a><a class="px-5 py-4" href="#">港點2</a><a class="px-5 py-4" href="#">港點3</a><a class="px-5 py-4" href="#">港點4</a><a class="px-5 py-4" href="#">港點5</a><a class="px-5 py-4" href="#">港點6</a>
-            </div>
-          </li>
-          <li class="relative">
-            <button class="flex items-center justify-between w-full text-base dropdownButton text-slate-600"><span>胡同裏的心港點2</span><img class="dropdwonIcon" src="./images/arrows/light_small_down.svg" alt=""><img class="hidden dropupIcon" src="./images/arrows/light_small_up.svg" alt=""></button>
-            <div class="hidden flex-col mt-[10px] border-t border-b bg-neutral-50 border-neutral-200 dropdownList"><a class="px-5 py-4" href="#">港點1</a><a class="px-5 py-4" href="#">港點2</a><a class="px-5 py-4" href="#">港點3</a><a class="px-5 py-4" href="#">港點4</a><a class="px-5 py-4" href="#">港點5</a><a class="px-5 py-4" href="#">港點6</a>
-            </div>
-          </li>
-          <li class="relative">
-            <button class="flex items-center justify-between w-full text-base dropdownButton text-slate-600"><span>胡同裏的心港點3</span><img class="dropdwonIcon" src="./images/arrows/light_small_down.svg" alt=""><img class="hidden dropupIcon" src="./images/arrows/light_small_up.svg" alt=""></button>
-            <div class="hidden flex-col mt-[10px] border-t border-b bg-neutral-50 border-neutral-200 dropdownList"><a class="px-5 py-4" href="#">港點1</a><a class="px-5 py-4" href="#">港點2</a><a class="px-5 py-4" href="#">港點3</a><a class="px-5 py-4" href="#">港點4</a><a class="px-5 py-4" href="#">港點5</a><a class="px-5 py-4" href="#">港點6</a>
-            </div>
-          </li>
-          <li class="relative">
-            <button class="flex items-center justify-between w-full text-base dropdownButton text-slate-600"><span>胡同裏的心港點4</span><img class="dropdwonIcon" src="./images/arrows/light_small_down.svg" alt=""><img class="hidden dropupIcon" src="./images/arrows/light_small_up.svg" alt=""></button>
-            <div class="hidden flex-col mt-[10px] border-t border-b bg-neutral-50 border-neutral-200 dropdownList"><a class="px-5 py-4" href="#">港點1</a><a class="px-5 py-4" href="#">港點2</a><a class="px-5 py-4" href="#">港點3</a><a class="px-5 py-4" href="#">港點4</a><a class="px-5 py-4" href="#">港點5</a><a class="px-5 py-4" href="#">港點6</a>
-            </div>
-          </li>
-          <li class="relative">
-            <button class="flex items-center justify-between w-full text-base dropdownButton text-slate-600"><span>胡同裏的心港點5</span><img class="dropdwonIcon" src="./images/arrows/light_small_down.svg" alt=""><img class="hidden dropupIcon" src="./images/arrows/light_small_up.svg" alt=""></button>
-            <div class="hidden flex-col mt-[10px] border-t border-b bg-neutral-50 border-neutral-200 dropdownList"><a class="px-5 py-4" href="#">港點1</a><a class="px-5 py-4" href="#">港點2</a><a class="px-5 py-4" href="#">港點3</a><a class="px-5 py-4" href="#">港點4</a><a class="px-5 py-4" href="#">港點5</a><a class="px-5 py-4" href="#">港點6</a>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section class="flex-1">
-        <!-- 麵包屑-->
-        <ul class="flex flex-wrap items-center px-6 space-x-1 lg:px-0">
-          <li class="breadCrumbLink"><a class="text-sm text-slate-600" href="#">商品</a></li>
-          <li class="breadCrumbLink"><a class="text-sm ext-slate-600" href="#">低溫食品</a></li>
-        </ul>
-        <!-- 分類標題--><a class="block mt-5 lg:mt-6" href="#"> <img class="object-cover object-center w-full lg:h-[400px] h-[180px] lg:rounded" src="./images/category/categoryBanner.png" alt=""></a>
-        <!-- 獨家商品-->
-        <p class="mt-10 text-xl font-semibold text-center text-slate-600 lg:mt-12">胡同嚴選/ 獨家商品</p>
-        <div class="flex justify-between mt-10 lg:px-0 px-[10px]"><a href="#"> <img class="object-cover object-center w-full lg:h-[335px] h-[100px]" src="./images/category/exclusive1.png" alt="">
-            <p class="lg:text-base text-xs text-slate-600 lg:px-[7px] lg:mt-6 mt-2 text-center lg:text-left">胡同裏的心港點</p></a><a href="#"> <img class="object-cover object-center w-full lg:h-[335px] h-[100px]" src="./images/category/exclusive2.png" alt="">
-            <p class="lg:text-base text-xs text-slate-600 lg:px-[7px] lg:mt-6 mt-2 text-center lg:text-left">胡同裏的心港點</p></a><a href="#"> <img class="object-cover object-center w-full lg:h-[335px] h-[100px]" src="./images/category/exclusive3.png" alt="">
-            <p class="lg:text-base text-xs text-slate-600 lg:px-[7px] lg:mt-6 mt-2 text-center lg:text-left">胡同裏的心港點</p></a>
+    <main class="flex flex-col mx-auto max-w-screen-2xl pt-6 lg:pt-10 pb-[102px] lg:pb-[120px]">
+      <div class="flex pb-10 mx-0 border-b lg:space-x-8 border-neutral-200 lg:mx-10 lg:pb-12">
+        <!-- 左邊選單-->
+        <section class="flex-1 max-w-[182px] lg:block hidden">
+          <p class="text-xl font-semibold text-slate-600">低溫食品</p>
+          <ul class="flex flex-col mt-10 space-y-4" id="dropdownMenu">
+            <li class="relative">
+              <button class="flex items-center justify-between w-full text-base dropdownButton text-slate-600"><span>胡同裏的心港點1</span><img class="dropdwonIcon" src="./images/arrows/light_small_down.svg" alt=""><img class="hidden dropupIcon" src="./images/arrows/light_small_up.svg" alt=""></button>
+              <div class="hidden flex-col mt-[10px] border-t border-b bg-neutral-50 border-neutral-200 dropdownList"><a class="px-5 py-4" href="#">港點1</a><a class="px-5 py-4" href="#">港點2</a><a class="px-5 py-4" href="#">港點3</a><a class="px-5 py-4" href="#">港點4</a><a class="px-5 py-4" href="#">港點5</a><a class="px-5 py-4" href="#">港點6</a>
+              </div>
+            </li>
+            <li class="relative">
+              <button class="flex items-center justify-between w-full text-base dropdownButton text-slate-600"><span>胡同裏的心港點2</span><img class="dropdwonIcon" src="./images/arrows/light_small_down.svg" alt=""><img class="hidden dropupIcon" src="./images/arrows/light_small_up.svg" alt=""></button>
+              <div class="hidden flex-col mt-[10px] border-t border-b bg-neutral-50 border-neutral-200 dropdownList"><a class="px-5 py-4" href="#">港點1</a><a class="px-5 py-4" href="#">港點2</a><a class="px-5 py-4" href="#">港點3</a><a class="px-5 py-4" href="#">港點4</a><a class="px-5 py-4" href="#">港點5</a><a class="px-5 py-4" href="#">港點6</a>
+              </div>
+            </li>
+            <li class="relative">
+              <button class="flex items-center justify-between w-full text-base dropdownButton text-slate-600"><span>胡同裏的心港點3</span><img class="dropdwonIcon" src="./images/arrows/light_small_down.svg" alt=""><img class="hidden dropupIcon" src="./images/arrows/light_small_up.svg" alt=""></button>
+              <div class="hidden flex-col mt-[10px] border-t border-b bg-neutral-50 border-neutral-200 dropdownList"><a class="px-5 py-4" href="#">港點1</a><a class="px-5 py-4" href="#">港點2</a><a class="px-5 py-4" href="#">港點3</a><a class="px-5 py-4" href="#">港點4</a><a class="px-5 py-4" href="#">港點5</a><a class="px-5 py-4" href="#">港點6</a>
+              </div>
+            </li>
+            <li class="relative">
+              <button class="flex items-center justify-between w-full text-base dropdownButton text-slate-600"><span>胡同裏的心港點4</span><img class="dropdwonIcon" src="./images/arrows/light_small_down.svg" alt=""><img class="hidden dropupIcon" src="./images/arrows/light_small_up.svg" alt=""></button>
+              <div class="hidden flex-col mt-[10px] border-t border-b bg-neutral-50 border-neutral-200 dropdownList"><a class="px-5 py-4" href="#">港點1</a><a class="px-5 py-4" href="#">港點2</a><a class="px-5 py-4" href="#">港點3</a><a class="px-5 py-4" href="#">港點4</a><a class="px-5 py-4" href="#">港點5</a><a class="px-5 py-4" href="#">港點6</a>
+              </div>
+            </li>
+            <li class="relative">
+              <button class="flex items-center justify-between w-full text-base dropdownButton text-slate-600"><span>胡同裏的心港點5</span><img class="dropdwonIcon" src="./images/arrows/light_small_down.svg" alt=""><img class="hidden dropupIcon" src="./images/arrows/light_small_up.svg" alt=""></button>
+              <div class="hidden flex-col mt-[10px] border-t border-b bg-neutral-50 border-neutral-200 dropdownList"><a class="px-5 py-4" href="#">港點1</a><a class="px-5 py-4" href="#">港點2</a><a class="px-5 py-4" href="#">港點3</a><a class="px-5 py-4" href="#">港點4</a><a class="px-5 py-4" href="#">港點5</a><a class="px-5 py-4" href="#">港點6</a>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <!-- 右邊商品列表-->
+        <section class="flex-1">
+          <!-- 麵包屑-->
+          <ul class="flex flex-wrap items-center px-6 space-x-1 lg:px-0">
+            <li class="breadCrumbLink"><a class="text-sm text-slate-600" href="#">商品</a></li>
+            <li class="breadCrumbLink"><a class="text-sm ext-slate-600" href="#">低溫食品</a></li>
+          </ul>
+          <!-- 分類標題--><a class="block mt-5 lg:mt-6" href="#"> <img class="object-cover object-center w-full lg:h-[400px] h-[180px] lg:rounded" src="./images/category/categoryBanner.png" alt=""></a>
+          <!-- 獨家商品-->
+          <p class="mt-10 text-xl font-semibold text-center text-slate-600 lg:mt-12">胡同嚴選/ 獨家商品</p>
+          <div class="flex justify-between mt-10 lg:px-0 px-[10px]"><a href="#"> <img class="object-cover object-center w-full lg:h-[335px] h-[100px]" src="./images/category/exclusive1.png" alt="">
+              <p class="lg:text-base text-xs text-slate-600 lg:px-[7px] lg:mt-6 mt-2 text-center lg:text-left">胡同裏的心港點</p></a><a href="#"> <img class="object-cover object-center w-full lg:h-[335px] h-[100px]" src="./images/category/exclusive2.png" alt="">
+              <p class="lg:text-base text-xs text-slate-600 lg:px-[7px] lg:mt-6 mt-2 text-center lg:text-left">胡同裏的心港點</p></a><a href="#"> <img class="object-cover object-center w-full lg:h-[335px] h-[100px]" src="./images/category/exclusive3.png" alt="">
+              <p class="lg:text-base text-xs text-slate-600 lg:px-[7px] lg:mt-6 mt-2 text-center lg:text-left">胡同裏的心港點</p></a>
+          </div>
+          <!-- 最新消息-->
+          <div class="mt-10 lg:mt-14"><a href="#"><img src="./images/category/news.png" alt=""></a></div>
+          <!-- 精選推薦-->
+          <p class="mt-10 text-xl font-semibold text-center text-slate-600 lg:mt-12">精選推薦</p>
+          <div class="grid grid-cols-2 gap-3 px-4 pb-4 mt-10 lg:grid-cols-4 lg:gap-8 lg:px-0 lg:pb-14">
+            <!-- 商品卡片 - 1--><a class="relative flex flex-col" href="#"> 
+              <div class="relative"><img class="object-cover object-center w-full lg:max-w-[262px] h-full lg:max-h-[280px] max-h-[273px]" src="./images/category/recommended1.png" alt="">
+                <!-- 第 1 種狀態-->
+                <div class="absolute left-3 bottom-[44px] bg-gray-800 w-14 h-14 rounded-sm flex items-center justify-center">
+                  <p class="flex flex-col text-sm text-white left-[30px]"> <span>東港</span><span>名產</span></p>
+                </div>
+              </div>
+              <div class="flex flex-col px-3 pb-4 mt-2 lg:pb-0 lg:px-0 lg:mt-4">
+                <p class="text-slate-400 lg:mt-6 lg:text-xs text-10">胡同嚴選</p>
+                <p class="mt-[5px] text-sm text-black lg:mt-3 lg:text-base">胡同 元氣爆米花-原味 (短效期, 2024.03) / 200g/桶</p>
+                <div class="flex lg:flex-col flex-col-reverse mt-[9px] lg:mt-[14px]">
+                  <div class="flex lg:justify-normal justify-between space-y-2 xl:space-x-6 lg:space-x-4 lg:space-y-0 flex-row mt-[10px] lg:mt-0">
+                    <p class="flex flex-col font-semibold text-red-500 lg:space-x-2 lg:block"><span class="lg:text-xs text-10">優惠價</span><span class="text-sm lg:text-base">NT$ 99</span></p>
+                    <p class="font-semibold text-gray-700 line-through"><span class="text-sm lg:text-base">NT$ 129</span></p>
+                  </div>
+                  <!-- 3 種狀態-->
+                  <div class="flex flex-wrap items-center lg:mt-2">
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-red-400 rounded-sm text-10">限量新品</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-green-400 rounded-sm text-10">常溫</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-blue-400 rounded-sm text-10">冷藏</p>
+                  </div>
+                </div>
+              </div></a>
+            <!-- 商品卡片 - 2--><a class="relative flex flex-col" href="#"> 
+              <div class="relative"><img class="object-cover object-center w-full lg:max-w-[262px] h-full lg:max-h-[280px] max-h-[273px]" src="./images/category/recommended1.png" alt="">
+                <!-- 第 2 種狀態-->
+                <div class="absolute bottom-0 flex justify-center w-full h-8 px-1 bg-origin-500">
+                  <p class="flex items-center font-bold text-white"><span class="xl:text-sm text-11">12.12 限定 熱銷商品破盤價 下殺 </span><span class="xl:text-10 text-[9px]">$</span><span class="text-xs xl:text-base">299</span></p>
+                </div>
+                <!-- 第 3 種狀態-->
+                <div class="absolute -translate-x-1/2 -translate-y-1/2 bg-white left-1/2 top-1/2 bg-opacity-60">
+                  <p class="text-black text-base px-2 py-[6px] whitespace-nowrap">售完補貨中</p>
+                </div>
+              </div>
+              <div class="flex flex-col px-3 pb-4 mt-2 lg:pb-0 lg:px-0 lg:mt-4">
+                <p class="text-slate-400 lg:mt-6 lg:text-xs text-10">胡同嚴選</p>
+                <p class="mt-[5px] text-sm text-black lg:mt-3 lg:text-base">胡同 元氣爆米花-原味 (短效期, 2024.03) / 200g/桶</p>
+                <div class="flex lg:flex-col flex-col-reverse mt-[9px] lg:mt-[14px]">
+                  <div class="flex lg:justify-normal justify-between space-y-2 xl:space-x-6 lg:space-x-4 lg:space-y-0 flex-row mt-[10px] lg:mt-0">
+                    <p class="flex flex-col font-semibold text-red-500 lg:space-x-2 lg:block"><span class="lg:text-xs text-10">優惠價</span><span class="text-sm lg:text-base">NT$ 99</span></p>
+                    <p class="font-semibold text-gray-700 line-through"><span class="text-sm lg:text-base">NT$ 129</span></p>
+                  </div>
+                  <!-- 3 種狀態-->
+                  <div class="flex flex-wrap items-center lg:mt-2">
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-red-400 rounded-sm text-10">限量新品</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-green-400 rounded-sm text-10">常溫</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-blue-400 rounded-sm text-10">冷藏</p>
+                  </div>
+                </div>
+              </div></a>
+            <!-- 商品卡片 - 3--><a class="relative flex flex-col" href="#"> 
+              <div class="relative"><img class="object-cover object-center w-full lg:max-w-[262px] h-full lg:max-h-[280px] max-h-[273px]" src="./images/category/recommended1.png" alt="">
+                <!-- 第 1 種狀態-->
+                <div class="absolute left-3 bottom-[44px] bg-gray-800 w-14 h-14 rounded-sm flex items-center justify-center">
+                  <p class="flex flex-col text-sm text-white left-[30px]"> <span>東港</span><span>名產</span></p>
+                </div>
+              </div>
+              <div class="flex flex-col px-3 pb-4 mt-2 lg:pb-0 lg:px-0 lg:mt-4">
+                <p class="text-slate-400 lg:mt-6 lg:text-xs text-10">胡同嚴選</p>
+                <p class="mt-[5px] text-sm text-black lg:mt-3 lg:text-base">胡同 元氣爆米花-原味 (短效期, 2024.03) / 200g/桶</p>
+                <div class="flex lg:flex-col flex-col-reverse mt-[9px] lg:mt-[14px]">
+                  <div class="flex lg:justify-normal justify-between space-y-2 xl:space-x-6 lg:space-x-4 lg:space-y-0 flex-row mt-[10px] lg:mt-0">
+                    <p class="flex flex-col font-semibold text-red-500 lg:space-x-2 lg:block"><span class="lg:text-xs text-10">優惠價</span><span class="text-sm lg:text-base">NT$ 99</span></p>
+                    <p class="font-semibold text-gray-700 line-through"><span class="text-sm lg:text-base">NT$ 129</span></p>
+                  </div>
+                  <!-- 3 種狀態-->
+                  <div class="flex flex-wrap items-center lg:mt-2">
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-red-400 rounded-sm text-10">限量新品</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-green-400 rounded-sm text-10">常溫</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-blue-400 rounded-sm text-10">冷藏</p>
+                  </div>
+                </div>
+              </div></a>
+            <!-- 商品卡片 - 4--><a class="relative flex flex-col" href="#"> 
+              <div class="relative"><img class="object-cover object-center w-full lg:max-w-[262px] h-full lg:max-h-[280px] max-h-[273px]" src="./images/category/recommended1.png" alt="">
+                <!-- 第 2 種狀態-->
+                <div class="absolute bottom-0 flex justify-center w-full h-8 px-1 bg-origin-500">
+                  <p class="flex items-center font-bold text-white"><span class="xl:text-sm text-11">12.12 限定 熱銷商品破盤價 下殺 </span><span class="xl:text-10 text-[9px]">$</span><span class="text-xs xl:text-base">299</span></p>
+                </div>
+                <!-- 第 3 種狀態-->
+                <div class="absolute -translate-x-1/2 -translate-y-1/2 bg-white left-1/2 top-1/2 bg-opacity-60">
+                  <p class="text-black text-base px-2 py-[6px] whitespace-nowrap">售完補貨中</p>
+                </div>
+              </div>
+              <div class="flex flex-col px-3 pb-4 mt-2 lg:pb-0 lg:px-0 lg:mt-4">
+                <p class="text-slate-400 lg:mt-6 lg:text-xs text-10">胡同嚴選</p>
+                <p class="mt-[5px] text-sm text-black lg:mt-3 lg:text-base">胡同 元氣爆米花-原味 (短效期, 2024.03) / 200g/桶</p>
+                <div class="flex lg:flex-col flex-col-reverse mt-[9px] lg:mt-[14px]">
+                  <div class="flex lg:justify-normal justify-between space-y-2 xl:space-x-6 lg:space-x-4 lg:space-y-0 flex-row mt-[10px] lg:mt-0">
+                    <p class="flex flex-col font-semibold text-red-500 lg:space-x-2 lg:block"><span class="lg:text-xs text-10">優惠價</span><span class="text-sm lg:text-base">NT$ 99</span></p>
+                    <p class="font-semibold text-gray-700 line-through"><span class="text-sm lg:text-base">NT$ 129</span></p>
+                  </div>
+                  <!-- 3 種狀態-->
+                  <div class="flex flex-wrap items-center lg:mt-2">
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-red-400 rounded-sm text-10">限量新品</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-green-400 rounded-sm text-10">常溫</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-blue-400 rounded-sm text-10">冷藏</p>
+                  </div>
+                </div>
+              </div></a>
+            <!-- 廣告版位--><a class="flex col-span-2" href="#"><img class="object-cover object-center w-full" src="./images/category/categoryAD.png" alt=""></a>
+            <!-- 商品卡片 - 5--><a class="relative flex flex-col" href="#"> 
+              <div class="relative"><img class="object-cover object-center w-full lg:max-w-[262px] h-full lg:max-h-[280px] max-h-[273px]" src="./images/category/recommended1.png" alt="">
+                <!-- 第 1 種狀態-->
+                <div class="absolute left-3 bottom-[44px] bg-gray-800 w-14 h-14 rounded-sm flex items-center justify-center">
+                  <p class="flex flex-col text-sm text-white left-[30px]"> <span>東港</span><span>名產</span></p>
+                </div>
+              </div>
+              <div class="flex flex-col px-3 pb-4 mt-2 lg:pb-0 lg:px-0 lg:mt-4">
+                <p class="text-slate-400 lg:mt-6 lg:text-xs text-10">胡同嚴選</p>
+                <p class="mt-[5px] text-sm text-black lg:mt-3 lg:text-base">胡同 元氣爆米花-原味 (短效期, 2024.03) / 200g/桶</p>
+                <div class="flex lg:flex-col flex-col-reverse mt-[9px] lg:mt-[14px]">
+                  <div class="flex lg:justify-normal justify-between space-y-2 xl:space-x-6 lg:space-x-4 lg:space-y-0 flex-row mt-[10px] lg:mt-0">
+                    <p class="flex flex-col font-semibold text-red-500 lg:space-x-2 lg:block"><span class="lg:text-xs text-10">優惠價</span><span class="text-sm lg:text-base">NT$ 99</span></p>
+                    <p class="font-semibold text-gray-700 line-through"><span class="text-sm lg:text-base">NT$ 129</span></p>
+                  </div>
+                  <!-- 3 種狀態-->
+                  <div class="flex flex-wrap items-center lg:mt-2">
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-red-400 rounded-sm text-10">限量新品</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-green-400 rounded-sm text-10">常溫</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-blue-400 rounded-sm text-10">冷藏</p>
+                  </div>
+                </div>
+              </div></a>
+            <!-- 商品卡片 - 6--><a class="relative flex flex-col" href="#"> 
+              <div class="relative"><img class="object-cover object-center w-full lg:max-w-[262px] h-full lg:max-h-[280px] max-h-[273px]" src="./images/category/recommended1.png" alt="">
+                <!-- 第 2 種狀態-->
+                <div class="absolute bottom-0 flex justify-center w-full h-8 px-1 bg-origin-500">
+                  <p class="flex items-center font-bold text-white"><span class="xl:text-sm text-11">12.12 限定 熱銷商品破盤價 下殺 </span><span class="xl:text-10 text-[9px]">$</span><span class="text-xs xl:text-base">299</span></p>
+                </div>
+                <!-- 第 3 種狀態-->
+                <div class="absolute -translate-x-1/2 -translate-y-1/2 bg-white left-1/2 top-1/2 bg-opacity-60">
+                  <p class="text-black text-base px-2 py-[6px] whitespace-nowrap">售完補貨中</p>
+                </div>
+              </div>
+              <div class="flex flex-col px-3 pb-4 mt-2 lg:pb-0 lg:px-0 lg:mt-4">
+                <p class="text-slate-400 lg:mt-6 lg:text-xs text-10">胡同嚴選</p>
+                <p class="mt-[5px] text-sm text-black lg:mt-3 lg:text-base">胡同 元氣爆米花-原味 (短效期, 2024.03) / 200g/桶</p>
+                <div class="flex lg:flex-col flex-col-reverse mt-[9px] lg:mt-[14px]">
+                  <div class="flex lg:justify-normal justify-between space-y-2 xl:space-x-6 lg:space-x-4 lg:space-y-0 flex-row mt-[10px] lg:mt-0">
+                    <p class="flex flex-col font-semibold text-red-500 lg:space-x-2 lg:block"><span class="lg:text-xs text-10">優惠價</span><span class="text-sm lg:text-base">NT$ 99</span></p>
+                    <p class="font-semibold text-gray-700 line-through"><span class="text-sm lg:text-base">NT$ 129</span></p>
+                  </div>
+                  <!-- 3 種狀態-->
+                  <div class="flex flex-wrap items-center lg:mt-2">
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-red-400 rounded-sm text-10">限量新品</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-green-400 rounded-sm text-10">常溫</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-blue-400 rounded-sm text-10">冷藏</p>
+                  </div>
+                </div>
+              </div></a>
+          </div>
+        </section>
+      </div>
+      <!-- 專屬精選項目-->
+      <section class="mt-10 lg:mt-12">
+        <p class="text-xl font-semibold text-center text-black">專屬精選項目</p>
+        <!-- 輪播圖-->
+        <div class="lg:!pl-10 !pl-6 !pb-[38px] !mt-[38px] swiper swiper-featured">
+          <div class="swiper-wrapper"><a class="lg:max-w-[320px] max-w-[270px] swiper-slide" href="/"><img class="lg:max-w-[320px] max-w-[270px] lg:max-h-[380px] max-h-[320px] w-full h-full object-cover" src="./images/category/featured1.png" alt="">
+              <p class="mt-8 text-base text-black">全站熱銷商品第二件五折  ></p></a><a class="lg:max-w-[320px] max-w-[270px] swiper-slide" href="/"><img class="lg:max-w-[320px] max-w-[270px] lg:max-h-[380px] max-h-[320px] w-full h-full object-cover" src="./images/category/featured2.png" alt="">
+              <p class="mt-8 text-base text-black">全站熱銷商品第二件五折  ></p></a><a class="lg:max-w-[320px] max-w-[270px] swiper-slide" href="/"><img class="lg:max-w-[320px] max-w-[270px] lg:max-h-[380px] max-h-[320px] w-full h-full object-cover" src="./images/category/featured3.png" alt="">
+              <p class="mt-8 text-base text-black">全站熱銷商品第二件五折  ></p></a><a class="lg:max-w-[320px] max-w-[270px] swiper-slide" href="/"><img class="lg:max-w-[320px] max-w-[270px] lg:max-h-[380px] max-h-[320px] w-full h-full object-cover" src="./images/category/featured4.png" alt="">
+              <p class="mt-8 text-base text-black">全站熱銷商品第二件五折  ></p></a><a class="lg:max-w-[320px] max-w-[270px] swiper-slide" href="/"><img class="lg:max-w-[320px] max-w-[270px] lg:max-h-[380px] max-h-[320px] w-full h-full object-cover" src="./images/category/featured5.png" alt="">
+              <p class="mt-8 text-base text-black">全站熱銷商品第二件五折  ></p></a><a class="lg:max-w-[320px] max-w-[270px] swiper-slide" href="/"><img class="lg:max-w-[320px] max-w-[270px] lg:max-h-[380px] max-h-[320px] w-full h-full object-cover" src="./images/category/featured6.png" alt="">
+              <p class="mt-8 text-base text-black">全站熱銷商品第二件五折  ></p></a>
+          </div>
+          <div class="2xl:max-w-[1300px] xl:max-w-[1000px] lg:max-w-[900px] md:max-w-[700px] max-w-[320px] !left-[51%] !bottom-0 !-translate-x-1/2 swiper-scrollbar swiper-featured-scrollbar"></div>
+          <div class="swiper-button-prev swiper-button-featured-prev bg-white lg:!flex !hidden items-center justify-center !w-12 !h-[60px] !left-0 rotate-180"><img src="./images/arrows/arrow_forward_24px.svg" alt=""></div>
+          <div class="swiper-button-next swiper-button-featured-next bg-white lg:!flex !hidden items-center justify-center !w-12 !h-[60px] !right-0"><img src="./images/arrows/arrow_forward_24px.svg" alt=""></div>
         </div>
-        <!-- 最新消息-->
-        <div class="mt-10 lg:mt-14"><a href="#"><img src="./images/category/news.png" alt=""></a></div>
-        <!-- 精選推薦-->
-        <p class="mt-10 text-xl font-semibold text-center text-slate-600 lg:mt-12">精選推薦</p>
-        <div class="grid grid-cols-2 gap-3 px-4 mt-10 lg:grid-cols-4 lg:gap-8 lg:px-0"><a class="relative flex flex-col" href="#"> 
-            <div class="relative"><img class="object-cover object-center w-full lg:max-w-[262px] h-full lg:max-h-[280px] max-h-[273px]" src="./images/category/recommended1.png" alt="">
-              <!-- 第 1 種狀態-->
-              <div class="absolute left-3 bottom-[44px] bg-gray-800 w-14 h-14 rounded-sm flex items-center justify-center">
-                <p class="flex flex-col text-sm text-white left-[30px]"> <span>東港</span><span>名產</span></p>
-              </div>
-            </div>
-            <div class="flex flex-col px-3 pb-4 mt-2 lg:pb-0 lg:px-0 lg:mt-4">
-              <p class="text-slate-400 lg:mt-6 lg:text-xs text-10">胡同嚴選</p>
-              <p class="mt-[5px] text-sm text-black lg:mt-3 lg:text-base">胡同 元氣爆米花-原味 (短效期, 2024.03) / 200g/桶</p>
-              <div class="flex lg:flex-col flex-col-reverse mt-[9px] lg:mt-[14px]">
-                <div class="flex lg:justify-normal justify-between space-y-2 xl:space-x-6 lg:space-x-4 lg:space-y-0 flex-row mt-[10px] lg:mt-0">
-                  <p class="flex flex-col font-semibold text-red-500 lg:space-x-2 lg:block"><span class="lg:text-xs text-10">優惠價</span><span class="text-sm lg:text-base">NT$ 99</span></p>
-                  <p class="font-semibold text-gray-700 line-through"><span class="text-sm lg:text-base">NT$ 129</span></p>
-                </div>
-                <!-- 3 種狀態-->
-                <div class="flex flex-wrap items-center lg:mt-2">
-                  <p class="px-2 py-1 mb-1 mr-3 text-white bg-red-400 rounded-sm text-10">限量新品</p>
-                  <p class="px-2 py-1 mb-1 mr-3 text-white bg-green-400 rounded-sm text-10">常溫</p>
-                  <p class="px-2 py-1 mb-1 mr-3 text-white bg-blue-400 rounded-sm text-10">冷藏</p>
+        <div class="px-4 lg:px-[148px] lg:mt-14 mt-10">
+          <div class="grid grid-cols-2 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-10 gap-x-3 gap-y-4"><a class="relative flex flex-col" href="#"> 
+              <div class="relative"><img class="object-cover object-center w-full lg:max-w-[262px] h-full lg:max-h-[280px] max-h-[273px]" src="./images/category/recommended1.png" alt="">
+                <!-- 第 1 種狀態-->
+                <div class="absolute left-3 bottom-[44px] bg-gray-800 w-14 h-14 rounded-sm flex items-center justify-center">
+                  <p class="flex flex-col text-sm text-white left-[30px]"> <span>東港</span><span>名產</span></p>
                 </div>
               </div>
-            </div></a><a class="relative flex flex-col" href="#"> 
-            <div class="relative"><img class="object-cover object-center w-full lg:max-w-[262px] h-full lg:max-h-[280px] max-h-[273px]" src="./images/category/recommended1.png" alt="">
-              <!-- 第 2 種狀態-->
-              <div class="absolute left-3 bottom-[44px] bg-gray-800 w-14 h-14 rounded-sm flex items-center justify-center">
-                <p class="flex flex-col text-sm text-white left-[30px]"> <span>東港</span><span>名產</span></p>
-              </div>
-            </div>
-            <div class="flex flex-col px-3 pb-4 mt-2 lg:pb-0 lg:px-0 lg:mt-4">
-              <p class="text-slate-400 lg:mt-6 lg:text-xs text-10">胡同嚴選</p>
-              <p class="mt-[5px] text-sm text-black lg:mt-3 lg:text-base">胡同 元氣爆米花-原味 (短效期, 2024.03) / 200g/桶</p>
-              <div class="flex lg:flex-col flex-col-reverse mt-[9px] lg:mt-[14px]">
-                <div class="flex lg:justify-normal justify-between space-y-2 xl:space-x-6 lg:space-x-4 lg:space-y-0 flex-row mt-[10px] lg:mt-0">
-                  <p class="flex flex-col font-semibold text-red-500 lg:space-x-2 lg:block"><span class="lg:text-xs text-10">優惠價</span><span class="text-sm lg:text-base">NT$ 99</span></p>
-                  <p class="font-semibold text-gray-700 line-through"><span class="text-sm lg:text-base">NT$ 129</span></p>
+              <div class="flex flex-col px-3 pb-4 mt-2 lg:pb-0 lg:px-0 lg:mt-4">
+                <p class="text-slate-400 lg:mt-6 lg:text-xs text-10">胡同嚴選</p>
+                <p class="mt-[5px] text-sm text-black lg:mt-3 lg:text-base">胡同 元氣爆米花-原味 (短效期, 2024.03) / 200g/桶</p>
+                <div class="flex lg:flex-col flex-col-reverse mt-[9px] lg:mt-[14px]">
+                  <div class="flex lg:justify-normal justify-between space-y-2 xl:space-x-6 lg:space-x-4 lg:space-y-0 flex-row mt-[10px] lg:mt-0">
+                    <p class="flex flex-col font-semibold text-red-500 lg:space-x-2 lg:block"><span class="lg:text-xs text-10">優惠價</span><span class="text-sm lg:text-base">NT$ 99</span></p>
+                    <p class="font-semibold text-gray-700 line-through"><span class="text-sm lg:text-base">NT$ 129</span></p>
+                  </div>
+                  <!-- 3 種狀態-->
+                  <div class="flex flex-wrap items-center lg:mt-2">
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-red-400 rounded-sm text-10">限量新品</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-green-400 rounded-sm text-10">常溫</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-blue-400 rounded-sm text-10">冷藏</p>
+                  </div>
                 </div>
-                <!-- 3 種狀態-->
-                <div class="flex flex-wrap items-center lg:mt-2">
-                  <p class="px-2 py-1 mb-1 mr-3 text-white bg-red-400 rounded-sm text-10">限量新品</p>
-                  <p class="px-2 py-1 mb-1 mr-3 text-white bg-green-400 rounded-sm text-10">常溫</p>
-                  <p class="px-2 py-1 mb-1 mr-3 text-white bg-blue-400 rounded-sm text-10">冷藏</p>
+              </div></a><a class="relative flex flex-col" href="#"> 
+              <div class="relative"><img class="object-cover object-center w-full lg:max-w-[262px] h-full lg:max-h-[280px] max-h-[273px]" src="./images/category/recommended1.png" alt="">
+                <!-- 第 2 種狀態-->
+                <div class="absolute bottom-0 flex justify-center w-full h-8 px-1 bg-origin-500">
+                  <p class="flex items-center font-bold text-white"><span class="xl:text-sm text-11">12.12 限定 熱銷商品破盤價 下殺 </span><span class="xl:text-10 text-[9px]">$</span><span class="text-xs xl:text-base">299</span></p>
+                </div>
+                <!-- 第 3 種狀態-->
+                <div class="absolute -translate-x-1/2 -translate-y-1/2 bg-white left-1/2 top-1/2 bg-opacity-60">
+                  <p class="text-black text-base px-2 py-[6px] whitespace-nowrap">售完補貨中</p>
                 </div>
               </div>
-            </div></a></div>
+              <div class="flex flex-col px-3 pb-4 mt-2 lg:pb-0 lg:px-0 lg:mt-4">
+                <p class="text-slate-400 lg:mt-6 lg:text-xs text-10">胡同嚴選</p>
+                <p class="mt-[5px] text-sm text-black lg:mt-3 lg:text-base">胡同 元氣爆米花-原味 (短效期, 2024.03) / 200g/桶</p>
+                <div class="flex lg:flex-col flex-col-reverse mt-[9px] lg:mt-[14px]">
+                  <div class="flex lg:justify-normal justify-between space-y-2 xl:space-x-6 lg:space-x-4 lg:space-y-0 flex-row mt-[10px] lg:mt-0">
+                    <p class="flex flex-col font-semibold text-red-500 lg:space-x-2 lg:block"><span class="lg:text-xs text-10">優惠價</span><span class="text-sm lg:text-base">NT$ 99</span></p>
+                    <p class="font-semibold text-gray-700 line-through"><span class="text-sm lg:text-base">NT$ 129</span></p>
+                  </div>
+                  <!-- 3 種狀態-->
+                  <div class="flex flex-wrap items-center lg:mt-2">
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-red-400 rounded-sm text-10">限量新品</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-green-400 rounded-sm text-10">常溫</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-blue-400 rounded-sm text-10">冷藏</p>
+                  </div>
+                </div>
+              </div></a><a class="relative flex flex-col" href="#"> 
+              <div class="relative"><img class="object-cover object-center w-full lg:max-w-[262px] h-full lg:max-h-[280px] max-h-[273px]" src="./images/category/recommended1.png" alt="">
+                <!-- 第 1 種狀態-->
+                <div class="absolute left-3 bottom-[44px] bg-gray-800 w-14 h-14 rounded-sm flex items-center justify-center">
+                  <p class="flex flex-col text-sm text-white left-[30px]"> <span>東港</span><span>名產</span></p>
+                </div>
+              </div>
+              <div class="flex flex-col px-3 pb-4 mt-2 lg:pb-0 lg:px-0 lg:mt-4">
+                <p class="text-slate-400 lg:mt-6 lg:text-xs text-10">胡同嚴選</p>
+                <p class="mt-[5px] text-sm text-black lg:mt-3 lg:text-base">胡同 元氣爆米花-原味 (短效期, 2024.03) / 200g/桶</p>
+                <div class="flex lg:flex-col flex-col-reverse mt-[9px] lg:mt-[14px]">
+                  <div class="flex lg:justify-normal justify-between space-y-2 xl:space-x-6 lg:space-x-4 lg:space-y-0 flex-row mt-[10px] lg:mt-0">
+                    <p class="flex flex-col font-semibold text-red-500 lg:space-x-2 lg:block"><span class="lg:text-xs text-10">優惠價</span><span class="text-sm lg:text-base">NT$ 99</span></p>
+                    <p class="font-semibold text-gray-700 line-through"><span class="text-sm lg:text-base">NT$ 129</span></p>
+                  </div>
+                  <!-- 3 種狀態-->
+                  <div class="flex flex-wrap items-center lg:mt-2">
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-red-400 rounded-sm text-10">限量新品</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-green-400 rounded-sm text-10">常溫</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-blue-400 rounded-sm text-10">冷藏</p>
+                  </div>
+                </div>
+              </div></a><a class="relative flex flex-col" href="#"> 
+              <div class="relative"><img class="object-cover object-center w-full lg:max-w-[262px] h-full lg:max-h-[280px] max-h-[273px]" src="./images/category/recommended1.png" alt="">
+                <!-- 第 2 種狀態-->
+                <div class="absolute bottom-0 flex justify-center w-full h-8 px-1 bg-origin-500">
+                  <p class="flex items-center font-bold text-white"><span class="xl:text-sm text-11">12.12 限定 熱銷商品破盤價 下殺 </span><span class="xl:text-10 text-[9px]">$</span><span class="text-xs xl:text-base">299</span></p>
+                </div>
+                <!-- 第 3 種狀態-->
+                <div class="absolute -translate-x-1/2 -translate-y-1/2 bg-white left-1/2 top-1/2 bg-opacity-60">
+                  <p class="text-black text-base px-2 py-[6px] whitespace-nowrap">售完補貨中</p>
+                </div>
+              </div>
+              <div class="flex flex-col px-3 pb-4 mt-2 lg:pb-0 lg:px-0 lg:mt-4">
+                <p class="text-slate-400 lg:mt-6 lg:text-xs text-10">胡同嚴選</p>
+                <p class="mt-[5px] text-sm text-black lg:mt-3 lg:text-base">胡同 元氣爆米花-原味 (短效期, 2024.03) / 200g/桶</p>
+                <div class="flex lg:flex-col flex-col-reverse mt-[9px] lg:mt-[14px]">
+                  <div class="flex lg:justify-normal justify-between space-y-2 xl:space-x-6 lg:space-x-4 lg:space-y-0 flex-row mt-[10px] lg:mt-0">
+                    <p class="flex flex-col font-semibold text-red-500 lg:space-x-2 lg:block"><span class="lg:text-xs text-10">優惠價</span><span class="text-sm lg:text-base">NT$ 99</span></p>
+                    <p class="font-semibold text-gray-700 line-through"><span class="text-sm lg:text-base">NT$ 129</span></p>
+                  </div>
+                  <!-- 3 種狀態-->
+                  <div class="flex flex-wrap items-center lg:mt-2">
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-red-400 rounded-sm text-10">限量新品</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-green-400 rounded-sm text-10">常溫</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-blue-400 rounded-sm text-10">冷藏</p>
+                  </div>
+                </div>
+              </div></a><a class="relative flex flex-col" href="#"> 
+              <div class="relative"><img class="object-cover object-center w-full lg:max-w-[262px] h-full lg:max-h-[280px] max-h-[273px]" src="./images/category/recommended1.png" alt="">
+                <!-- 第 1 種狀態-->
+                <div class="absolute left-3 bottom-[44px] bg-gray-800 w-14 h-14 rounded-sm flex items-center justify-center">
+                  <p class="flex flex-col text-sm text-white left-[30px]"> <span>東港</span><span>名產</span></p>
+                </div>
+              </div>
+              <div class="flex flex-col px-3 pb-4 mt-2 lg:pb-0 lg:px-0 lg:mt-4">
+                <p class="text-slate-400 lg:mt-6 lg:text-xs text-10">胡同嚴選</p>
+                <p class="mt-[5px] text-sm text-black lg:mt-3 lg:text-base">胡同 元氣爆米花-原味 (短效期, 2024.03) / 200g/桶</p>
+                <div class="flex lg:flex-col flex-col-reverse mt-[9px] lg:mt-[14px]">
+                  <div class="flex lg:justify-normal justify-between space-y-2 xl:space-x-6 lg:space-x-4 lg:space-y-0 flex-row mt-[10px] lg:mt-0">
+                    <p class="flex flex-col font-semibold text-red-500 lg:space-x-2 lg:block"><span class="lg:text-xs text-10">優惠價</span><span class="text-sm lg:text-base">NT$ 99</span></p>
+                    <p class="font-semibold text-gray-700 line-through"><span class="text-sm lg:text-base">NT$ 129</span></p>
+                  </div>
+                  <!-- 3 種狀態-->
+                  <div class="flex flex-wrap items-center lg:mt-2">
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-red-400 rounded-sm text-10">限量新品</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-green-400 rounded-sm text-10">常溫</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-blue-400 rounded-sm text-10">冷藏</p>
+                  </div>
+                </div>
+              </div></a><a class="relative flex flex-col" href="#"> 
+              <div class="relative"><img class="object-cover object-center w-full lg:max-w-[262px] h-full lg:max-h-[280px] max-h-[273px]" src="./images/category/recommended1.png" alt="">
+                <!-- 第 2 種狀態-->
+                <div class="absolute bottom-0 flex justify-center w-full h-8 px-1 bg-origin-500">
+                  <p class="flex items-center font-bold text-white"><span class="xl:text-sm text-11">12.12 限定 熱銷商品破盤價 下殺 </span><span class="xl:text-10 text-[9px]">$</span><span class="text-xs xl:text-base">299</span></p>
+                </div>
+                <!-- 第 3 種狀態-->
+                <div class="absolute -translate-x-1/2 -translate-y-1/2 bg-white left-1/2 top-1/2 bg-opacity-60">
+                  <p class="text-black text-base px-2 py-[6px] whitespace-nowrap">售完補貨中</p>
+                </div>
+              </div>
+              <div class="flex flex-col px-3 pb-4 mt-2 lg:pb-0 lg:px-0 lg:mt-4">
+                <p class="text-slate-400 lg:mt-6 lg:text-xs text-10">胡同嚴選</p>
+                <p class="mt-[5px] text-sm text-black lg:mt-3 lg:text-base">胡同 元氣爆米花-原味 (短效期, 2024.03) / 200g/桶</p>
+                <div class="flex lg:flex-col flex-col-reverse mt-[9px] lg:mt-[14px]">
+                  <div class="flex lg:justify-normal justify-between space-y-2 xl:space-x-6 lg:space-x-4 lg:space-y-0 flex-row mt-[10px] lg:mt-0">
+                    <p class="flex flex-col font-semibold text-red-500 lg:space-x-2 lg:block"><span class="lg:text-xs text-10">優惠價</span><span class="text-sm lg:text-base">NT$ 99</span></p>
+                    <p class="font-semibold text-gray-700 line-through"><span class="text-sm lg:text-base">NT$ 129</span></p>
+                  </div>
+                  <!-- 3 種狀態-->
+                  <div class="flex flex-wrap items-center lg:mt-2">
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-red-400 rounded-sm text-10">限量新品</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-green-400 rounded-sm text-10">常溫</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-blue-400 rounded-sm text-10">冷藏</p>
+                  </div>
+                </div>
+              </div></a><a class="relative flex flex-col" href="#"> 
+              <div class="relative"><img class="object-cover object-center w-full lg:max-w-[262px] h-full lg:max-h-[280px] max-h-[273px]" src="./images/category/recommended1.png" alt="">
+                <!-- 第 1 種狀態-->
+                <div class="absolute left-3 bottom-[44px] bg-gray-800 w-14 h-14 rounded-sm flex items-center justify-center">
+                  <p class="flex flex-col text-sm text-white left-[30px]"> <span>東港</span><span>名產</span></p>
+                </div>
+              </div>
+              <div class="flex flex-col px-3 pb-4 mt-2 lg:pb-0 lg:px-0 lg:mt-4">
+                <p class="text-slate-400 lg:mt-6 lg:text-xs text-10">胡同嚴選</p>
+                <p class="mt-[5px] text-sm text-black lg:mt-3 lg:text-base">胡同 元氣爆米花-原味 (短效期, 2024.03) / 200g/桶</p>
+                <div class="flex lg:flex-col flex-col-reverse mt-[9px] lg:mt-[14px]">
+                  <div class="flex lg:justify-normal justify-between space-y-2 xl:space-x-6 lg:space-x-4 lg:space-y-0 flex-row mt-[10px] lg:mt-0">
+                    <p class="flex flex-col font-semibold text-red-500 lg:space-x-2 lg:block"><span class="lg:text-xs text-10">優惠價</span><span class="text-sm lg:text-base">NT$ 99</span></p>
+                    <p class="font-semibold text-gray-700 line-through"><span class="text-sm lg:text-base">NT$ 129</span></p>
+                  </div>
+                  <!-- 3 種狀態-->
+                  <div class="flex flex-wrap items-center lg:mt-2">
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-red-400 rounded-sm text-10">限量新品</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-green-400 rounded-sm text-10">常溫</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-blue-400 rounded-sm text-10">冷藏</p>
+                  </div>
+                </div>
+              </div></a><a class="relative flex flex-col" href="#"> 
+              <div class="relative"><img class="object-cover object-center w-full lg:max-w-[262px] h-full lg:max-h-[280px] max-h-[273px]" src="./images/category/recommended1.png" alt="">
+                <!-- 第 2 種狀態-->
+                <div class="absolute bottom-0 flex justify-center w-full h-8 px-1 bg-origin-500">
+                  <p class="flex items-center font-bold text-white"><span class="xl:text-sm text-11">12.12 限定 熱銷商品破盤價 下殺 </span><span class="xl:text-10 text-[9px]">$</span><span class="text-xs xl:text-base">299</span></p>
+                </div>
+                <!-- 第 3 種狀態-->
+                <div class="absolute -translate-x-1/2 -translate-y-1/2 bg-white left-1/2 top-1/2 bg-opacity-60">
+                  <p class="text-black text-base px-2 py-[6px] whitespace-nowrap">售完補貨中</p>
+                </div>
+              </div>
+              <div class="flex flex-col px-3 pb-4 mt-2 lg:pb-0 lg:px-0 lg:mt-4">
+                <p class="text-slate-400 lg:mt-6 lg:text-xs text-10">胡同嚴選</p>
+                <p class="mt-[5px] text-sm text-black lg:mt-3 lg:text-base">胡同 元氣爆米花-原味 (短效期, 2024.03) / 200g/桶</p>
+                <div class="flex lg:flex-col flex-col-reverse mt-[9px] lg:mt-[14px]">
+                  <div class="flex lg:justify-normal justify-between space-y-2 xl:space-x-6 lg:space-x-4 lg:space-y-0 flex-row mt-[10px] lg:mt-0">
+                    <p class="flex flex-col font-semibold text-red-500 lg:space-x-2 lg:block"><span class="lg:text-xs text-10">優惠價</span><span class="text-sm lg:text-base">NT$ 99</span></p>
+                    <p class="font-semibold text-gray-700 line-through"><span class="text-sm lg:text-base">NT$ 129</span></p>
+                  </div>
+                  <!-- 3 種狀態-->
+                  <div class="flex flex-wrap items-center lg:mt-2">
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-red-400 rounded-sm text-10">限量新品</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-green-400 rounded-sm text-10">常溫</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-blue-400 rounded-sm text-10">冷藏</p>
+                  </div>
+                </div>
+              </div></a><a class="relative flex flex-col" href="#"> 
+              <div class="relative"><img class="object-cover object-center w-full lg:max-w-[262px] h-full lg:max-h-[280px] max-h-[273px]" src="./images/category/recommended1.png" alt="">
+                <!-- 第 1 種狀態-->
+                <div class="absolute left-3 bottom-[44px] bg-gray-800 w-14 h-14 rounded-sm flex items-center justify-center">
+                  <p class="flex flex-col text-sm text-white left-[30px]"> <span>東港</span><span>名產</span></p>
+                </div>
+              </div>
+              <div class="flex flex-col px-3 pb-4 mt-2 lg:pb-0 lg:px-0 lg:mt-4">
+                <p class="text-slate-400 lg:mt-6 lg:text-xs text-10">胡同嚴選</p>
+                <p class="mt-[5px] text-sm text-black lg:mt-3 lg:text-base">胡同 元氣爆米花-原味 (短效期, 2024.03) / 200g/桶</p>
+                <div class="flex lg:flex-col flex-col-reverse mt-[9px] lg:mt-[14px]">
+                  <div class="flex lg:justify-normal justify-between space-y-2 xl:space-x-6 lg:space-x-4 lg:space-y-0 flex-row mt-[10px] lg:mt-0">
+                    <p class="flex flex-col font-semibold text-red-500 lg:space-x-2 lg:block"><span class="lg:text-xs text-10">優惠價</span><span class="text-sm lg:text-base">NT$ 99</span></p>
+                    <p class="font-semibold text-gray-700 line-through"><span class="text-sm lg:text-base">NT$ 129</span></p>
+                  </div>
+                  <!-- 3 種狀態-->
+                  <div class="flex flex-wrap items-center lg:mt-2">
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-red-400 rounded-sm text-10">限量新品</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-green-400 rounded-sm text-10">常溫</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-blue-400 rounded-sm text-10">冷藏</p>
+                  </div>
+                </div>
+              </div></a><a class="relative flex flex-col" href="#"> 
+              <div class="relative"><img class="object-cover object-center w-full lg:max-w-[262px] h-full lg:max-h-[280px] max-h-[273px]" src="./images/category/recommended1.png" alt="">
+                <!-- 第 2 種狀態-->
+                <div class="absolute bottom-0 flex justify-center w-full h-8 px-1 bg-origin-500">
+                  <p class="flex items-center font-bold text-white"><span class="xl:text-sm text-11">12.12 限定 熱銷商品破盤價 下殺 </span><span class="xl:text-10 text-[9px]">$</span><span class="text-xs xl:text-base">299</span></p>
+                </div>
+                <!-- 第 3 種狀態-->
+                <div class="absolute -translate-x-1/2 -translate-y-1/2 bg-white left-1/2 top-1/2 bg-opacity-60">
+                  <p class="text-black text-base px-2 py-[6px] whitespace-nowrap">售完補貨中</p>
+                </div>
+              </div>
+              <div class="flex flex-col px-3 pb-4 mt-2 lg:pb-0 lg:px-0 lg:mt-4">
+                <p class="text-slate-400 lg:mt-6 lg:text-xs text-10">胡同嚴選</p>
+                <p class="mt-[5px] text-sm text-black lg:mt-3 lg:text-base">胡同 元氣爆米花-原味 (短效期, 2024.03) / 200g/桶</p>
+                <div class="flex lg:flex-col flex-col-reverse mt-[9px] lg:mt-[14px]">
+                  <div class="flex lg:justify-normal justify-between space-y-2 xl:space-x-6 lg:space-x-4 lg:space-y-0 flex-row mt-[10px] lg:mt-0">
+                    <p class="flex flex-col font-semibold text-red-500 lg:space-x-2 lg:block"><span class="lg:text-xs text-10">優惠價</span><span class="text-sm lg:text-base">NT$ 99</span></p>
+                    <p class="font-semibold text-gray-700 line-through"><span class="text-sm lg:text-base">NT$ 129</span></p>
+                  </div>
+                  <!-- 3 種狀態-->
+                  <div class="flex flex-wrap items-center lg:mt-2">
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-red-400 rounded-sm text-10">限量新品</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-green-400 rounded-sm text-10">常溫</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-blue-400 rounded-sm text-10">冷藏</p>
+                  </div>
+                </div>
+              </div></a><a class="relative flex flex-col" href="#"> 
+              <div class="relative"><img class="object-cover object-center w-full lg:max-w-[262px] h-full lg:max-h-[280px] max-h-[273px]" src="./images/category/recommended1.png" alt="">
+                <!-- 第 1 種狀態-->
+                <div class="absolute left-3 bottom-[44px] bg-gray-800 w-14 h-14 rounded-sm flex items-center justify-center">
+                  <p class="flex flex-col text-sm text-white left-[30px]"> <span>東港</span><span>名產</span></p>
+                </div>
+              </div>
+              <div class="flex flex-col px-3 pb-4 mt-2 lg:pb-0 lg:px-0 lg:mt-4">
+                <p class="text-slate-400 lg:mt-6 lg:text-xs text-10">胡同嚴選</p>
+                <p class="mt-[5px] text-sm text-black lg:mt-3 lg:text-base">胡同 元氣爆米花-原味 (短效期, 2024.03) / 200g/桶</p>
+                <div class="flex lg:flex-col flex-col-reverse mt-[9px] lg:mt-[14px]">
+                  <div class="flex lg:justify-normal justify-between space-y-2 xl:space-x-6 lg:space-x-4 lg:space-y-0 flex-row mt-[10px] lg:mt-0">
+                    <p class="flex flex-col font-semibold text-red-500 lg:space-x-2 lg:block"><span class="lg:text-xs text-10">優惠價</span><span class="text-sm lg:text-base">NT$ 99</span></p>
+                    <p class="font-semibold text-gray-700 line-through"><span class="text-sm lg:text-base">NT$ 129</span></p>
+                  </div>
+                  <!-- 3 種狀態-->
+                  <div class="flex flex-wrap items-center lg:mt-2">
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-red-400 rounded-sm text-10">限量新品</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-green-400 rounded-sm text-10">常溫</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-blue-400 rounded-sm text-10">冷藏</p>
+                  </div>
+                </div>
+              </div></a><a class="relative flex flex-col" href="#"> 
+              <div class="relative"><img class="object-cover object-center w-full lg:max-w-[262px] h-full lg:max-h-[280px] max-h-[273px]" src="./images/category/recommended1.png" alt="">
+                <!-- 第 2 種狀態-->
+                <div class="absolute bottom-0 flex justify-center w-full h-8 px-1 bg-origin-500">
+                  <p class="flex items-center font-bold text-white"><span class="xl:text-sm text-11">12.12 限定 熱銷商品破盤價 下殺 </span><span class="xl:text-10 text-[9px]">$</span><span class="text-xs xl:text-base">299</span></p>
+                </div>
+                <!-- 第 3 種狀態-->
+                <div class="absolute -translate-x-1/2 -translate-y-1/2 bg-white left-1/2 top-1/2 bg-opacity-60">
+                  <p class="text-black text-base px-2 py-[6px] whitespace-nowrap">售完補貨中</p>
+                </div>
+              </div>
+              <div class="flex flex-col px-3 pb-4 mt-2 lg:pb-0 lg:px-0 lg:mt-4">
+                <p class="text-slate-400 lg:mt-6 lg:text-xs text-10">胡同嚴選</p>
+                <p class="mt-[5px] text-sm text-black lg:mt-3 lg:text-base">胡同 元氣爆米花-原味 (短效期, 2024.03) / 200g/桶</p>
+                <div class="flex lg:flex-col flex-col-reverse mt-[9px] lg:mt-[14px]">
+                  <div class="flex lg:justify-normal justify-between space-y-2 xl:space-x-6 lg:space-x-4 lg:space-y-0 flex-row mt-[10px] lg:mt-0">
+                    <p class="flex flex-col font-semibold text-red-500 lg:space-x-2 lg:block"><span class="lg:text-xs text-10">優惠價</span><span class="text-sm lg:text-base">NT$ 99</span></p>
+                    <p class="font-semibold text-gray-700 line-through"><span class="text-sm lg:text-base">NT$ 129</span></p>
+                  </div>
+                  <!-- 3 種狀態-->
+                  <div class="flex flex-wrap items-center lg:mt-2">
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-red-400 rounded-sm text-10">限量新品</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-green-400 rounded-sm text-10">常溫</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-blue-400 rounded-sm text-10">冷藏</p>
+                  </div>
+                </div>
+              </div></a><a class="relative flex flex-col" href="#"> 
+              <div class="relative"><img class="object-cover object-center w-full lg:max-w-[262px] h-full lg:max-h-[280px] max-h-[273px]" src="./images/category/recommended1.png" alt="">
+                <!-- 第 1 種狀態-->
+                <div class="absolute left-3 bottom-[44px] bg-gray-800 w-14 h-14 rounded-sm flex items-center justify-center">
+                  <p class="flex flex-col text-sm text-white left-[30px]"> <span>東港</span><span>名產</span></p>
+                </div>
+              </div>
+              <div class="flex flex-col px-3 pb-4 mt-2 lg:pb-0 lg:px-0 lg:mt-4">
+                <p class="text-slate-400 lg:mt-6 lg:text-xs text-10">胡同嚴選</p>
+                <p class="mt-[5px] text-sm text-black lg:mt-3 lg:text-base">胡同 元氣爆米花-原味 (短效期, 2024.03) / 200g/桶</p>
+                <div class="flex lg:flex-col flex-col-reverse mt-[9px] lg:mt-[14px]">
+                  <div class="flex lg:justify-normal justify-between space-y-2 xl:space-x-6 lg:space-x-4 lg:space-y-0 flex-row mt-[10px] lg:mt-0">
+                    <p class="flex flex-col font-semibold text-red-500 lg:space-x-2 lg:block"><span class="lg:text-xs text-10">優惠價</span><span class="text-sm lg:text-base">NT$ 99</span></p>
+                    <p class="font-semibold text-gray-700 line-through"><span class="text-sm lg:text-base">NT$ 129</span></p>
+                  </div>
+                  <!-- 3 種狀態-->
+                  <div class="flex flex-wrap items-center lg:mt-2">
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-red-400 rounded-sm text-10">限量新品</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-green-400 rounded-sm text-10">常溫</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-blue-400 rounded-sm text-10">冷藏</p>
+                  </div>
+                </div>
+              </div></a><a class="relative flex flex-col" href="#"> 
+              <div class="relative"><img class="object-cover object-center w-full lg:max-w-[262px] h-full lg:max-h-[280px] max-h-[273px]" src="./images/category/recommended1.png" alt="">
+                <!-- 第 2 種狀態-->
+                <div class="absolute bottom-0 flex justify-center w-full h-8 px-1 bg-origin-500">
+                  <p class="flex items-center font-bold text-white"><span class="xl:text-sm text-11">12.12 限定 熱銷商品破盤價 下殺 </span><span class="xl:text-10 text-[9px]">$</span><span class="text-xs xl:text-base">299</span></p>
+                </div>
+                <!-- 第 3 種狀態-->
+                <div class="absolute -translate-x-1/2 -translate-y-1/2 bg-white left-1/2 top-1/2 bg-opacity-60">
+                  <p class="text-black text-base px-2 py-[6px] whitespace-nowrap">售完補貨中</p>
+                </div>
+              </div>
+              <div class="flex flex-col px-3 pb-4 mt-2 lg:pb-0 lg:px-0 lg:mt-4">
+                <p class="text-slate-400 lg:mt-6 lg:text-xs text-10">胡同嚴選</p>
+                <p class="mt-[5px] text-sm text-black lg:mt-3 lg:text-base">胡同 元氣爆米花-原味 (短效期, 2024.03) / 200g/桶</p>
+                <div class="flex lg:flex-col flex-col-reverse mt-[9px] lg:mt-[14px]">
+                  <div class="flex lg:justify-normal justify-between space-y-2 xl:space-x-6 lg:space-x-4 lg:space-y-0 flex-row mt-[10px] lg:mt-0">
+                    <p class="flex flex-col font-semibold text-red-500 lg:space-x-2 lg:block"><span class="lg:text-xs text-10">優惠價</span><span class="text-sm lg:text-base">NT$ 99</span></p>
+                    <p class="font-semibold text-gray-700 line-through"><span class="text-sm lg:text-base">NT$ 129</span></p>
+                  </div>
+                  <!-- 3 種狀態-->
+                  <div class="flex flex-wrap items-center lg:mt-2">
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-red-400 rounded-sm text-10">限量新品</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-green-400 rounded-sm text-10">常溫</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-blue-400 rounded-sm text-10">冷藏</p>
+                  </div>
+                </div>
+              </div></a><a class="relative flex flex-col" href="#"> 
+              <div class="relative"><img class="object-cover object-center w-full lg:max-w-[262px] h-full lg:max-h-[280px] max-h-[273px]" src="./images/category/recommended1.png" alt="">
+                <!-- 第 1 種狀態-->
+                <div class="absolute left-3 bottom-[44px] bg-gray-800 w-14 h-14 rounded-sm flex items-center justify-center">
+                  <p class="flex flex-col text-sm text-white left-[30px]"> <span>東港</span><span>名產</span></p>
+                </div>
+              </div>
+              <div class="flex flex-col px-3 pb-4 mt-2 lg:pb-0 lg:px-0 lg:mt-4">
+                <p class="text-slate-400 lg:mt-6 lg:text-xs text-10">胡同嚴選</p>
+                <p class="mt-[5px] text-sm text-black lg:mt-3 lg:text-base">胡同 元氣爆米花-原味 (短效期, 2024.03) / 200g/桶</p>
+                <div class="flex lg:flex-col flex-col-reverse mt-[9px] lg:mt-[14px]">
+                  <div class="flex lg:justify-normal justify-between space-y-2 xl:space-x-6 lg:space-x-4 lg:space-y-0 flex-row mt-[10px] lg:mt-0">
+                    <p class="flex flex-col font-semibold text-red-500 lg:space-x-2 lg:block"><span class="lg:text-xs text-10">優惠價</span><span class="text-sm lg:text-base">NT$ 99</span></p>
+                    <p class="font-semibold text-gray-700 line-through"><span class="text-sm lg:text-base">NT$ 129</span></p>
+                  </div>
+                  <!-- 3 種狀態-->
+                  <div class="flex flex-wrap items-center lg:mt-2">
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-red-400 rounded-sm text-10">限量新品</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-green-400 rounded-sm text-10">常溫</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-blue-400 rounded-sm text-10">冷藏</p>
+                  </div>
+                </div>
+              </div></a><a class="relative flex flex-col" href="#"> 
+              <div class="relative"><img class="object-cover object-center w-full lg:max-w-[262px] h-full lg:max-h-[280px] max-h-[273px]" src="./images/category/recommended1.png" alt="">
+                <!-- 第 2 種狀態-->
+                <div class="absolute bottom-0 flex justify-center w-full h-8 px-1 bg-origin-500">
+                  <p class="flex items-center font-bold text-white"><span class="xl:text-sm text-11">12.12 限定 熱銷商品破盤價 下殺 </span><span class="xl:text-10 text-[9px]">$</span><span class="text-xs xl:text-base">299</span></p>
+                </div>
+                <!-- 第 3 種狀態-->
+                <div class="absolute -translate-x-1/2 -translate-y-1/2 bg-white left-1/2 top-1/2 bg-opacity-60">
+                  <p class="text-black text-base px-2 py-[6px] whitespace-nowrap">售完補貨中</p>
+                </div>
+              </div>
+              <div class="flex flex-col px-3 pb-4 mt-2 lg:pb-0 lg:px-0 lg:mt-4">
+                <p class="text-slate-400 lg:mt-6 lg:text-xs text-10">胡同嚴選</p>
+                <p class="mt-[5px] text-sm text-black lg:mt-3 lg:text-base">胡同 元氣爆米花-原味 (短效期, 2024.03) / 200g/桶</p>
+                <div class="flex lg:flex-col flex-col-reverse mt-[9px] lg:mt-[14px]">
+                  <div class="flex lg:justify-normal justify-between space-y-2 xl:space-x-6 lg:space-x-4 lg:space-y-0 flex-row mt-[10px] lg:mt-0">
+                    <p class="flex flex-col font-semibold text-red-500 lg:space-x-2 lg:block"><span class="lg:text-xs text-10">優惠價</span><span class="text-sm lg:text-base">NT$ 99</span></p>
+                    <p class="font-semibold text-gray-700 line-through"><span class="text-sm lg:text-base">NT$ 129</span></p>
+                  </div>
+                  <!-- 3 種狀態-->
+                  <div class="flex flex-wrap items-center lg:mt-2">
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-red-400 rounded-sm text-10">限量新品</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-green-400 rounded-sm text-10">常溫</p>
+                    <p class="px-2 py-1 mb-1 mr-3 text-white bg-blue-400 rounded-sm text-10">冷藏</p>
+                  </div>
+                </div>
+              </div></a>
+          </div>
+          <!-- 分頁-->
+          <div class="lg:mt-[66px] mt-10 flex items-center justify-center space-x-4">
+            <button class="flex items-center justify-center w-5 h-5 text-sm font-medium rounded-sm text-slate-800" type="button"><</button>
+            <!-- active 狀態為 "text-white bg-origin-500"，非 active 狀態為 "text-slate-800"-->
+            <button class="flex items-center justify-center w-5 h-5 text-sm font-medium text-white rounded-sm bg-origin-500" type="button">1</button>
+            <button class="flex items-center justify-center w-5 h-5 text-sm font-medium rounded-sm text-slate-800" type="button">2</button>
+            <button class="flex items-center justify-center w-5 h-5 text-sm font-medium rounded-sm text-slate-800" type="button">3</button>
+            <button class="flex items-center justify-center w-5 h-5 text-sm font-medium rounded-sm text-slate-800" type="button">...</button>
+            <button class="flex items-center justify-center w-5 h-5 text-sm font-medium rounded-sm text-slate-800" type="button">10</button>
+            <button class="flex items-center justify-center w-5 h-5 text-sm font-medium rounded-sm text-slate-800" type="button">></button>
+          </div>
+        </div>
       </section>
     </main>
     <button class="fixed z-20 flex flex-col items-center justify-center invisible space-y-2 duration-200 right-6 bottom-8" id="gotop" type="button">

@@ -19,4 +19,26 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  // 專屬精選項目
+  new Swiper(".swiper-featured", {
+    slidesPerView: "auto",
+    spaceBetween: 16,
+    freeMode: true,
+    breakpoints: {
+      // when window width is >= 1024px
+      1024: {
+        freeMode: false,
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+    },
+    navigation: {
+      nextEl: ".swiper-button-featured-next",
+      prevEl: ".swiper-button-featured-prev",
+    },
+    scrollbar: {
+      el: ".swiper-featured-scrollbar",
+    },
+  });
 });
