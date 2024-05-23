@@ -11,7 +11,7 @@
 
 ### 商品頁
 
-- 🚧[主分類商品列表頁](https://one-liang.github.io/gyen/dist/category)
+- [主分類商品列表頁](https://one-liang.github.io/gyen/dist/category)
 - 🚧[主題商品列表頁](https://one-liang.github.io/gyen/dist/theme)
 - 🚧[網紅/聯名商品列表頁](https://one-liang.github.io/gyen/dist/co-branded)
 - 🚧[活動商品列表頁](https://one-liang.github.io/gyen/dist/activity)
