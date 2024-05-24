@@ -1,0 +1,91 @@
+include ../components/common/head.pug
+
+doctype html
+html(lang="zh-Hant-TW")
+  +head("category-pagination")
+  head
+    link(rel="stylesheet" href="./css/swiper-bundle.min.css")
+    script(src="./js/swiper-bundle.min.js")
+  body
+    include ../components/common/header.pug
+
+    main(class="flex flex-col mx-auto max-w-screen-2xl lg:px-[148px] pt-6 lg:pt-10 pb-[94px] lg:pb-[120px]")
+      // 右邊商品列表
+      section(class="flex-1")
+        // 麵包屑
+        ul(class="flex flex-wrap items-center px-6 space-x-1 lg:px-0")
+          li(class="breadCrumbLink")
+            a(class="text-sm text-slate-600" href="#") 全部商品
+          li(class="breadCrumbLink")
+            a(class="text-sm ext-slate-600" href="#") 低溫食品
+          li(class="breadCrumbLink")
+            a(class="text-sm ext-slate-600" href="#") 低溫醬料
+
+        // 標題
+        div(class="lg:text-center lg:mt-[37px] mt-6 lg:px-0 px-6")
+          p(class="text-xl font-semibold text-black") 低溫醬料
+            span(class="ml-3 text-base text-black lg:ml-4") (189)
+
+        // tag 分類
+        div(class="lg:mx-0 mx-[10px] pb-4 border-b lg:pb-0 lg:border-b-0 border-slate-300")
+          ul(class="flex items-center lg:flex-wrap flex-nowrap space-x-4 lg:overflow-visible overflow-x-auto lg:mt-6 mt-[37px] lg:px-0 px-[14px]")
+            // active 狀態為 "text-white bg-origin-700"，非 active 狀態為 "text-black bg-neutral-100"
+            li
+              button(class="px-4 py-2 text-sm text-white duration-150 rounded whitespace-nowrap bg-origin-700 hover:bg-origin-700 hover:text-white" type="button") 全部
+            li
+              button(class="px-4 py-2 text-sm text-black duration-150 rounded whitespace-nowrap bg-neutral-100 hover:bg-origin-700 hover:text-white" type="button") 牛肉
+            li
+              button(class="px-4 py-2 text-sm text-black duration-150 rounded whitespace-nowrap bg-neutral-100 hover:bg-origin-700 hover:text-white" type="button") 雞肉
+            li
+              button(class="px-4 py-2 text-sm text-black duration-150 rounded whitespace-nowrap bg-neutral-100 hover:bg-origin-700 hover:text-white" type="button") 羊肉
+            li
+              button(class="px-4 py-2 text-sm text-black duration-150 rounded whitespace-nowrap bg-neutral-100 hover:bg-origin-700 hover:text-white" type="button") 海鮮
+            li
+              button(class="px-4 py-2 text-sm text-black duration-150 rounded whitespace-nowrap bg-neutral-100 hover:bg-origin-700 hover:text-white" type="button") 低溫醬料
+
+        // 分類標題
+        a(class="block mt-5 lg:mt-6" href="#") 
+          img(class="object-cover object-center w-full lg:h-[400px] h-[180px] lg:rounded" src="./images/category/categoryBanner.png" alt="")
+        
+      // 篩選列表
+      section(class="mt-10 lg:mt-4")
+        ul(class="flex items-center text-xl font-semibold text-center text-black lg:px-0 px-6 lg:space-x-[46px] space-x-2")
+          li
+            p(class="text-sm text-slate-600") 最新
+          // active 狀態為 "text-origin-700 bg-neutral-100"，非 active 狀態為 "text-slate-600"
+          li
+            button(class="px-3 lg:px-[18px] py-[15px] text-sm text-origin-700 bg-neutral-100 flex items-center space-x-3 rounded-lg duration-150 group hover:text-origin-700 hover:bg-neutral-100" type="button")
+              span 價錢高到低
+              svg(class="fill-current" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                path(fill-rule="evenodd" clip-rule="evenodd" d="M9.85714 6.85693L20.1429 6.85693C20.6162 6.85693 21 6.47318 21 5.99979C21 5.5264 20.6162 5.14265 20.1429 5.14265L9.85714 5.14265C9.38376 5.14265 9 5.5264 9 5.99979C9 6.47318 9.38376 6.85693 9.85714 6.85693Z")
+                path(fill-rule="evenodd" clip-rule="evenodd" d="M9.85714 10.2856L16.7143 10.2856C17.1877 10.2856 17.5714 9.90189 17.5714 9.4285C17.5714 8.95511 17.1877 8.57136 16.7143 8.57136L9.85714 8.57136C9.38376 8.57136 9 8.95511 9 9.4285C9 9.90189 9.38376 10.2856 9.85714 10.2856Z")
+                path(fill-rule="evenodd" clip-rule="evenodd" d="M9.85714 13.7144L13.2857 13.7144C13.7591 13.7144 14.1429 13.3306 14.1429 12.8572C14.1429 12.3838 13.7591 12.0001 13.2857 12.0001L9.85714 12.0001C9.38376 12.0001 9 12.3838 9 12.8572C9 13.3306 9.38376 13.7144 9.85714 13.7144Z")
+                path(fill-rule="evenodd" clip-rule="evenodd" d="M6.51491 19.7144C6.76252 19.7144 6.98561 19.6094 7.14209 19.4415C7.14951 19.4345 7.15684 19.4275 7.16407 19.4202L10.1945 16.3898C10.5293 16.055 10.5293 15.5123 10.1945 15.1776C9.85979 14.8429 9.31708 14.8429 8.98235 15.1776L7.37205 16.7879L7.37205 5.14292C7.37205 4.66954 6.98829 4.28578 6.51491 4.28578C6.04152 4.28578 5.65776 4.66954 5.65776 5.14292L5.65776 16.7999L4.0355 15.1776C3.70076 14.8429 3.15805 14.8429 2.82332 15.1776C2.48858 15.5123 2.48858 16.055 2.82332 16.3898L5.85378 19.4202C5.88743 19.4539 5.92319 19.4842 5.96063 19.511C6.11007 19.6379 6.30356 19.7144 6.51491 19.7144Z")
+          li
+            button(class="px-3 lg:px-[18px] py-[15px] text-sm text-slate-600 flex items-center space-x-3 rounded-lg duration-150 group hover:text-origin-700 hover:bg-neutral-100" type="button")
+              span 價錢低到高
+              svg(class="fill-current" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                path(fill-rule="evenodd" clip-rule="evenodd" d="M9.85714 17.1431H20.1429C20.6162 17.1431 21 17.5268 21 18.0002C21 18.4736 20.6162 18.8574 20.1429 18.8574H9.85714C9.38376 18.8574 9 18.4736 9 18.0002C9 17.5268 9.38376 17.1431 9.85714 17.1431Z")
+                path(fill-rule="evenodd" clip-rule="evenodd" d="M9.85714 13.7144H16.7143C17.1877 13.7144 17.5714 14.0981 17.5714 14.5715C17.5714 15.0449 17.1877 15.4286 16.7143 15.4286H9.85714C9.38376 15.4286 9 15.0449 9 14.5715C9 14.0981 9.38376 13.7144 9.85714 13.7144Z")
+                path(fill-rule="evenodd" clip-rule="evenodd" d="M9.85714 10.2856H13.2857C13.7591 10.2856 14.1429 10.6694 14.1429 11.1428C14.1429 11.6162 13.7591 11.9999 13.2857 11.9999H9.85714C9.38376 11.9999 9 11.6162 9 11.1428C9 10.6694 9.38376 10.2856 9.85714 10.2856Z")
+                path(fill-rule="evenodd" clip-rule="evenodd" d="M6.51295 4.28564C6.76057 4.28564 6.98366 4.39064 7.14013 4.55854C7.14756 4.56546 7.15489 4.57254 7.16212 4.57977L10.1926 7.61023C10.5273 7.94496 10.5273 8.48768 10.1926 8.82241C9.85784 9.15715 9.31513 9.15715 8.98039 8.82241L7.3701 7.21211V18.8571C7.3701 19.3305 6.98634 19.7142 6.51295 19.7142C6.03957 19.7142 5.65581 19.3305 5.65581 18.8571V7.20015L4.03355 8.82241C3.69881 9.15715 3.1561 9.15715 2.82136 8.82241C2.48663 8.48768 2.48663 7.94496 2.82136 7.61023L5.85182 4.57977C5.88548 4.54611 5.92124 4.51584 5.95867 4.48895C6.10812 4.36214 6.3016 4.28564 6.51295 4.28564Z")
+
+        div(class="px-4 mt-10 lg:px-0 lg:mt-4")
+          div(class="grid grid-cols-2 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-10 gap-x-3 gap-y-4")
+            each val in [1, 2, 3, 4, 5, 6, 7, 8]
+              include ../components/product/card1.pug
+              include ../components/product/card2.pug
+
+          // 分頁
+          div(class="lg:mt-[66px] mt-10 flex items-center justify-center space-x-4")
+            button(class="flex items-center justify-center w-5 h-5 text-sm font-medium rounded-sm text-slate-800" type="button") <
+            // active 狀態為 "text-white bg-origin-500"，非 active 狀態為 "text-slate-800"
+            button(class="flex items-center justify-center w-5 h-5 text-sm font-medium text-white rounded-sm bg-origin-500" type="button") 1
+            button(class="flex items-center justify-center w-5 h-5 text-sm font-medium rounded-sm text-slate-800" type="button") 2
+            button(class="flex items-center justify-center w-5 h-5 text-sm font-medium rounded-sm text-slate-800" type="button") 3
+            button(class="flex items-center justify-center w-5 h-5 text-sm font-medium rounded-sm text-slate-800" type="button") ...
+            button(class="flex items-center justify-center w-5 h-5 text-sm font-medium rounded-sm text-slate-800" type="button") 10
+            button(class="flex items-center justify-center w-5 h-5 text-sm font-medium rounded-sm text-slate-800" type="button") >
+
+    include ../components/common/gotop.pug
+    include ../components/common/footer.pug
