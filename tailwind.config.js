@@ -56,6 +56,9 @@ module.exports = {
         blue: {
           400: "#5B89FF",
         },
+        purple: {
+          400: "#B08FE6",
+        },
       },
       fontSize: {
         10: [
