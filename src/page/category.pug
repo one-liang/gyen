@@ -40,10 +40,10 @@ html(lang="zh-Hant-TW")
           
           // 獨家商品
           p(class="mt-10 text-xl font-semibold text-center text-slate-600 lg:mt-12") 胡同嚴選/ 獨家商品
-          div(class="flex justify-between mt-10 lg:px-0 px-[10px]")
+          div(class="flex justify-between mt-10 lg:px-0 px-[10px] space-x-[10px]")
             each val in [1, 2, 3]
               a(href="#") 
-                img(class="object-cover object-center w-full lg:h-[335px] h-[100px]" src=`./images/category/exclusive${val}.png` alt="")
+                img(class="object-cover object-center w-full max-h-[335px] h-auto" src=`./images/category/exclusive${val}.png` alt="")
                 p(class="lg:text-base text-xs text-slate-600 lg:px-[7px] lg:mt-6 mt-2 text-center lg:text-left") 胡同裏的心港點
           
           // 最新消息

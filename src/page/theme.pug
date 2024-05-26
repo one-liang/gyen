@@ -6,7 +6,73 @@ html(lang="zh-Hant-TW")
   body
     include ../components/common/header.pug
 
-    section(class="") theme
-    
+
+    main(class="flex flex-col mx-auto max-w-screen-2xl lg:px-[148px] pt-6 lg:pt-10 pb-[102px] lg:pb-[120px]")
+      section(class="lg:mt-[124px] mt-6 max-w-[912px] mx-auto")
+        h1(class="text-[40px] font-semibold text-black text-center") 胡同燒肉的戶外主題
+        p(class="mt-4 text-base text-black lg:mt-12") 身為橘焱胡同餐飲集團的經營者，董事長吳念忠在意的不僅僅只是食物的味道，有溫度的、能讓客人感受到溫暖貼心的餐廳，才是品牌的長久經營之道。好的食材只要肯花錢就買得到，但是細緻的服務卻不是每一家店都做得到，因此多年來胡同燒肉都堅持烤網
+
+      // 獨家商品
+      section(class="lg:mt-[75px] mt-6")
+        p(class="mt-10 text-xl font-semibold text-center text-slate-600 lg:mt-12") 胡同嚴選/ 獨家商品
+        div(class="flex justify-between mt-10 lg:px-0 px-[10px] space-x-[10px]")
+          each val in [1, 2, 3]
+            a(href="#") 
+              img(class="object-cover object-center w-full max-h-[335px] h-auto" src=`./images/category/exclusive${val}.png` alt="")
+              p(class="lg:text-base text-xs text-slate-600 lg:px-[7px] lg:mt-6 mt-2 text-center lg:text-left") 胡同裏的心港點
+        
+      // 戶外質感生活提案
+      section(class="lg:mt-[116px] mt-6")
+        p(class="mt-10 text-xl font-semibold text-center text-slate-600 lg:mt-12") 戶外質感生活提案
+
+        //- div(class="flex mt-6 space-x-4 lg:space-x-14 lg:mt-10")
+        div(class="grid grid-cols-1 mt-6 lg:grid-cols-2 lg:gap-x-14 lg:mt-10 lg:gap-y-0 gap-y-6")
+          div(class="relative flex-1 px-6 lg:px-0")
+            img(class="object-cover object-[center_20%] w-full h-full lg:max-h-fit max-h-[291px]" src="./images/index/limited5.png", alt="")
+            div(class="flex flex-col lg:items-center items-start lg:top-[183px] top-10 absolute left-1/2 -translate-x-1/2 lg:w-full xl:px-[68px] lg:px-9 w-[calc(100%-48px)] px-6")
+              p(class="text-2xl font-bold text-center text-white xl:text-4xl lg:text-3xl") 空運日本和牛客製化代切
+              div(class="lg:mt-[45px] mt-5")
+                p(class="text-white xl:text-2xl lg:text-xl text-xs xl:leading-[56px] leading-relaxed") 超透氣桉樹 冷卻與溫度調節
+                  br
+                  | 絲般柔軟； 對皮膚和頭髮有益
+                  br
+                  | 光滑柔軟的人造纖維絨毛，帶給
+                  br
+                  | 你整日的舒適
+                a(class="xl:w-[160px] xl:h-[60px] lg:text-xl text-sm lg:w-[130px] lg:h-[50px] w-[104px] h-[44px] text-black flex items-center justify-center bg-white lg:mt-12 mt-[27px] rounded" href="#") 立即選購
+          div(class="grid flex-1 grid-cols-2 gap-3 px-6 lg:gap-14 lg:px-0")
+            each val in [1, 2]
+              include ../components/product/card1.pug
+              include ../components/product/card2.pug
+
+        // 最新消息
+        div(class="flex justify-center mt-10 lg:mt-14")
+          a(class="" href="#")
+            img(class="" src="./images/category/news.png", alt="")
+
+
+
+            
+        //- // 精選推薦
+        //- p(class="mt-10 text-xl font-semibold text-center text-slate-600 lg:mt-12") 精選推薦
+        //- div(class="grid grid-cols-2 gap-3 px-4 pb-4 mt-10 lg:grid-cols-4 lg:gap-8 lg:px-0 lg:pb-14")
+        //-   // 商品卡片 - 1
+        //-   include ../components/product/card1.pug
+        //-   // 商品卡片 - 2
+        //-   include ../components/product/card2.pug
+        //-   // 商品卡片 - 3
+        //-   include ../components/product/card1.pug
+        //-   // 商品卡片 - 4
+        //-   include ../components/product/card2.pug
+
+        //-   // 廣告版位
+        //-   a(class="flex col-span-2" href="#")
+        //-     img(class="object-cover object-center w-full" src="./images/category/categoryAD.png" alt="")
+
+        //-   // 商品卡片 - 5
+        //-   include ../components/product/card1.pug
+        //-   // 商品卡片 - 6
+        //-   include ../components/product/card2.pug
+
     include ../components/common/gotop.pug
     include ../components/common/footer.pug
