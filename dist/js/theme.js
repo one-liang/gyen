@@ -193,7 +193,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _gotop__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_gotop__WEBPACK_IMPORTED_MODULE_1__);
 
 
-document.addEventListener("DOMContentLoaded", function () {});
+document.addEventListener("DOMContentLoaded", function () {
+  // 猜你會喜歡
+  new Swiper(".swiper-alsoLike", {
+    slidesPerView: "auto",
+    spaceBetween: 16,
+    freeMode: true,
+    breakpoints: {
+      // when window width is >= 1024px
+      1024: {
+        freeMode: false,
+        slidesPerView: 4,
+        spaceBetween: 40
+      }
+    },
+    navigation: {
+      nextEl: ".swiper-button-alsoLike-next",
+      prevEl: ".swiper-button-alsoLike-prev"
+    }
+  });
+});
 }();
 /******/ })()
 ;

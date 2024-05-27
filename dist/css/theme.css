@@ -2027,6 +2027,31 @@ body {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+.swiper-main .swiper-slide::before {
+  position: absolute;
+  inset: 0px;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  content: var(--tw-content);
+  --tw-bg-opacity: 0.02;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: none !important;
+}
+
+.swiper-alsoLike .swiper-button-disabled {
+  opacity: 0 !important;
+}
+
+.swiper-alsoLike .swiper-button-alsoLike-next,
+.swiper-alsoLike .swiper-button-alsoLike-prev {
+  top: calc(50% - 56px);
+}
+
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;
@@ -2286,6 +2311,10 @@ body {
 
   .lg\:mt-\[55px\] {
     margin-top: 55px;
+  }
+
+  .lg\:mt-\[65px\] {
+    margin-top: 65px;
   }
 
   .lg\:mt-\[66px\] {
@@ -2549,12 +2578,6 @@ body {
     --tw-space-x-reverse: 0;
     margin-right: calc(2.5rem * var(--tw-space-x-reverse));
     margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .lg\:space-x-14 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(3.5rem * var(--tw-space-x-reverse));
-    margin-left: calc(3.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .lg\:space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2831,6 +2854,14 @@ body {
 
   .lg\:pt-\[43px\] {
     padding-top: 43px;
+  }
+
+  .lg\:pb-\[137px\] {
+    padding-bottom: 137px;
+  }
+
+  .lg\:\!pl-0 {
+    padding-left: 0px !important;
   }
 
   .lg\:text-left {

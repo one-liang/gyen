@@ -1,1 +1,19 @@
 @import url("./tailwind.css");
+
+.swiper-main .swiper-slide {
+  @apply before:absolute before:inset-0 before:z-1 before:w-full before:h-full before:bg-black before:bg-opacity-[0.02];
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: none !important;
+}
+
+.swiper-alsoLike .swiper-button-disabled {
+  @apply !opacity-0;
+}
+
+.swiper-alsoLike .swiper-button-alsoLike-next,
+.swiper-alsoLike .swiper-button-alsoLike-prev {
+  @apply top-[calc(50%-56px)];
+}
