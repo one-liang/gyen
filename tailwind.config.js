@@ -33,6 +33,7 @@ module.exports = {
           50: "#F7F6F3",
         },
         neutral: {
+          400: "#BEBEBE",
           200: "#E1E1E1",
           100: "#F9F9F9",
           50: "#FAFAFA",
@@ -45,6 +46,7 @@ module.exports = {
         },
         green: {
           900: "#185304",
+          600: "#46A85B",
           400: "#68BA7A",
         },
         origin: {

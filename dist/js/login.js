@@ -5,38 +5,28 @@
 /***/ (function() {
 
 // gotop
-let requestAnimationFrame =
-  window.requestAnimationFrame ||
-  window.mozRequestAnimationFrame ||
-  window.webkitRequestAnimationFrame ||
-  window.msRequestAnimationFrame;
-
+var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
 document.addEventListener("DOMContentLoaded", function () {
-  const goTopButton = document.querySelector("#gotop");
-  const windowViewPortHeight = window.innerHeight;
-  let isRequestingAnimationFrame = false;
-
+  var goTopButton = document.querySelector("#gotop");
+  var windowViewPortHeight = window.innerHeight;
+  var isRequestingAnimationFrame = false;
   if (!goTopButton) {
     return;
   }
-
   goTopButton.addEventListener("click", function () {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: "smooth"
     });
   });
-
   window.addEventListener("scroll", function () {
     if (!isRequestingAnimationFrame) {
       requestAnimationFrame(filterGoTopButtonVisibility);
       isRequestingAnimationFrame = true;
     }
   });
-
   function filterGoTopButtonVisibility() {
-    let windowPageYOffset =
-      window.pageYOffset || document.documentElement.scrollTop;
+    var windowPageYOffset = window.pageYOffset || document.documentElement.scrollTop;
     if (windowPageYOffset > windowViewPortHeight) {
       goTopButton.classList.add("show");
       isRequestingAnimationFrame = false;
@@ -47,7 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 // gotop end
-
 
 /***/ })
 /******/ 	]);
@@ -126,8 +115,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _gotop__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var _gotop__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_gotop__WEBPACK_IMPORTED_MODULE_0__);
 
-
-const a = 'login.js';
+var a = 'login.js';
 console.log(a);
 }();
 /******/ })()

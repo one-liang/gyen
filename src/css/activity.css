@@ -1,1 +1,33 @@
 @import url("./tailwind.css");
+
+.breadCrumbLink:not(:first-child):before {
+  content: ">";
+
+  @apply pr-1;
+}
+
+.swiper-main .swiper-slide {
+  @apply before:absolute before:inset-0 before:z-1 before:w-full before:h-full before:bg-black before:bg-opacity-[0.02];
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: none !important;
+}
+
+.swiper-featured .swiper-button-disabled {
+  @apply !opacity-0;
+}
+
+.swiper-featured .swiper-scrollbar {
+  @apply !bg-gray-300;
+}
+
+.swiper-featured .swiper-scrollbar-drag {
+  @apply !bg-gray-900;
+}
+
+.swiper-featured .swiper-button-featured-next,
+.swiper-featured .swiper-button-featured-prev {
+  @apply top-[calc(50%-56px)];
+}
