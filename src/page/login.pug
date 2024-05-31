@@ -4,9 +4,36 @@ doctype html
 html(lang="zh-Hant-TW")
   +head("login")
   body
-    include ../components/common/header.pug
-    h1(class="bg-teal-500 text-9xl") Hello, World!
+    header(class="sticky top-0 z-50")
+      nav(class="z-20 relative bg-white lg:h-[105px] h-[88px] flex items-center justify-center px-6 lg:px-12")
+        a(href="#")
+          img(class="lg:w-[96px] w-[58px]" src="./images/logo.png" alt="橘焱胡同")
 
-    include ../components/common/cookieBanner.pug
-    include ../components/common/gotop.pug
+    main(class="max-w-screen-2xl mx-auto px-5 lg:px-[316px] pt-5 lg:pb-0 pb-20 lg:min-h-[calc(100dvh-542px)]")
+      a(class="text-sm font-medium" href="#") < 回首頁
+      div(class="mt-[51px] mx-auto max-w-[370px] px-5")
+        p(class="text-xl font-medium text-center text-black") 會員登入
+        form(class="mt-10")
+          div
+            label(class="block text-sm text-slate-800" for="phone") 手機號碼
+            // error 狀態 class: !border-red-650
+            input(id="phone" class="w-full h-[52px] mt-3 px-4 py-2 text-slate-800 border border-slate-200 rounded !border-red-650" type="text")
+            span(class="block mt-[11px] text-sm text-red-650") 手機號碼 為必填
+          div(class="mt-5")
+            label(class="block text-sm text-slate-800" for="password") 密碼
+            input(id="password" class="w-full h-[52px] mt-3 px-4 py-2 text-slate-800 border border-slate-200 rounded" type="password")
+            // span(class="block mt-[11px] text-sm text-red-650") 密碼 為必填
+          button(class="w-full h-[52px] bg-origin-600 text-white inline-flex items-center justify-center mt-12 rounded" type="button") 登入
+
+          div(class="flex justify-between mt-4")
+            a(class="text-xs text-blue-700" href="#") 忘記密碼？
+            a(class="text-xs text-blue-700" href='#') 註冊會員
+
+          p(class="relative mt-4 text-center before:bg-gray-300 before:w-full before:h-px before:absolute before:left-0 before:top-1/2")
+            span(class="relative inline-block px-6 text-base text-gray-300 bg-white") 或
+
+          a(class="w-full h-[52px] bg-green-800 text-white inline-flex items-center justify-center mt-8 rounded space-x-3" href="#")
+            img(src="./images/login/line-white.png" alt="")
+            span 帳號登入
+
     include ../components/common/footer.pug
