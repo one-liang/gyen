@@ -1,1 +1,13 @@
 @import url("./tailwind.css");
+
+.full-bg {
+  background-image: url("../images/co-branded/background.png");
+
+  @apply bg-repeat bg-center;
+}
+
+.main-bg {
+  background-image: url("../images/co-branded/main-banner.png");
+
+  @apply bg-no-repeat lg:bg-center bg-top lg:bg-cover bg-[length:auto_400px];
+}

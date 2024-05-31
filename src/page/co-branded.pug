@@ -3,11 +3,71 @@ include ../components/common/head.pug
 doctype html
 html(lang="zh-Hant-TW")
   +head("co-branded")
-  body
+  body(class="full-bg")
     include ../components/common/header.pug
 
-    section(class="") co-branded
-    
+    main(class="mx-auto max-w-screen-2xl lg:pb-[120px] pb-[98px]")
+      div(class="lg:mt-[50px] mt-6 lg:ml-12 ml-6")
+        a(class="text-sm font-medium text-white" href="#") < 回上頁
+
+      section(class="lg:mt-[46px] mt-6 relative")
+        div(class="relative lg:h-[417px] h-full main-bg")
+          // 左邊頭像內容
+          div(class="lg:absolute lg:top-[43px] lg:left-[88px] top-0 lg:translate-x-0 bg-white rounded-sm lg:w-[276px] w-auto lg:mx-0 mx-6 pt-8 lg:px-4 pb-4 px-[30px]")
+            div(class="w-[130px] h-[130px] mx-auto relative")
+              img(class="object-cover object-center w-full rounded-full" src="./images/co-branded/avatar.png" alt="")
+              a(class="absolute bottom-0 right-0 hidden lg:block" href="#")
+                img(src="./images/arrows/share.svg" alt="")
+            p(class="mt-5 text-base text-center text-black lg:mt-6") 吳淡如獨家優惠團
+            p(class="mt-[18px] text-xl text-center text-black font-medium lg:mt-6") 胡同點心&胡同燒肉組
+            div(class="px-6 py-3 mt-5 text-base font-semibold text-center text-white rounded-sm bg-origin-800 lg:mt-6") 倒數計時  20 天 18 時 15 分
+            p(class="text-slate-400 lg:mt-[21px] mt-[18px] text-center text-sm") 出貨時間： 商品於活動結束統一出貨
+            div(class="lg:mt-[38px] mt-9 bg-yellow-300 px-5 lg:pt-9 lg:pb-10 pt-8 pb-9")
+              p(class="text-sm text-center text-amber-800") 商品出貨資訊
+              p(class="text-amber-800 text-sm mt-[14px]") 龍年春節假期因個物流公司運輸量大，自1/15起停止隔日配送，同時停止指定到貨日。數無法保證年前到達，我們除夕、初一店休兩天，於2/11(日)初二陸續恢復營年節服務不間斷提供給您聚餐的首選，歡迎撥打各門市電話或線上訂位進行預約！
+
+        div(class="bg-slate-50 lg:pt-[67px] lg:pb-[102px] lg:pr-[102px] lg:pl-[427px] pt-16 px-6 pb-16 lg:mt-0 -mt-[18px]")
+          p(class="lg:text-[40px] lg:leading-tight text-xl font-semibold") 胡同燒肉：吳淡如推薦的美味燒肉
+          div(class="mt-10 lg:mt-12")
+            p(class="text-base text-black") 高規格肉品處理技術
+            p(class="mt-4 text-sm text-black") 身為橘焱胡同餐飲集團的經營者，董事長吳念忠在意的不僅僅只是食物的味道，有溫度的、能讓客人感受到溫暖貼心的餐廳，才是品牌的長久經營之道。好的食材只要肯花錢就買得到，但是細緻的服務卻不是每一家店都做得到，因此多年來胡同燒肉都堅持烤網烤過一次就必須更換，這樣才能維持每一道食材的好味道。
+            p(class="mt-6 text-base text-black") 吳淡如推薦的美味燒肉
+            p(class="mt-4 text-sm text-black") 橘焱胡同集團於2009年耗資數千萬打造100坪高規格中央廚房，恆溫15度的低溫處理及保存食材的廠房內，有10多位資歷至少兩年以上的手切肉師傅，把筋膜全部剔除修清再切片塊，在耗損率將近5成的情況下，我們仍堅持 。
+
+      section(class="mt-6 lg:mt-16")
+        // 最新消息
+        div(class="lg:px-16")
+          a(href="#")
+            img(class="object-cover w-full" src="./images/category/news.png" alt="")
+        div(class="lg:mt-[43px] mt-10")
+          p(class="text-xl font-semibold text-center text-white") 吳淡如開發獨家經典組合
+          div(class="grid lg:grid-cols-4 grid-cols-2 gap-3 px-4 lg:px-16 lg:gap-6 lg:mt-[44px] mt-8")
+            each val in [1, 2, 3, 4, 5, 6, 7, 8]
+              include ../components/product/card1-white.pug
+              include ../components/product/card2-white.pug
+
+        div(class="lg:mt-[43px] mt-10")
+          p(class="text-xl font-semibold text-center text-white") 吳淡如 x 胡同裡的心港點
+          div(class="grid lg:grid-cols-4 grid-cols-2 gap-3 px-4 lg:px-16 lg:gap-6 lg:mt-[44px] mt-8")
+            // 商品卡片 - 1
+            include ../components/product/card1-white.pug
+            // 商品卡片 - 2
+            include ../components/product/card2-white.pug
+
+            // 廣告版位
+            a(class="flex col-span-2" href="#")
+              img(class="object-cover object-center w-full" src="./images/co-branded/categoryAD.png" alt="")
+
+            // 商品卡片 - 3
+            include ../components/product/card1-white.pug
+            // 商品卡片 - 4
+            include ../components/product/card2-white.pug
+
+            // 商品卡片 - 5
+            include ../components/product/card1-white.pug
+            // 商品卡片 - 6
+            include ../components/product/card2-white.pug
+
     include ../components/common/cookieBanner.pug
     include ../components/common/gotop.pug
     include ../components/common/footer.pug
