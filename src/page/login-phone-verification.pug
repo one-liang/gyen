@@ -1,0 +1,33 @@
+include ../components/common/head.pug
+
+doctype html
+html(lang="zh-Hant-TW")
+  +head("login-phone-verification")
+  body
+    header(class="sticky top-0 z-50")
+      nav(class="z-20 relative bg-white lg:h-[105px] h-[88px] flex items-center justify-center px-6 lg:px-12")
+        a(href="#")
+          img(class="lg:w-[96px] w-[58px]" src="./images/logo.png" alt="橘焱胡同")
+
+    main(class="max-w-screen-2xl mx-auto px-5 lg:px-[316px] pt-5 lg:pb-0 pb-20 lg:min-h-[calc(100dvh-542px)]")
+      a(class="text-sm font-medium" href="#") < 回首頁
+      div(class="lg:mt-[51px] mt-6 mx-auto max-w-[370px] px-5")
+        div(class="relative")
+          div(class="xl:absolute xl:right-[-354px] xl:top-[14px] flex items-center xl:justify-normal justify-center space-x-3")
+            // 一般狀態: bg-gray-300, active 狀態: bg-gray-900
+            div(class="h-1 bg-gray-900 w-14")
+            div(class="h-1 bg-gray-300 w-14")
+            div(class="h-1 bg-gray-300 w-14")
+          p(class="mt-10 text-xl font-medium text-center text-black xl:mt-0") 輸入電話號碼簡訊驗證
+        form(class="mt-10")
+          div
+            label(class="block text-sm text-slate-800" for="phone") 手機號碼
+            // error 狀態 class: !border-red-650
+            input(id="phone" class="w-full h-[52px] mt-3 px-6 py-3 text-slate-800 text-xl border border-slate-200 rounded !border-red-650" type="text")
+            span(class="block mt-[11px] text-xs text-red-650") 此手機號碼以其他會員註冊使用，若為本人請
+              a(class="text-blue-600" href="#") 登入
+
+          // disabled 狀態 class: !bg-gray-200 !text-white
+          button(class="w-full h-[52px] bg-origin-600 text-white inline-flex items-center justify-center mt-12 rounded" type="submit") 發送驗證碼
+
+    include ../components/common/footer.pug
