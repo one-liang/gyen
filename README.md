@@ -22,3 +22,4 @@
 
 - [會員登入](https://one-liang.github.io/gyen/dist/login)
 - [會員登入-電話驗證](https://one-liang.github.io/gyen/dist/login-phone-verification)
+- [會員登入-輸入驗證碼](https://one-liang.github.io/gyen/dist/login-verification-code)

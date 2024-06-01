@@ -1,0 +1,45 @@
+include ../components/common/head.pug
+
+doctype html
+html(lang="zh-Hant-TW")
+  +head("login-verification-code")
+  body
+    header(class="sticky top-0 z-50")
+      nav(class="z-20 relative bg-white lg:h-[105px] h-[88px] flex items-center justify-center px-6 lg:px-12")
+        a(href="#")
+          img(class="lg:w-[96px] w-[58px]" src="./images/logo.png" alt="橘焱胡同")
+
+    main(class="max-w-screen-2xl mx-auto px-5 lg:px-[316px] pt-5 lg:pb-0 pb-20 lg:min-h-[calc(100dvh-542px)]")
+      a(class="text-sm font-medium" href="#") < 回首頁
+      div(class="lg:mt-[51px] mt-6 mx-auto max-w-[370px] px-5")
+        div(class="relative")
+          div(class="xl:absolute xl:right-[-354px] xl:top-[14px] flex items-center xl:justify-normal justify-center space-x-3")
+            // 一般狀態: bg-gray-300, active 狀態: bg-gray-900
+            div(class="h-1 bg-gray-900 w-14")
+            div(class="h-1 bg-gray-300 w-14")
+            div(class="h-1 bg-gray-300 w-14")
+          p(class="mt-10 text-xl font-medium text-center text-black xl:mt-0") 輸入手機簡訊驗證碼
+        div(class="flex flex-col items-center justify-center space-y-[6px] mt-8")
+          p(class="font-semibold text-slate-800") 已發送驗證碼至
+          p(class="font-medium text-slate-800") 0934272645
+
+        div(class="flex justify-between space-x-2 mt-[45px]")
+          // active 狀態 class: !border-blue-600
+          input(class="w-10 h-10 pb-3 text-xl font-medium text-center border-t-0 border-b-2 border-l-0 border-r-0 border-black focus:outline-none focus:border-blue-600" min="0" max="9" maxlength="1" type="tel")
+          input(class="w-10 h-10 pb-3 text-xl font-medium text-center border-t-0 border-b-2 border-l-0 border-r-0 border-black focus:outline-none focus:border-blue-600" min="0" max="9" maxlength="1" type="tel")
+          input(class="w-10 h-10 pb-3 text-xl font-medium text-center border-t-0 border-b-2 border-l-0 border-r-0 border-black focus:outline-none focus:border-blue-600" min="0" max="9" maxlength="1" type="tel")
+          input(class="w-10 h-10 pb-3 text-xl font-medium text-center border-t-0 border-b-2 border-l-0 border-r-0 border-black focus:outline-none focus:border-blue-600" min="0" max="9" maxlength="1" type="tel")
+          input(class="w-10 h-10 pb-3 text-xl font-medium text-center border-t-0 border-b-2 border-l-0 border-r-0 border-black focus:outline-none focus:border-blue-600" min="0" max="9" maxlength="1" type="tel")
+          input(class="w-10 h-10 pb-3 text-xl font-medium text-center border-t-0 border-b-2 border-l-0 border-r-0 border-black focus:outline-none focus:border-blue-600" min="0" max="9" maxlength="1" type="tel")
+        div(class="mt-4 text-center")
+          a(class="text-xs text-blue-600" href="#") 重新發送驗證碼
+
+        // disabled 狀態 class: !bg-gray-200 !text-white
+        button(class="w-full h-[52px] bg-origin-600 text-white inline-flex items-center justify-center mt-8 rounded" type="button")
+          span 發送驗證碼
+          // loading 狀態
+          // svg(class="animate-spin" width='33' height='32' viewbox='0 0 33 32' fill='none' xmlns='http://www.w3.org/2000/svg')
+          //   path(fill-rule='evenodd' clip-rule='evenodd' d='M16.5004 32C7.40196 32 0 24.6629 0 15.6444C0 12.1157 1.11623 8.75519 3.22716 5.92618C5.2959 3.15427 8.13129 1.13183 11.4267 0.0783886C12.2793 -0.195023 13.1936 0.269777 13.4686 1.11494C13.7445 1.9601 13.2756 2.86638 12.423 3.13899C6.93304 4.89526 3.245 9.9204 3.245 15.6444C3.245 22.889 9.19162 28.7834 16.5004 28.7834C23.8091 28.7834 29.7549 22.889 29.7549 15.6444C29.7549 9.9204 26.0669 4.89526 20.577 3.13899C19.7244 2.86638 19.2554 1.9601 19.5314 1.11494C19.8063 0.269777 20.7206 -0.195023 21.5733 0.0783886C24.8686 1.13183 27.704 3.15427 29.7728 5.92618C31.8837 8.75519 33 12.1157 33 15.6444C33 24.6629 25.598 32 16.5004 32Z' fill='white')
+
+
+    include ../components/common/footer.pug

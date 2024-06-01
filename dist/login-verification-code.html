@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/login-verification-code.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Noto+Sans+TC:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+    <script src="js/login-verification-code.js" defer="defer"> </script>
+    <title>login-verification-code</title>
+  </head>
+  <body>
+    <header class="sticky top-0 z-50">
+      <nav class="z-20 relative bg-white lg:h-[105px] h-[88px] flex items-center justify-center px-6 lg:px-12"><a href="#"><img class="lg:w-[96px] w-[58px]" src="./images/logo.png" alt="橘焱胡同"></a></nav>
+    </header>
+    <main class="max-w-screen-2xl mx-auto px-5 lg:px-[316px] pt-5 lg:pb-0 pb-20 lg:min-h-[calc(100dvh-542px)]"><a class="text-sm font-medium" href="#">< 回首頁</a>
+      <div class="lg:mt-[51px] mt-6 mx-auto max-w-[370px] px-5">
+        <div class="relative">
+          <div class="xl:absolute xl:right-[-354px] xl:top-[14px] flex items-center xl:justify-normal justify-center space-x-3">
+            <!-- 一般狀態: bg-gray-300, active 狀態: bg-gray-900-->
+            <div class="h-1 bg-gray-900 w-14"></div>
+            <div class="h-1 bg-gray-300 w-14"></div>
+            <div class="h-1 bg-gray-300 w-14"></div>
+          </div>
+          <p class="mt-10 text-xl font-medium text-center text-black xl:mt-0">輸入手機簡訊驗證碼</p>
+        </div>
+        <div class="flex flex-col items-center justify-center space-y-[6px] mt-8">
+          <p class="font-semibold text-slate-800">已發送驗證碼至</p>
+          <p class="font-medium text-slate-800">0934272645</p>
+        </div>
+        <div class="flex justify-between space-x-2 mt-[45px]">
+          <!-- active 狀態 class: !border-blue-600-->
+          <input class="w-10 h-10 pb-3 text-xl font-medium text-center border-t-0 border-b-2 border-l-0 border-r-0 border-black focus:outline-none focus:border-blue-600" min="0" max="9" maxlength="1" type="tel">
+          <input class="w-10 h-10 pb-3 text-xl font-medium text-center border-t-0 border-b-2 border-l-0 border-r-0 border-black focus:outline-none focus:border-blue-600" min="0" max="9" maxlength="1" type="tel">
+          <input class="w-10 h-10 pb-3 text-xl font-medium text-center border-t-0 border-b-2 border-l-0 border-r-0 border-black focus:outline-none focus:border-blue-600" min="0" max="9" maxlength="1" type="tel">
+          <input class="w-10 h-10 pb-3 text-xl font-medium text-center border-t-0 border-b-2 border-l-0 border-r-0 border-black focus:outline-none focus:border-blue-600" min="0" max="9" maxlength="1" type="tel">
+          <input class="w-10 h-10 pb-3 text-xl font-medium text-center border-t-0 border-b-2 border-l-0 border-r-0 border-black focus:outline-none focus:border-blue-600" min="0" max="9" maxlength="1" type="tel">
+          <input class="w-10 h-10 pb-3 text-xl font-medium text-center border-t-0 border-b-2 border-l-0 border-r-0 border-black focus:outline-none focus:border-blue-600" min="0" max="9" maxlength="1" type="tel">
+        </div>
+        <div class="mt-4 text-center"><a class="text-xs text-blue-600" href="#">重新發送驗證碼</a></div>
+        <!-- disabled 狀態 class: !bg-gray-200 !text-white-->
+        <button class="w-full h-[52px] bg-origin-600 text-white inline-flex items-center justify-center mt-8 rounded" type="button"><span>發送驗證碼</span>
+          <!-- loading 狀態-->
+          <!-- svg(class="animate-spin" width='33' height='32' viewbox='0 0 33 32' fill='none' xmlns='http://www.w3.org/2000/svg')-->
+          <!--   path(fill-rule='evenodd' clip-rule='evenodd' d='M16.5004 32C7.40196 32 0 24.6629 0 15.6444C0 12.1157 1.11623 8.75519 3.22716 5.92618C5.2959 3.15427 8.13129 1.13183 11.4267 0.0783886C12.2793 -0.195023 13.1936 0.269777 13.4686 1.11494C13.7445 1.9601 13.2756 2.86638 12.423 3.13899C6.93304 4.89526 3.245 9.9204 3.245 15.6444C3.245 22.889 9.19162 28.7834 16.5004 28.7834C23.8091 28.7834 29.7549 22.889 29.7549 15.6444C29.7549 9.9204 26.0669 4.89526 20.577 3.13899C19.7244 2.86638 19.2554 1.9601 19.5314 1.11494C19.8063 0.269777 20.7206 -0.195023 21.5733 0.0783886C24.8686 1.13183 27.704 3.15427 29.7728 5.92618C31.8837 8.75519 33 12.1157 33 15.6444C33 24.6629 25.598 32 16.5004 32Z' fill='white')-->
+        </button>
+      </div>
+    </main>
+    <footer class="px-6 bg-black lg:px-0">
+      <div class="flex flex-col-reverse justify-center py-8 mx-auto max-w-screen-2xl lg:px-8 lg:py-16 xl:space-x-20 lg:space-x-6 lg:flex-row">
+        <div class="relative flex pt-8 mt-10 border-t-2 border-gray-500 divide-gray-500 lg:pt-0 lg:divide-x-2 lg:mt-0 lg:border-t-0">
+          <div class="flex items-center xl:pr-[97px] lg:pr-10 lg:static absolute right-0"><img class="w-[104px] lg:w-[179px] object-cover" src="./images/logo.png" alt=""></div>
+          <div class="xl:pl-[82px] lg:pl-10">
+            <p class="mb-6 text-base font-semibold text-white lg:text-xl">聯絡我們｜CONTACT US</p>
+            <p class="text-sm leading-loose text-gray-200 xl:text-base whitespace-nowrap lg:leading-relaxed">服務時段：09:00-18:00<br>(週末及國定假日休息)<br>客服專線：02-2218-9868<br>服務地址：<br>新北市新店區中正路四維巷2弄5號2樓</p>
+          </div>
+        </div>
+        <div class="flex xl:space-x-20 lg:space-x-6">
+          <div class="flex-1 lg:flex-initial">
+            <p class="mb-6 text-base font-semibold text-white lg:text-xl">商品專區</p>
+            <div class="flex lg:space-x-[52px] flex-col lg:flex-row space-y-[14px] lg:space-y-0">
+              <ul class="xl:space-y-6 space-y-[14px]">
+                <li><a class="text-sm text-gray-200 xl:text-base" href="/">3C 家電</a></li>
+                <li><a class="text-sm text-gray-200 xl:text-base" href="/">居家用品</a></li>
+                <li><a class="text-sm text-gray-200 xl:text-base" href="/">婦幼相關</a></li>
+                <li><a class="text-sm text-gray-200 xl:text-base" href="/">戶外用品</a></li>
+              </ul>
+              <ul class="xl:space-y-6 space-y-[14px]">
+                <li><a class="text-sm text-gray-200 xl:text-base" href="/">低溫食品</a></li>
+                <li><a class="text-sm text-gray-200 xl:text-base" href="/">常溫食品</a></li>
+                <li><a class="text-sm text-gray-200 xl:text-base" href="/">餐廚用品</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex-1 lg:flex-initial">
+            <p class="mb-6 text-base font-semibold text-white lg:text-xl">會員專區</p>
+            <div class="flex space-x-[52px]">
+              <ul class="xl:space-y-6 space-y-[14px]">
+                <li><a class="text-sm text-gray-200 xl:text-base" href="/">購物須知</a></li>
+                <li><a class="text-sm text-gray-200 xl:text-base" href="/">會員服務條款</a></li>
+                <li><a class="text-sm text-gray-200 xl:text-base" href="/">隱私權政策</a></li>
+                <li><a class="text-sm text-gray-200 xl:text-base" href="/">退貨須知</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex-1 lg:flex-initial">
+            <p class="mb-6 text-base font-semibold text-white lg:text-xl">客服中心</p>
+            <div class="flex space-x-[52px]">
+              <ul class="xl:space-y-6 space-y-[14px]">
+                <li><a class="text-sm text-gray-200 xl:text-base" href="/">服務公告</a></li>
+                <li><a class="text-sm text-gray-200 xl:text-base" href="/">服務信箱</a></li>
+                <li><a class="text-sm text-gray-200 xl:text-base" href="/">LINE＠</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-4 border-t-2 border-gray-500 lg:border-t lg:py-6">
+        <div class="flex flex-col items-center justify-center text-center lg:w-auto w-[230px] space-y-6 lg:space-y-0 m-auto">
+          <p class="text-xs text-white lg:text-sm">橘焱胡同國際股份有限公司 版權所有 ©<span class="font-semibold">2023 G-YEN HUTONG CO., LTD.</span></p>
+          <p class="text-xs text-white lg:text-sm">本站最佳瀏覽環境請使用Google Chrome、Firefox或IE10以上版本</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
