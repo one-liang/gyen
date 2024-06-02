@@ -1,0 +1,11 @@
+@import url("./tailwind.css");
+
+.select-wrapper {
+  @apply relative mt-3;
+}
+
+.select-wrapper::after {
+  @apply absolute top-1/2 right-[30px] transform -translate-y-1/2 pointer-events-none w-3 h-[7px];
+  content: "";
+  background-image: url("../images/arrows/light_small_down.svg");
+}
