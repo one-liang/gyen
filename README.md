@@ -18,6 +18,11 @@
 - [活動商品列表頁](https://one-liang.github.io/gyen/dist/activity)
 - 🚧[商品 item 頁](https://one-liang.github.io/gyen/dist/products)
 
+### 購物流程
+
+- 🚧[購物車 1/2](https://one-liang.github.io/gyen/dist/cart1)
+- 🚧[購物車 2/2](https://one-liang.github.io/gyen/dist/cart2)
+
 ### 註冊/登入
 
 - [會員登入](https://one-liang.github.io/gyen/dist/login)

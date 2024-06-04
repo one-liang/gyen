@@ -6,8 +6,79 @@ html(lang="zh-Hant-TW")
   body
     include ../components/common/header.pug
 
+    main(class="px-4 mx-auto max-w-screen-2xl lg:px-12 lg:pb-[118px] pb-10")
+      // 麵包屑
+      ul(class="flex flex-wrap items-center px-6 space-x-1 lg:px-0")
+        li(class="breadCrumbLink")
+          a(class="text-sm text-slate-600" href="#") 首頁
+        li(class="breadCrumbLink")
+          a(class="text-sm ext-slate-600" href="#") 購物車
+      
+      section(class="px-4 pt-3 pb-5 bg-neutral-150 lg:mt-12 lg:px-10 lg:pt-6 lg:pb-10")
+
+        div(class="hidden border-b border-gray-200 lg:block")
+          div(class="flex p-4 mx-auto xl:px-10")
+            //- div(class="w-2/12 lg:px-4 xl:px-10")
+            div(class="flex flex-grow w-11/12")
+              div(class="w-2/6 text-lg font-normal text-gray-600 xl:w-6/12") 品名
+              div(class="flex-1 text-lg font-normal text-center text-gray-600") 單價
+              div(class="flex-1 text-lg font-normal text-center text-gray-600") 數量
+              div(class="flex-1 text-lg font-normal text-right text-gray-600") 小計
+            div(class="w-1/12")
 
 
-    include ../components/common/cookieBanner.pug
+        div(class="mt-4 bg-white lg:mt-10")
+          each item in [1, 2]
+            div(class="flex flex-wrap items-center p-4 mx-auto bg-white lg:py-10 lg:px-10")
+              div(class="flex flex-wrap w-full mb-6 lg:mb-4")
+                div(class="w-3/12 md:w-2/12 lg:pr-4")
+                  img(class="object-cover object-center w-full max-w-[155px] max-h-[153px]" src="./images/cart/item.png")
+                div(class="flex flex-col justify-between w-7/12 px-4 md:w-9/12 lg:px-0")
+                  div(class="flex flex-wrap self-stretch")
+                    div(class="flex-col w-full lg:flex lg:h-full lg:w-2/6 xl:w-5/12")
+                      a(href="/products/2119801")
+                        h2(class="mb-4 font-bold text-neutral-600 lg:mb-0 lg:text-base") 【常溫】胡同肉鬆 純豬肉鬆 120g /1 罐
+                      // 狀態 1
+                      div(class="hidden lg:flex items-center lg:space-x-4 space-x-2 mt-[14px]")
+                        p(class="text-base text-slate-600") 三天內出貨
+                      // 狀態 2
+                      p(class="hidden mt-[14px] text-base text-red-500 lg:block") 贈品
+                      // 狀態 3
+                      div(class="hidden lg:flex items-center lg:space-x-4 space-x-2 mt-[14px]")
+                        // 限量新品: bg-red-400、常溫: bg-green-400、冷藏: bg-blue-400、冷凍: bg-purple-400
+                        span(class="px-2 py-1 text-white bg-purple-400 rounded-sm text-10") 冷凍
+                        p(class="text-base text-slate-600") 三天內出貨
+                      // 狀態 4
+                      div(class="hidden lg:flex items-center lg:space-x-4 space-x-2 mt-[14px]")
+                        // 限量新品: bg-red-400、常溫: bg-green-400、冷藏: bg-blue-400、冷凍: bg-purple-400
+                        span(class="px-2 py-1 text-white bg-purple-400 rounded-sm text-10") 冷凍
+                        p(class="text-base text-red-500") 預購
+                        p(class="text-base text-slate-600") 預計 2024 -05 -01 出貨
+                    p(class="hidden w-full text-base font-normal text-center text-neutral-550 lg:block lg:flex-1 lg:mt-[11px]") NT 864
+                    div(class="order-2 w-full text-center lg:flex-1 lg:order-1")
+                      div(class="flex items-center lg:justify-center")
+                        div(class="max-w-[112px] flex-1 select-wrapper")
+                          select(class="w-full h-10 px-3 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200")
+                            each item in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+                              option(value=item)= item
+                    p(class="order-1 w-full mb-3 text-neutral-550 lg:mb-0 lg:text-right lg:order-2 lg:flex-1 lg:mt-[11px]") NT 864
+                  // 狀態 1
+                  div(class="mt-2")
+                    p(class="text-sm text-gray-400") 提醒您注意，本商品為食品，不提供試吃，一經拆封即無法退換，敬請見諒與配合。商品退貨時必須保持原狀，不可拆封，亦即必須回復至您收到商品的原始狀態。（包含包裝, 附件, 內外包裝, 隨機文件, 贈品等完整性）。
+                  // 狀態 2
+                  div(class="flex justify-between mt-2")
+                    p(class="text-sm text-red-500") Frenature富紐翠  全面 79折
+                    p(class="text-base text-red-500") NT -30
+                  // 狀態 3
+                  div(class="flex items-center mt-2")
+                    img(class="object-cover object-center w-full max-w-[63px] max-h-[63px]" src="./images/cart/item.png")
+                    div(class="flex ml-[9px] space-x-4")
+                      p(class="hidden text-base text-red-500 lg:block") 贈品
+                      p(class="text-base text-gray-400") 預計 2024 -05 -01 出貨
+                div(class="w-2/12 text-right md:w-1/12 lg:mt-[11px]")
+                  button(class="text-base font-normal text-blue-650" type="button") 刪除
+                //- p(class="mt-6 text-sm text-slate-600 lg:hidden") 三天內出貨
+
+    //- include ../components/common/cookieBanner.pug
     include ../components/common/gotop.pug
     include ../components/common/footer.pug
