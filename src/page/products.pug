@@ -3,11 +3,47 @@ include ../components/common/head.pug
 doctype html
 html(lang="zh-Hant-TW")
   +head("products")
+  head
+    link(rel="stylesheet" href="./css/swiper-bundle.min.css")
+    script(src="./js/swiper-bundle.min.js")
   body
     include ../components/common/header.pug
 
-    section(class="") products
-    
-    include ../components/common/cookieBanner.pug
+    main(class="px-4 mx-auto max-w-screen-2xl lg:px-12 lg:pb-[118px] pb-10")
+      // 麵包屑
+      ul(class="flex flex-wrap items-center px-6 space-x-1 lg:px-0")
+        li(class="breadCrumbLink")
+          a(class="text-sm text-slate-600" href="#") 首頁
+        li(class="breadCrumbLink")
+          a(class="text-sm ext-slate-600" href="#") 全部商品
+        li(class="breadCrumbLink")
+          a(class="text-sm ext-slate-600" href="#") 常溫食品
+        li(class="breadCrumbLink")
+          a(class="text-sm ext-slate-600" href="#") 胡同肉鬆
+
+      section(class="lg:mt-[86px] mt-8 lg:flex-row flex-col")
+        div(class="max-w-[535px]")
+          // 商品輪播
+          div(class="swiper swiper-products")
+            div(class="swiper-wrapper")
+              each val in [1, 2, 3, 4, 5, 6]
+                div(class="swiper-slide")
+                  img(class="object-cover object-center w-full" src=`https://fakeimg.pl/535x530/?text=Product${val}` alt="")
+            div(class="swiper-button-prev swiper-button-products-prev bg-white lg:!flex !hidden items-center justify-center !w-12 !h-[60px] !left-0 rotate-180")
+              img(src="./images/arrows/arrow_forward_24px.svg" alt="")
+            div(class="swiper-button-next swiper-button-products-next bg-white lg:!flex !hidden items-center justify-center !w-12 !h-[60px] !right-0")
+              img(src="./images/arrows/arrow_forward_24px.svg" alt="")
+          // 商品輪播小圖
+          div(class="mt-6 lg:mt-8 swiper swiper-products-thumb" thumbsSlider="")
+            div(class="swiper-wrapper")
+              each val in [1, 2, 3, 4, 5, 6]
+                div(class="swiper-slide")
+                  img(class="object-cover object-center w-full" src=`https://fakeimg.pl/535x530/?text=Product${val}` alt="")
+            div(class="swiper-button-prev swiper-button-products-thumb-prev bg-white lg:!flex !hidden items-center justify-center !w-12 !h-[60px] !left-0 rotate-180")
+              img(src="./images/arrows/arrow_forward_24px.svg" alt="")
+            div(class="swiper-button-next swiper-button-products-thumb-next bg-white lg:!flex !hidden items-center justify-center !w-12 !h-[60px] !right-0")
+              img(src="./images/arrows/arrow_forward_24px.svg" alt="")
+
+    //- include ../components/common/cookieBanner.pug
     include ../components/common/gotop.pug
     include ../components/common/footer.pug

@@ -11,6 +11,10 @@
     <script src="js/products.js" defer="defer"> </script>
     <title>products</title>
   </head>
+  <head>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <script src="./js/swiper-bundle.min.js"></script>
+  </head>
   <body>
     <header class="sticky top-0 z-50">
       <!-- topbar-->
@@ -94,16 +98,45 @@
         </div>
       </div>
     </header>
-    <section>products</section>
-    <div class="fixed bottom-0 w-full z-30 bg-black bg-opacity-75 lg:pt-10 pt-4 lg:pb-[17px] pb-4">
-      <div class="mx-auto max-w-screen-2xl lg:px-[88px] px-6">
-        <p class="text-sm text-white">請防範透過電話或郵件之詐騙行為。若有疑問，請撥打反詐騙專線165或與本公司客服聯繫。</p>
-        <p class="text-sm text-white">本網站使用Cookie和類似技術，以確保我們的網站正常運行並為您提供更好的網站體驗。在您的同意下，我們將使用Cookie來分析和改進頁面的使用，並提供個人化服務及進行廣告與流量分析等。點擊「同意」或繼續使用網站，即表示您同意放置所有的 Cookie。您可以點選<a class="text-blue-500 underline" href="#">Cookie政策</a>以詳細了解其內容。</p>
-        <div class="mt-[23px] text-center">
-          <button class="px-10 py-5 text-white rounded bg-origin-600" type="button">我同意</button>
+    <main class="px-4 mx-auto max-w-screen-2xl lg:px-12 lg:pb-[118px] pb-10">
+      <!-- 麵包屑-->
+      <ul class="flex flex-wrap items-center px-6 space-x-1 lg:px-0">
+        <li class="breadCrumbLink"><a class="text-sm text-slate-600" href="#">首頁</a></li>
+        <li class="breadCrumbLink"><a class="text-sm ext-slate-600" href="#">全部商品</a></li>
+        <li class="breadCrumbLink"><a class="text-sm ext-slate-600" href="#">常溫食品</a></li>
+        <li class="breadCrumbLink"><a class="text-sm ext-slate-600" href="#">胡同肉鬆</a></li>
+      </ul>
+      <section class="lg:mt-[86px] mt-8 lg:flex-row flex-col">
+        <div class="max-w-[535px]">
+          <!-- 商品輪播-->
+          <div class="swiper swiper-products">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img class="object-cover object-center w-full" src="https://fakeimg.pl/535x530/?text=Product1" alt=""></div>
+              <div class="swiper-slide"><img class="object-cover object-center w-full" src="https://fakeimg.pl/535x530/?text=Product2" alt=""></div>
+              <div class="swiper-slide"><img class="object-cover object-center w-full" src="https://fakeimg.pl/535x530/?text=Product3" alt=""></div>
+              <div class="swiper-slide"><img class="object-cover object-center w-full" src="https://fakeimg.pl/535x530/?text=Product4" alt=""></div>
+              <div class="swiper-slide"><img class="object-cover object-center w-full" src="https://fakeimg.pl/535x530/?text=Product5" alt=""></div>
+              <div class="swiper-slide"><img class="object-cover object-center w-full" src="https://fakeimg.pl/535x530/?text=Product6" alt=""></div>
+            </div>
+            <div class="swiper-button-prev swiper-button-products-prev bg-white lg:!flex !hidden items-center justify-center !w-12 !h-[60px] !left-0 rotate-180"><img src="./images/arrows/arrow_forward_24px.svg" alt=""></div>
+            <div class="swiper-button-next swiper-button-products-next bg-white lg:!flex !hidden items-center justify-center !w-12 !h-[60px] !right-0"><img src="./images/arrows/arrow_forward_24px.svg" alt=""></div>
+          </div>
+          <!-- 商品輪播小圖-->
+          <div class="mt-6 lg:mt-8 swiper swiper-products-thumb" thumbsSlider="">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img class="object-cover object-center w-full" src="https://fakeimg.pl/535x530/?text=Product1" alt=""></div>
+              <div class="swiper-slide"><img class="object-cover object-center w-full" src="https://fakeimg.pl/535x530/?text=Product2" alt=""></div>
+              <div class="swiper-slide"><img class="object-cover object-center w-full" src="https://fakeimg.pl/535x530/?text=Product3" alt=""></div>
+              <div class="swiper-slide"><img class="object-cover object-center w-full" src="https://fakeimg.pl/535x530/?text=Product4" alt=""></div>
+              <div class="swiper-slide"><img class="object-cover object-center w-full" src="https://fakeimg.pl/535x530/?text=Product5" alt=""></div>
+              <div class="swiper-slide"><img class="object-cover object-center w-full" src="https://fakeimg.pl/535x530/?text=Product6" alt=""></div>
+            </div>
+            <div class="swiper-button-prev swiper-button-products-thumb-prev bg-white lg:!flex !hidden items-center justify-center !w-12 !h-[60px] !left-0 rotate-180"><img src="./images/arrows/arrow_forward_24px.svg" alt=""></div>
+            <div class="swiper-button-next swiper-button-products-thumb-next bg-white lg:!flex !hidden items-center justify-center !w-12 !h-[60px] !right-0"><img src="./images/arrows/arrow_forward_24px.svg" alt=""></div>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
     <button class="fixed z-20 flex flex-col items-center justify-center invisible space-y-2 duration-200 right-6 bottom-8" id="gotop" type="button">
       <div class="flex items-center justify-center w-12 h-12 duration-200 bg-white border border-gray-300 rounded-full drop-shadow-md"><img src="./images/arrows/light_small_up.svg" alt=""></div>
       <p class="text-sm font-semibold text-black duration-200">Top</p>

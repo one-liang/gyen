@@ -1,1 +1,46 @@
 @import url("./tailwind.css");
+
+.breadCrumbLink:not(:first-child):before {
+  content: ">";
+
+  @apply pr-1;
+}
+
+.swiper-products {
+  height: 80%;
+  width: 100%;
+}
+
+.swiper-products .swiper-slide {
+  @apply before:absolute before:inset-0 before:z-1 before:w-full before:h-full before:bg-black before:bg-opacity-[0.02];
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: none !important;
+}
+
+.swiper-products .swiper-button-disabled {
+  @apply !opacity-50;
+}
+
+.swiper-products .swiper-button-products-next,
+.swiper-products .swiper-button-products-prev {
+  @apply top-1/2;
+}
+
+.swiper-products-thumb {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.swiper-products-thumb .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.swiper-products-thumb .swiper-slide-thumb-active {
+  opacity: 1;
+}
