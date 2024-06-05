@@ -9,7 +9,7 @@ html(lang="zh-Hant-TW")
   body
     include ../components/common/header.pug
 
-    main(class="px-4 mx-auto max-w-screen-2xl lg:px-12 lg:pb-[118px] pb-10")
+    main(class="px-0 mx-auto max-w-screen-2xl lg:px-12 lg:pb-[233px]")
       // 麵包屑
       ul(class="flex flex-wrap items-center px-6 space-x-1 lg:px-0")
         li(class="breadCrumbLink")
@@ -21,28 +21,137 @@ html(lang="zh-Hant-TW")
         li(class="breadCrumbLink")
           a(class="text-sm ext-slate-600" href="#") 胡同肉鬆
 
-      section(class="lg:mt-[86px] mt-8 lg:flex-row flex-col")
-        div(class="max-w-[535px]")
+      section(class="lg:mt-[86px] mt-8 flex lg:flex-row flex-col")
+        div(class="lg:max-w-[535px] px-6 lg:px-0")
           // 商品輪播
-          div(class="swiper swiper-products")
-            div(class="swiper-wrapper")
-              each val in [1, 2, 3, 4, 5, 6]
-                div(class="swiper-slide")
-                  img(class="object-cover object-center w-full" src=`https://fakeimg.pl/535x530/?text=Product${val}` alt="")
-            div(class="swiper-button-prev swiper-button-products-prev bg-white lg:!flex !hidden items-center justify-center !w-12 !h-[60px] !left-0 rotate-180")
+          div(class="relative px-1 lg:px-4")
+            div(class="swiper swiper-products")
+              div(class="swiper-wrapper")
+                each val in [1, 2, 3, 4, 5, 6]
+                  div(class="swiper-slide")
+                    img(class="object-cover object-center w-full" src=`https://fakeimg.pl/535x530/?text=Product${val}` alt="")
+            div(class="swiper-button-prev swiper-button-products-prev bg-white lg:!flex !hidden items-center justify-center rounded !w-[44px] !h-[44px] !-left-2 rotate-180")
               img(src="./images/arrows/arrow_forward_24px.svg" alt="")
-            div(class="swiper-button-next swiper-button-products-next bg-white lg:!flex !hidden items-center justify-center !w-12 !h-[60px] !right-0")
+            div(class="swiper-button-next swiper-button-products-next bg-white lg:!flex !hidden items-center justify-center rounded !w-[44px] !h-[44px] !-right-2")
               img(src="./images/arrows/arrow_forward_24px.svg" alt="")
           // 商品輪播小圖
-          div(class="mt-6 lg:mt-8 swiper swiper-products-thumb" thumbsSlider="")
-            div(class="swiper-wrapper")
-              each val in [1, 2, 3, 4, 5, 6]
-                div(class="swiper-slide")
-                  img(class="object-cover object-center w-full" src=`https://fakeimg.pl/535x530/?text=Product${val}` alt="")
-            div(class="swiper-button-prev swiper-button-products-thumb-prev bg-white lg:!flex !hidden items-center justify-center !w-12 !h-[60px] !left-0 rotate-180")
-              img(src="./images/arrows/arrow_forward_24px.svg" alt="")
-            div(class="swiper-button-next swiper-button-products-thumb-next bg-white lg:!flex !hidden items-center justify-center !w-12 !h-[60px] !right-0")
-              img(src="./images/arrows/arrow_forward_24px.svg" alt="")
+          div(class="relative px-1 lg:px-4")
+            div(class="mt-6 lg:mt-8 swiper swiper-products-thumb" thumbsSlider="")
+              div(class="swiper-wrapper")
+                each val in [1, 2, 3, 4, 5, 6]
+                  div(class="swiper-slide")
+                    img(class="object-cover object-center w-full" src=`https://fakeimg.pl/535x530/?text=Product${val}` alt="")
+            div(class="swiper-button-prev swiper-button-products-thumb-prev bg-white lg:!hidden !flex items-center justify-center rounded !w-[20px] !h-[20px] !-left-1 rotate-180")
+              img(class="w-[11px] h-[11px]" src="./images/arrows/arrow_forward_24px.svg" alt="")
+            div(class="swiper-button-next swiper-button-products-thumb-next bg-white lg:!hidden !flex items-center justify-center rounded !w-[20px] !h-[20px] !-right-1")
+              img(class="w-[11px] h-[11px]" src="./images/arrows/arrow_forward_24px.svg" alt="")
+
+          // 分享按鈕
+          div(class="items-center justify-end hidden px-1 divide-x lg:flex lg:mt-24 lg:px-4 divide-slate-300")
+            div(class="flex items-center mr-4 space-x-4")
+              button(class="w-6 h-6" type="button")
+                img(src="./images/social/mail.svg" alt="")
+              button(class="w-6 h-6" type="button")
+                img(src="./images/social/facebook.svg" alt="")
+              button(class="w-6 h-6" type="button")
+                span(class="text-sm text-black whitespace-nowrap") 分享
+            div(class="pl-4")
+              button(class="flex items-center space-x-4 group" type="button")
+                svg(class="w-6 h-6")(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 36 33")
+                  path(class="fill-black lg:group-hover:fill-red-500" d="M33.11,3.35a9.19,9.19,0,0,0-6.67-3A8.48,8.48,0,0,0,20.18,3a12.82,12.82,0,0,0-2.25,3.15A12.82,12.82,0,0,0,15.68,3,8.49,8.49,0,0,0,9.42.33a9,9,0,0,0-6.61,3A11,11,0,0,0,0,10.23C-.3,17,4.94,21.53,12.87,28.4c1.39,1.2,2.83,2.45,4.37,3.81l.69.62.69-.62c1.63-1.44,3.16-2.76,4.63-4,7.86-6.77,13-11.25,12.74-17.95A10.82,10.82,0,0,0,33.11,3.35ZM21.88,26.55c-1.27,1.09-2.57,2.22-3.95,3.44-1.29-1.14-2.51-2.2-3.7-3.22-3.92-3.4-7-6.08-9.14-8.71S2,13,2.12,10.34C2.32,6,5.54,2.51,9.43,2.48h.06c4.08,0,6.16,3.52,7,5.62a1.52,1.52,0,0,0,2.82,0c.87-2.1,2.95-5.63,7-5.63h.05c3.92,0,7.26,3.56,7.46,7.87.12,2.61-.79,5-3,7.63S25.76,23.21,21.88,26.55Z" transform="translate(0 -0.33)")
+                  path(class="fill-[transparent] stroke-black lg:group-hover:fill-red-500 lg:group-hover:stroke-red-500" d="M33.88,10.34c.12,2.61-.79,5-3,7.63s-5.16,5.24-9,8.58c-1.27,1.09-2.57,2.22-3.95,3.44-1.29-1.14-2.51-2.2-3.7-3.22-3.92-3.4-7-6.08-9.14-8.71S2,13,2.12,10.34C2.32,6,5.54,2.51,9.43,2.48h.06c4.08,0,6.16,3.52,7,5.62a1.52,1.52,0,0,0,2.82,0c.87-2.1,2.95-5.63,7-5.63h.05C30.34,2.51,33.68,6,33.88,10.34Z" transform="translate(0 -0.33)")
+                span(class="text-sm text-black whitespace-nowrap") 收藏
+
+        // 右側
+        div(class="mt-10 lg:mt-0 lg:ml-[116px] lg:px-0 px-6")
+          p(class="text-base font-bold lg:text-xl text-slate-600") 【常溫】胡同肉鬆 純豬肉鬆 / 120g/1罐
+          div(class="flex items-center mt-10 space-x-6 lg:mt-14 lg:space-x-8")
+            p(class="space-x-2 text-red-500")
+              span(class="text-sm lg:text-base") 優惠價
+              span(class="lg:text-[40px] text-2xl font-black") $109
+            p(class="text-base text-gray-700 line-through") NT$ 180
+          p(class="text-xl text-slate-600 mt-14") 商品說明
+          p(class="mt-6 lg:text-base lg:leading-[30px] text-slate-600 text-sm leading-[26px]") 胡同燒肉攜手製肉鬆經驗50年的專業老師傅共同研製，嚴選台灣豬肉並遵循古法，由老師傅掌握調味的美味秘訣，共推出「純豬肉鬆」與「海苔肉鬆」兩種口味。肉鬆纖維分明，嚐起來蓬鬆香脆，甜甜又鹹鹹，是大人小孩都無法抗拒的家常美味。胡同燒肉嚴格把關，衛生安全品質有保障。
+            br
+            | 「純豬肉鬆」慢火烘焙保留了豬肉原始的風味，待肉絲逐漸乾燥後，再以大火快炒蓬鬆，用最單純的原料呈現純肉鬆的自然風味，爽口不油膩，健康無負擔！ 
+          div(class="mt-10 lg:mt-14")
+            p(class="text-sm lg:text-base text-slate-600") 出貨天數：五天
+            p(class="text-sm lg:text-base text-slate-600") 配送方式：宅配 / 超商取貨 
+          div(class="mt-16 lg:flex items-center hidden space-x-[35px]")
+            p(class="text-base text-slate-600") 數量
+            div(class="max-w-[148px] flex-1 select-wrapper")
+              select(class="w-full h-12 px-6 py-[9px] text-xl border rounded appearance-none text-neutral-600 border-neutral-200")
+                each item in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+                  option(value=item)= item
+          div(class="items-center hidden mt-16 space-x-5 lg:flex")
+            button(class="w-[295px] h-14 flex items-center justify-center text-origin-600 text-xl border border-origin-600 rounded") 加入購物車
+            button(class="w-[295px] h-14 flex items-center justify-center text-white text-xl bg-origin-600 rounded") 直接購買
+          div(class="mt-14")
+            p(class="text-base lg:text-xl text-slate-600") 優惠活動
+            div(class="flex items-center mt-6 space-x-4")
+              span(class="px-3 py-1 text-sm text-white bg-black rounded-sm") 活動優惠
+              p(class="text-base text-slate-600") 訂單滿件再折1000元
+
+          // 分享按鈕
+          div(class="flex items-center px-1 divide-x lg:hidden mt-[88px] divide-slate-300")
+            div(class="flex items-center mr-4 space-x-4")
+              button(class="w-6 h-6" type="button")
+                img(src="./images/social/mail.svg" alt="")
+              button(class="w-6 h-6" type="button")
+                img(src="./images/social/facebook.svg" alt="")
+              button(class="w-6 h-6" type="button")
+                span(class="text-sm text-black whitespace-nowrap") 分享
+            div(class="pl-4")
+              button(class="flex items-center space-x-4 group" type="button")
+                svg(class="w-6 h-6")(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 36 33")
+                  path(class="fill-black lg:group-hover:fill-red-500" d="M33.11,3.35a9.19,9.19,0,0,0-6.67-3A8.48,8.48,0,0,0,20.18,3a12.82,12.82,0,0,0-2.25,3.15A12.82,12.82,0,0,0,15.68,3,8.49,8.49,0,0,0,9.42.33a9,9,0,0,0-6.61,3A11,11,0,0,0,0,10.23C-.3,17,4.94,21.53,12.87,28.4c1.39,1.2,2.83,2.45,4.37,3.81l.69.62.69-.62c1.63-1.44,3.16-2.76,4.63-4,7.86-6.77,13-11.25,12.74-17.95A10.82,10.82,0,0,0,33.11,3.35ZM21.88,26.55c-1.27,1.09-2.57,2.22-3.95,3.44-1.29-1.14-2.51-2.2-3.7-3.22-3.92-3.4-7-6.08-9.14-8.71S2,13,2.12,10.34C2.32,6,5.54,2.51,9.43,2.48h.06c4.08,0,6.16,3.52,7,5.62a1.52,1.52,0,0,0,2.82,0c.87-2.1,2.95-5.63,7-5.63h.05c3.92,0,7.26,3.56,7.46,7.87.12,2.61-.79,5-3,7.63S25.76,23.21,21.88,26.55Z" transform="translate(0 -0.33)")
+                  path(class="fill-[transparent] stroke-black lg:group-hover:fill-red-500 lg:group-hover:stroke-red-500" d="M33.88,10.34c.12,2.61-.79,5-3,7.63s-5.16,5.24-9,8.58c-1.27,1.09-2.57,2.22-3.95,3.44-1.29-1.14-2.51-2.2-3.7-3.22-3.92-3.4-7-6.08-9.14-8.71S2,13,2.12,10.34C2.32,6,5.54,2.51,9.43,2.48h.06c4.08,0,6.16,3.52,7,5.62a1.52,1.52,0,0,0,2.82,0c.87-2.1,2.95-5.63,7-5.63h.05C30.34,2.51,33.68,6,33.88,10.34Z" transform="translate(0 -0.33)")
+                span(class="text-sm text-black whitespace-nowrap") 收藏
+
+      // 商品分頁
+      section(class="lg:mt-[176px] mt-[113px] lg:pb-0 pb-[197px]")
+        ul(class="tab-links flex lg:justify-start justify-center border-b border-neutral-200 lg:space-x-7 space-x-[18px]")
+          // active 狀態: bg-neutral-100
+          li(class="px-5 py-3 bg-neutral-100")
+            a(class="text-base lg:text-xl" href="#tab1") 商品詳細說明
+          li(class="px-5 py-3")
+            a(class="text-base lg:text-xl" href="#tab2") 商品規格
+
+        // tab 1 content
+        div(class="tab mt-10 lg:mt-[76px] lg:px-0 px-6" id="tab1")
+          p(class="text-sm text-black lg:text-base") 品名：【常溫】胡同肉鬆 純豬肉鬆
+          p(class="text-sm text-black lg:text-base") 成份：豬肉(台灣)、大豆沙拉油、砂糖、醬油
+          p(class="text-sm text-black lg:text-base") 產地：台灣 豬肉原產地：台灣 重量：120g /罐
+          p(class="text-sm text-black lg:text-base") 保存方式：避免陽光直射及高溫潮濕處 ＊內附乾燥機和脫氧劑請勿食用＊
+          p(class="text-sm text-black lg:text-base") 最佳賞味期限：6個月
+          p(class="text-sm text-black lg:text-base") 保存方式：常溫
+          p(class="text-sm text-black lg:text-base") 注意事項：開封後請盡速食用完畢，以免影響品質。商品若於送達時有損壞之狀況，請務必立即拍照存證並與我們聯繫。
+          br
+          p(class="text-sm text-black lg:text-base") ※常溫運送／冷藏運送／冷凍運送，各運送溫層之運費分別計算，將以購物車資訊為準，敬請見諒。 常溫訂單：未滿$2000酌收運費$150／冷藏訂單：未滿$3000酌收運費$200／冷凍訂單：未滿$3000酌收運費$200
+
+        // tab 2 content
+        div(class="tab mt-10 lg:mt-[76px] lg:px-0 px-6 hidden" id="tab2")
+          p(class="text-sm text-black lg:text-base") 商品規格商品規格商品規格
+
+      // 購物車
+      div(class="pt-[21px] pb-[5px] lg:hidden sticky bottom-0 z-30 w-full bg-white")
+        div(class="flex items-center px-4 divide-x divide-slate-300")
+          div(class="pr-4 flex items-center space-x-[35px] flex-1")
+            p(class="text-base text-slate-600") 數量
+            div(class="max-w-[148px] flex-1 select-wrapper")
+              select(class="w-full h-12 px-6 py-[9px] text-xl border rounded appearance-none text-neutral-600 border-neutral-200")
+                each item in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+                  option(value=item)= item
+          div(class="pl-4")
+            button(class="flex items-center space-x-4 group" type="button")
+              svg(class="w-6 h-6")(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 36 33")
+                path(class="fill-black lg:group-hover:fill-red-500" d="M33.11,3.35a9.19,9.19,0,0,0-6.67-3A8.48,8.48,0,0,0,20.18,3a12.82,12.82,0,0,0-2.25,3.15A12.82,12.82,0,0,0,15.68,3,8.49,8.49,0,0,0,9.42.33a9,9,0,0,0-6.61,3A11,11,0,0,0,0,10.23C-.3,17,4.94,21.53,12.87,28.4c1.39,1.2,2.83,2.45,4.37,3.81l.69.62.69-.62c1.63-1.44,3.16-2.76,4.63-4,7.86-6.77,13-11.25,12.74-17.95A10.82,10.82,0,0,0,33.11,3.35ZM21.88,26.55c-1.27,1.09-2.57,2.22-3.95,3.44-1.29-1.14-2.51-2.2-3.7-3.22-3.92-3.4-7-6.08-9.14-8.71S2,13,2.12,10.34C2.32,6,5.54,2.51,9.43,2.48h.06c4.08,0,6.16,3.52,7,5.62a1.52,1.52,0,0,0,2.82,0c.87-2.1,2.95-5.63,7-5.63h.05c3.92,0,7.26,3.56,7.46,7.87.12,2.61-.79,5-3,7.63S25.76,23.21,21.88,26.55Z" transform="translate(0 -0.33)")
+                path(class="fill-[transparent] stroke-black lg:group-hover:fill-red-500 lg:group-hover:stroke-red-500" d="M33.88,10.34c.12,2.61-.79,5-3,7.63s-5.16,5.24-9,8.58c-1.27,1.09-2.57,2.22-3.95,3.44-1.29-1.14-2.51-2.2-3.7-3.22-3.92-3.4-7-6.08-9.14-8.71S2,13,2.12,10.34C2.32,6,5.54,2.51,9.43,2.48h.06c4.08,0,6.16,3.52,7,5.62a1.52,1.52,0,0,0,2.82,0c.87-2.1,2.95-5.63,7-5.63h.05C30.34,2.51,33.68,6,33.88,10.34Z" transform="translate(0 -0.33)")
+              span(class="text-sm text-black whitespace-nowrap") 收藏
+
+        div(class="space-x-2.5 flex px-4 mt-[23px]")
+          button(class="w-full text-base border rounded h-14 border-origin-600 text-origin-600" type="button") 加入購物車
+          button(class="w-full text-base text-white rounded h-14 bg-origin-600" type="button") 直接購買
 
     //- include ../components/common/cookieBanner.pug
     include ../components/common/gotop.pug

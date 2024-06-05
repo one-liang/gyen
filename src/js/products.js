@@ -24,4 +24,22 @@ document.addEventListener("DOMContentLoaded", function () {
       prevEl: ".swiper-button-products-prev",
     },
   });
+
+  // 商品分頁
+  const tabs = document.querySelectorAll(".tab-links a");
+  const contents = document.querySelectorAll(".tab");
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      let activeTab = this.getAttribute("href");
+
+      tabs.forEach((tab) => tab.parentNode.classList.remove("bg-neutral-100"));
+      contents.forEach((content) => content.classList.add("hidden"));
+
+      this.parentNode.classList.add("bg-neutral-100");
+      document.querySelector(activeTab).classList.remove("hidden");
+    });
+  });
 });
