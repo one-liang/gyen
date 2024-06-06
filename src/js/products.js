@@ -8,10 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
     slidesPerView: 4,
     freeMode: true,
     watchSlidesProgress: true,
-    navigation: {
-      nextEl: ".swiper-button-products-thumb-next",
-      prevEl: ".swiper-button-products-thumb-prev",
-    },
   });
 
   // 商品輪播

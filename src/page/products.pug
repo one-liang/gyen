@@ -30,9 +30,9 @@ html(lang="zh-Hant-TW")
                 each val in [1, 2, 3, 4, 5, 6]
                   div(class="swiper-slide")
                     img(class="object-cover object-center w-full" src=`https://fakeimg.pl/535x530/?text=Product${val}` alt="")
-            div(class="swiper-button-prev swiper-button-products-prev bg-white lg:!flex !hidden items-center justify-center rounded !w-[44px] !h-[44px] !-left-2 rotate-180")
+            div(class="swiper-button-prev swiper-button-products-prev bg-white !flex items-center justify-center rounded lg:!w-[44px] lg:!h-[44px] !w-[20px] !h-[20px] !-left-2 rotate-180")
               img(src="./images/arrows/arrow_forward_24px.svg" alt="")
-            div(class="swiper-button-next swiper-button-products-next bg-white lg:!flex !hidden items-center justify-center rounded !w-[44px] !h-[44px] !-right-2")
+            div(class="swiper-button-next swiper-button-products-next bg-white !flex items-center justify-center rounded lg:!w-[44px] lg:!h-[44px] !w-[20px] !h-[20px] !-right-2")
               img(src="./images/arrows/arrow_forward_24px.svg" alt="")
           // 商品輪播小圖
           div(class="relative px-1 lg:px-4")
@@ -41,10 +41,6 @@ html(lang="zh-Hant-TW")
                 each val in [1, 2, 3, 4, 5, 6]
                   div(class="swiper-slide")
                     img(class="object-cover object-center w-full" src=`https://fakeimg.pl/535x530/?text=Product${val}` alt="")
-            div(class="swiper-button-prev swiper-button-products-thumb-prev bg-white lg:!hidden !flex items-center justify-center rounded !w-[20px] !h-[20px] !-left-1 rotate-180")
-              img(class="w-[11px] h-[11px]" src="./images/arrows/arrow_forward_24px.svg" alt="")
-            div(class="swiper-button-next swiper-button-products-thumb-next bg-white lg:!hidden !flex items-center justify-center rounded !w-[20px] !h-[20px] !-right-1")
-              img(class="w-[11px] h-[11px]" src="./images/arrows/arrow_forward_24px.svg" alt="")
 
           // 分享按鈕
           div(class="items-center justify-end hidden px-1 divide-x lg:flex lg:mt-24 lg:px-4 divide-slate-300")
@@ -73,7 +69,7 @@ html(lang="zh-Hant-TW")
           p(class="text-xl text-slate-600 mt-14") 商品說明
           p(class="mt-6 lg:text-base lg:leading-[30px] text-slate-600 text-sm leading-[26px]") 胡同燒肉攜手製肉鬆經驗50年的專業老師傅共同研製，嚴選台灣豬肉並遵循古法，由老師傅掌握調味的美味秘訣，共推出「純豬肉鬆」與「海苔肉鬆」兩種口味。肉鬆纖維分明，嚐起來蓬鬆香脆，甜甜又鹹鹹，是大人小孩都無法抗拒的家常美味。胡同燒肉嚴格把關，衛生安全品質有保障。
             br
-            | 「純豬肉鬆」慢火烘焙保留了豬肉原始的風味，待肉絲逐漸乾燥後，再以大火快炒蓬鬆，用最單純的原料呈現純肉鬆的自然風味，爽口不油膩，健康無負擔！ 
+            | 「純豬肉鬆」慢火烘焙保留了豬肉原始的風味，待肉絲逐漸乾燥後，再以大火快炒蓬鬆，用最單純的原料呈現純肉鬆的自然風味，爽口不油膩，健康無負擔！
           div(class="mt-10 lg:mt-14")
             p(class="text-sm lg:text-base text-slate-600") 出貨天數：五天
             p(class="text-sm lg:text-base text-slate-600") 配送方式：宅配 / 超商取貨 
@@ -153,6 +149,6 @@ html(lang="zh-Hant-TW")
           button(class="w-full text-base border rounded h-14 border-origin-600 text-origin-600" type="button") 加入購物車
           button(class="w-full text-base text-white rounded h-14 bg-origin-600" type="button") 直接購買
 
-    //- include ../components/common/cookieBanner.pug
+    include ../components/common/cookieBanner.pug
     include ../components/common/gotop.pug
     include ../components/common/footer.pug
