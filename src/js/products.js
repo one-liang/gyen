@@ -38,4 +38,22 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelector(activeTab).classList.remove("hidden");
     });
   });
+
+  // 商品組合
+  const productMix = document.querySelector("#productMix");
+  const closeProductMix = document.querySelector("#closeProductMix");
+  const body = document.querySelector("body");
+
+  for (let val = 1; val <= 6; val++) {
+    const productSelect = document.querySelector(`#productSelect${val}`);
+    productSelect.addEventListener("click", function () {
+      productMix.classList.remove("hidden");
+      body.classList.add("overflow-y-hidden");
+    });
+  }
+
+  closeProductMix.addEventListener("click", function () {
+    productMix.classList.add("hidden");
+    body.classList.remove("overflow-y-hidden");
+  });
 });

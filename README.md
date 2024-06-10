@@ -16,7 +16,7 @@
 - 🚧[主題商品列表頁](https://one-liang.github.io/gyen/dist/theme)
 - [網紅/聯名商品列表頁](https://one-liang.github.io/gyen/dist/co-branded)
 - [活動商品列表頁](https://one-liang.github.io/gyen/dist/activity)
-- 🚧[商品 item 頁](https://one-liang.github.io/gyen/dist/products)
+- [商品 item 頁](https://one-liang.github.io/gyen/dist/products)
 
 ### 購物流程
 

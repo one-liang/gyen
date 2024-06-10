@@ -107,7 +107,7 @@
         <li class="breadCrumbLink"><a class="text-sm ext-slate-600" href="#">胡同肉鬆</a></li>
       </ul>
       <section class="lg:mt-[86px] mt-8 flex lg:flex-row flex-col">
-        <div class="lg:max-w-[535px] px-6 lg:px-0">
+        <div class="xl:max-w-[535px] lg:max-w-[300px] px-6 lg:px-0">
           <!-- 商品輪播-->
           <div class="relative px-1 lg:px-4">
             <div class="swiper swiper-products">
@@ -154,17 +154,70 @@
           </div>
         </div>
         <!-- 右側-->
-        <div class="mt-10 lg:mt-0 lg:ml-[116px] lg:px-0 px-6">
+        <div class="flex flex-col mt-10 lg:mt-0 xl:ml-[116px] lg:ml-10 lg:px-0 px-6">
           <p class="text-base font-bold lg:text-xl text-slate-600">【常溫】胡同肉鬆 純豬肉鬆 / 120g/1罐</p>
-          <div class="flex items-center mt-10 space-x-6 lg:mt-14 lg:space-x-8">
-            <p class="space-x-2 text-red-500"><span class="text-sm lg:text-base">優惠價</span><span class="lg:text-[40px] text-2xl font-black">$109</span></p>
-            <p class="text-base text-gray-700 line-through">NT$ 180</p>
+          <div class="mt-10 lg:mt-14">
+            <p class="space-x-2 text-red-500"><span class="text-sm lg:text-base">優惠價</span><span class="lg:text-[40px] text-2xl font-black">$109 - 249</span></p>
           </div>
           <p class="text-xl text-slate-600 mt-14">商品說明</p>
           <p class="mt-6 lg:text-base lg:leading-[30px] text-slate-600 text-sm leading-[26px]">胡同燒肉攜手製肉鬆經驗50年的專業老師傅共同研製，嚴選台灣豬肉並遵循古法，由老師傅掌握調味的美味秘訣，共推出「純豬肉鬆」與「海苔肉鬆」兩種口味。肉鬆纖維分明，嚐起來蓬鬆香脆，甜甜又鹹鹹，是大人小孩都無法抗拒的家常美味。胡同燒肉嚴格把關，衛生安全品質有保障。<br>「純豬肉鬆」慢火烘焙保留了豬肉原始的風味，待肉絲逐漸乾燥後，再以大火快炒蓬鬆，用最單純的原料呈現純肉鬆的自然風味，爽口不油膩，健康無負擔！</p>
           <div class="mt-10 lg:mt-14">
             <p class="text-sm lg:text-base text-slate-600">出貨天數：五天</p>
-            <p class="text-sm lg:text-base text-slate-600">配送方式：宅配 / 超商取貨 </p>
+            <p class="text-sm lg:text-base text-slate-600">配送方式：宅配 / 超商取貨</p>
+          </div>
+          <!-- 組合選擇 -->
+          <div class="order-10 mt-14 lg:order-none">
+            <p class="text-xl text-slate-600">組合選擇</p>
+            <div class="flex flex-wrap gap-4 mt-6">
+              <!-- active 狀態: border-origin-600 text-origin-600-->
+              <button class="flex items-center px-4 py-2 space-x-2 duration-150 border rounded text-slate-60 border-slate-200 hover:border-origin-600 hover:text-origin-600" id="productSelect1" type="button"><img class="object-cover object-center w-[42px] h-[42px]" src="https://fakeimg.pl/535x530/?text=Product1" alt="">
+                <p class="text-base text-left">拌飯神醬 (350g/瓶)</p>
+              </button>
+              <!-- disabled 狀態: disabled:opacity-50 disabled:bg-gray-100 disabled:cursor-not-allowed-->
+              <!-- button(class="flex items-center px-4 py-2 space-x-2 duration-150 border rounded text-slate-60 border-slate-200 disabled:opacity-50 disabled:bg-gray-100 disabled:cursor-not-allowed" type="button" disabled)-->
+              <!--   img(class="object-cover object-center w-[42px] h-[42px]" src=`https://fakeimg.pl/535x530/?text=Product${val}` alt="")-->
+              <!--   p(class="text-base text-left text-opacity-30") 拌飯神醬 (350g/瓶)-->
+              <!-- active 狀態: border-origin-600 text-origin-600-->
+              <button class="flex items-center px-4 py-2 space-x-2 duration-150 border rounded text-slate-60 border-slate-200 hover:border-origin-600 hover:text-origin-600" id="productSelect2" type="button"><img class="object-cover object-center w-[42px] h-[42px]" src="https://fakeimg.pl/535x530/?text=Product2" alt="">
+                <p class="text-base text-left">拌飯神醬 (350g/瓶)</p>
+              </button>
+              <!-- disabled 狀態: disabled:opacity-50 disabled:bg-gray-100 disabled:cursor-not-allowed-->
+              <!-- button(class="flex items-center px-4 py-2 space-x-2 duration-150 border rounded text-slate-60 border-slate-200 disabled:opacity-50 disabled:bg-gray-100 disabled:cursor-not-allowed" type="button" disabled)-->
+              <!--   img(class="object-cover object-center w-[42px] h-[42px]" src=`https://fakeimg.pl/535x530/?text=Product${val}` alt="")-->
+              <!--   p(class="text-base text-left text-opacity-30") 拌飯神醬 (350g/瓶)-->
+              <!-- active 狀態: border-origin-600 text-origin-600-->
+              <button class="flex items-center px-4 py-2 space-x-2 duration-150 border rounded text-slate-60 border-slate-200 hover:border-origin-600 hover:text-origin-600" id="productSelect3" type="button"><img class="object-cover object-center w-[42px] h-[42px]" src="https://fakeimg.pl/535x530/?text=Product3" alt="">
+                <p class="text-base text-left">拌飯神醬 (350g/瓶)</p>
+              </button>
+              <!-- disabled 狀態: disabled:opacity-50 disabled:bg-gray-100 disabled:cursor-not-allowed-->
+              <!-- button(class="flex items-center px-4 py-2 space-x-2 duration-150 border rounded text-slate-60 border-slate-200 disabled:opacity-50 disabled:bg-gray-100 disabled:cursor-not-allowed" type="button" disabled)-->
+              <!--   img(class="object-cover object-center w-[42px] h-[42px]" src=`https://fakeimg.pl/535x530/?text=Product${val}` alt="")-->
+              <!--   p(class="text-base text-left text-opacity-30") 拌飯神醬 (350g/瓶)-->
+              <!-- active 狀態: border-origin-600 text-origin-600-->
+              <button class="flex items-center px-4 py-2 space-x-2 duration-150 border rounded text-slate-60 border-slate-200 hover:border-origin-600 hover:text-origin-600" id="productSelect4" type="button"><img class="object-cover object-center w-[42px] h-[42px]" src="https://fakeimg.pl/535x530/?text=Product4" alt="">
+                <p class="text-base text-left">拌飯神醬 (350g/瓶)</p>
+              </button>
+              <!-- disabled 狀態: disabled:opacity-50 disabled:bg-gray-100 disabled:cursor-not-allowed-->
+              <!-- button(class="flex items-center px-4 py-2 space-x-2 duration-150 border rounded text-slate-60 border-slate-200 disabled:opacity-50 disabled:bg-gray-100 disabled:cursor-not-allowed" type="button" disabled)-->
+              <!--   img(class="object-cover object-center w-[42px] h-[42px]" src=`https://fakeimg.pl/535x530/?text=Product${val}` alt="")-->
+              <!--   p(class="text-base text-left text-opacity-30") 拌飯神醬 (350g/瓶)-->
+              <!-- active 狀態: border-origin-600 text-origin-600-->
+              <button class="flex items-center px-4 py-2 space-x-2 duration-150 border rounded text-slate-60 border-slate-200 hover:border-origin-600 hover:text-origin-600" id="productSelect5" type="button"><img class="object-cover object-center w-[42px] h-[42px]" src="https://fakeimg.pl/535x530/?text=Product5" alt="">
+                <p class="text-base text-left">拌飯神醬 (350g/瓶)</p>
+              </button>
+              <!-- disabled 狀態: disabled:opacity-50 disabled:bg-gray-100 disabled:cursor-not-allowed-->
+              <!-- button(class="flex items-center px-4 py-2 space-x-2 duration-150 border rounded text-slate-60 border-slate-200 disabled:opacity-50 disabled:bg-gray-100 disabled:cursor-not-allowed" type="button" disabled)-->
+              <!--   img(class="object-cover object-center w-[42px] h-[42px]" src=`https://fakeimg.pl/535x530/?text=Product${val}` alt="")-->
+              <!--   p(class="text-base text-left text-opacity-30") 拌飯神醬 (350g/瓶)-->
+              <!-- active 狀態: border-origin-600 text-origin-600-->
+              <button class="flex items-center px-4 py-2 space-x-2 duration-150 border rounded text-slate-60 border-slate-200 hover:border-origin-600 hover:text-origin-600" id="productSelect6" type="button"><img class="object-cover object-center w-[42px] h-[42px]" src="https://fakeimg.pl/535x530/?text=Product6" alt="">
+                <p class="text-base text-left">拌飯神醬 (350g/瓶)</p>
+              </button>
+              <!-- disabled 狀態: disabled:opacity-50 disabled:bg-gray-100 disabled:cursor-not-allowed-->
+              <!-- button(class="flex items-center px-4 py-2 space-x-2 duration-150 border rounded text-slate-60 border-slate-200 disabled:opacity-50 disabled:bg-gray-100 disabled:cursor-not-allowed" type="button" disabled)-->
+              <!--   img(class="object-cover object-center w-[42px] h-[42px]" src=`https://fakeimg.pl/535x530/?text=Product${val}` alt="")-->
+              <!--   p(class="text-base text-left text-opacity-30") 拌飯神醬 (350g/瓶)-->
+            </div>
           </div>
           <div class="mt-16 lg:flex items-center hidden space-x-[35px]">
             <p class="text-base text-slate-600">數量</p>
@@ -211,8 +264,154 @@
           </div>
         </div>
       </section>
+      <!-- 商品組合-->
+      <section class="fixed top-0 left-0 z-50 hidden w-full bg-white lg:mt-20 lg:static" id="productMix">
+        <div class="lg:bg-neutral-50 lg:px-[44px] px-6 lg:py-4 py-6 lg:text-left text-right">
+          <p class="hidden text-xl font-bold text-black lg:block">商品組合</p>
+          <button class="inline-block lg:hidden" id="closeProductMix" type="button"><img class="w-6 h-6" src="./images/icon/close_black.svg" alt=""></button>
+        </div>
+        <div class="lg:mt-10 pb-[5px] lg:pb-0 grid lg:grid-cols-2 grid-cols-1 lg:gap-x-[133px] lg:gap-y-14 gap-y-6 lg:px-0 px-6 overflow-y-auto lg:h-auto h-[calc(100dvh-78px)]">
+          <div class="flex items-center lg:space-x-10 space-x-[10px]">
+            <input class="w-[19px] h-[19px]" type="radio" name="product" id="product1">
+            <div class="flex items-center w-full space-x-5"><img class="object-cover object-center w-[120px]" src="https://fakeimg.pl/120x120/?text=Product1" alt="">
+              <div class="flex flex-col w-full space-y-2 lg:space-y-3">
+                <label class="text-sm text-black lg:text-base" for="product1">『胡同嚴選』海苔肉鬆</label>
+                <p class="text-base font-bold text-red-500 lg:text-xl">$109</p>
+                <div class="flex flex-col items-end space-y-2 lg:items-start lg:flex-row lg:space-x-4 lg:space-y-0">
+                  <div class="max-w-[133px] lg:max-w-[190px] flex-1 w-full select-wrapper">
+                    <select class="w-full h-12 px-6 py-[9px] lg:text-xl text-sm border rounded appearance-none text-neutral-600 border-neutral-200">
+                      <option value="請選擇規格">請選擇規格</option>
+                      <option value="規格一">規格一</option>
+                      <option value="規格二">規格二</option>
+                      <option value="規格三">規格三</option>
+                    </select>
+                  </div>
+                  <div class="max-w-[80px] lg:max-w-[148px] flex-1 w-full select-wrapper">
+                    <select class="w-full h-12 px-6 py-[9px] lg:text-xl text-sm border rounded appearance-none text-neutral-600 border-neutral-200">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center lg:space-x-10 space-x-[10px]">
+            <input class="w-[19px] h-[19px]" type="radio" name="product" id="product2">
+            <div class="flex items-center w-full space-x-5"><img class="object-cover object-center w-[120px]" src="https://fakeimg.pl/120x120/?text=Product2" alt="">
+              <div class="flex flex-col w-full space-y-2 lg:space-y-3">
+                <label class="text-sm text-black lg:text-base" for="product2">『胡同嚴選』海苔肉鬆</label>
+                <p class="text-base font-bold text-red-500 lg:text-xl">$109</p>
+                <div class="flex flex-col items-end space-y-2 lg:items-start lg:flex-row lg:space-x-4 lg:space-y-0">
+                  <div class="max-w-[133px] lg:max-w-[190px] flex-1 w-full select-wrapper">
+                    <select class="w-full h-12 px-6 py-[9px] lg:text-xl text-sm border rounded appearance-none text-neutral-600 border-neutral-200">
+                      <option value="請選擇規格">請選擇規格</option>
+                      <option value="規格一">規格一</option>
+                      <option value="規格二">規格二</option>
+                      <option value="規格三">規格三</option>
+                    </select>
+                  </div>
+                  <div class="max-w-[80px] lg:max-w-[148px] flex-1 w-full select-wrapper">
+                    <select class="w-full h-12 px-6 py-[9px] lg:text-xl text-sm border rounded appearance-none text-neutral-600 border-neutral-200">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center lg:space-x-10 space-x-[10px]">
+            <input class="w-[19px] h-[19px]" type="radio" name="product" id="product3">
+            <div class="flex items-center w-full space-x-5"><img class="object-cover object-center w-[120px]" src="https://fakeimg.pl/120x120/?text=Product3" alt="">
+              <div class="flex flex-col w-full space-y-2 lg:space-y-3">
+                <label class="text-sm text-black lg:text-base" for="product3">『胡同嚴選』海苔肉鬆</label>
+                <p class="text-base font-bold text-red-500 lg:text-xl">$109</p>
+                <div class="flex flex-col items-end space-y-2 lg:items-start lg:flex-row lg:space-x-4 lg:space-y-0">
+                  <div class="max-w-[133px] lg:max-w-[190px] flex-1 w-full select-wrapper">
+                    <select class="w-full h-12 px-6 py-[9px] lg:text-xl text-sm border rounded appearance-none text-neutral-600 border-neutral-200">
+                      <option value="請選擇規格">請選擇規格</option>
+                      <option value="規格一">規格一</option>
+                      <option value="規格二">規格二</option>
+                      <option value="規格三">規格三</option>
+                    </select>
+                  </div>
+                  <div class="max-w-[80px] lg:max-w-[148px] flex-1 w-full select-wrapper">
+                    <select class="w-full h-12 px-6 py-[9px] lg:text-xl text-sm border rounded appearance-none text-neutral-600 border-neutral-200">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center lg:space-x-10 space-x-[10px]">
+            <input class="w-[19px] h-[19px]" type="radio" name="product" id="product4">
+            <div class="flex items-center w-full space-x-5"><img class="object-cover object-center w-[120px]" src="https://fakeimg.pl/120x120/?text=Product4" alt="">
+              <div class="flex flex-col w-full space-y-2 lg:space-y-3">
+                <label class="text-sm text-black lg:text-base" for="product4">『胡同嚴選』海苔肉鬆</label>
+                <p class="text-base font-bold text-red-500 lg:text-xl">$109</p>
+                <div class="flex flex-col items-end space-y-2 lg:items-start lg:flex-row lg:space-x-4 lg:space-y-0">
+                  <div class="max-w-[133px] lg:max-w-[190px] flex-1 w-full select-wrapper">
+                    <select class="w-full h-12 px-6 py-[9px] lg:text-xl text-sm border rounded appearance-none text-neutral-600 border-neutral-200">
+                      <option value="請選擇規格">請選擇規格</option>
+                      <option value="規格一">規格一</option>
+                      <option value="規格二">規格二</option>
+                      <option value="規格三">規格三</option>
+                    </select>
+                  </div>
+                  <div class="max-w-[80px] lg:max-w-[148px] flex-1 w-full select-wrapper">
+                    <select class="w-full h-12 px-6 py-[9px] lg:text-xl text-sm border rounded appearance-none text-neutral-600 border-neutral-200">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block mt-10 lg:hidden">
+            <!-- normal 狀態 border-origin-600 text-origin-600、disabled 狀態: disabled:opacity-50 disabled:bg-gray-100 disabled:cursor-not-allowed-->
+            <button class="w-full text-base border rounded h-14 border-origin-600 text-origin-600" type="button">加入購物車</button>
+            <!-- button(class="w-full text-base border rounded h-14 text-slate-400 disabled:opacity-50 disabled:bg-neutral-50 disabled:cursor-not-allowed" type="button" disabled) 加入購物車-->
+          </div>
+        </div>
+      </section>
       <!-- 商品分頁-->
-      <section class="lg:mt-[176px] mt-[113px] lg:pb-0 pb-[197px]">
+      <section class="lg:mt-[156px] mt-[113px] lg:pb-0 pb-[197px]">
         <ul class="tab-links flex lg:justify-start justify-center border-b border-neutral-200 lg:space-x-7 space-x-[18px]">
           <!-- active 狀態: bg-neutral-100-->
           <li class="px-5 py-3 bg-neutral-100"><a class="text-base lg:text-xl" href="#tab1">商品詳細說明</a></li>
