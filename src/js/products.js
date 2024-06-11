@@ -48,12 +48,18 @@ document.addEventListener("DOMContentLoaded", function () {
     const productSelect = document.querySelector(`#productSelect${val}`);
     productSelect.addEventListener("click", function () {
       productMix.classList.remove("hidden");
-      body.classList.add("overflow-y-hidden");
+
+      if (window.innerWidth < 1024) {
+        body.classList.add("overflow-y-hidden");
+      }
     });
   }
 
   closeProductMix.addEventListener("click", function () {
     productMix.classList.add("hidden");
-    body.classList.remove("overflow-y-hidden");
+
+    if (window.innerWidth < 1024) {
+      body.classList.remove("overflow-y-hidden");
+    }
   });
 });
