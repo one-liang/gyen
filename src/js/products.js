@@ -62,4 +62,30 @@ document.addEventListener("DOMContentLoaded", function () {
       body.classList.remove("overflow-y-hidden");
     }
   });
+
+  // 商品加至購物車
+  const addToCartPC = document.querySelector("#addToCartPC");
+  const addToCartMB = document.querySelector("#addToCartMB");
+  const productCart = document.querySelector("#productCart");
+  const closeCartMenuBtn = document.querySelector("#closeCartMenuBtn");
+
+  closeCartMenuBtn.addEventListener("click", function () {
+    productCart.classList.add("opacity-0", "pointer-events-none");
+  });
+
+  addToCartPC.addEventListener("click", function () {
+    productCart.classList.remove("opacity-0", "pointer-events-none");
+
+    setTimeout(() => {
+      productCart.classList.add("opacity-0", "pointer-events-none");
+    }, 2000);
+  });
+
+  addToCartMB.addEventListener("click", function () {
+    productCart.classList.remove("opacity-0", "pointer-events-none");
+
+    setTimeout(() => {
+      productCart.classList.add("opacity-0", "pointer-events-none");
+    }, 2000);
+  });
 });
