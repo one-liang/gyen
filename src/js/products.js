@@ -44,8 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeProductMix = document.querySelector("#closeProductMix");
   const body = document.querySelector("body");
 
-  for (let val = 1; val <= 6; val++) {
-    const productSelect = document.querySelector(`#productSelect${val}`);
+  const productSelects = document.querySelectorAll("[id^='productSelect']");
+  productSelects.forEach((productSelect) => {
     productSelect.addEventListener("click", function () {
       productMix.classList.remove("hidden");
 
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
         body.classList.add("overflow-y-hidden");
       }
     });
-  }
+  });
 
   closeProductMix.addEventListener("click", function () {
     productMix.classList.add("hidden");
