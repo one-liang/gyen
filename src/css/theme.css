@@ -9,6 +9,10 @@
   content: none !important;
 }
 
+.swiper-alsoLike .swiper-wrapper {
+  @apply lg:flex grid grid-cols-2 lg:gap-0 gap-4;
+}
+
 .swiper-alsoLike .swiper-button-disabled {
   @apply !opacity-0;
 }
