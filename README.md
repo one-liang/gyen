@@ -30,3 +30,8 @@
 - [會員登入-輸入驗證碼](https://one-liang.github.io/gyen/dist/login-verification-code)
 - [會員登入-密碼設定](https://one-liang.github.io/gyen/dist/login-password-setting)
 - [會員登入-輸入會員資料](https://one-liang.github.io/gyen/dist/login-member-information)
+
+### 專欄
+
+- 🚧[專欄列表頁](https://one-liang.github.io/gyen/dist/columnList)
+- 🚧[內容單頁](https://one-liang.github.io/gyen/dist/contentSingle)
