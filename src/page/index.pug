@@ -13,7 +13,7 @@ html(lang="zh-Hant-TW")
       div(class="swiper swiper-main lg:!pb-0 !pb-[57px]")
         div(class="swiper-wrapper")
           each val in [1, 2, 3, 4, 5, 6]
-            a(class="relative swiper-slide" href="/")
+            a(class="relative swiper-slide" href="#")
               picture
                 img(class="object-cover object-center w-full lg:h-[480px] h-[440px]" src=`./images/index/banner${val}.png` alt="")
         div(class="swiper-pagination swiper-main-pagination")
@@ -64,7 +64,7 @@ html(lang="zh-Hant-TW")
         div(class="lg:!pl-10 !pl-6 !pb-[38px] !mt-[38px] swiper swiper-recommend")
           div(class="swiper-wrapper")
             each val in [1, 2, 3, 4, 5, 6]
-              a(class="lg:max-w-[320px] max-w-[270px] swiper-slide" href="/")
+              a(class="lg:max-w-[320px] max-w-[270px] swiper-slide" href="#")
                 img(class="lg:max-w-[320px] max-w-[270px] lg:max-h-[380px] max-h-[320px] w-full h-full object-cover" src=`./images/index/recommend${val}.png`, alt="")
                 p(class="mt-8 text-base text-black") 全站熱銷商品第二件五折  >
           div(class="2xl:max-w-[1300px] xl:max-w-[1000px] lg:max-w-[900px] md:max-w-[700px] max-w-[320px] !left-[51%] !bottom-0 !-translate-x-1/2 swiper-scrollbar swiper-recommend-scrollbar")
@@ -78,7 +78,7 @@ html(lang="zh-Hant-TW")
       div(class="swiper swiper-secondary")
         div(class="swiper-wrapper")
           each val in [1, 2, 3, 4, 5, 6]
-            a(class="relative swiper-slide" href="/")
+            a(class="relative swiper-slide" href="#")
               picture
                 img(class="object-cover object-center w-full lg:h-[480px] h-[440px]" src=`./images/index/secondary${val}.png` alt="")
         div(class="lg:!block hidden swiper-pagination swiper-secondary-pagination")
@@ -88,7 +88,7 @@ html(lang="zh-Hant-TW")
       div(class="flex gap-x-[84px] lg:flex-row flex-col-reverse lg:gay-y-0 gap-y-10")
         div(class="flex flex-1 overflow-x-auto pl-7 lg:overflow-x-visible lg:grid lg:grid-cols-2 lg:gap-x-8 gap-x-5 lg:gap-y-8 lg:pl-0")
           // 樣式 1
-          a(class="flex flex-col lg:flex-1 flex-[0_0_auto] relative" href="/") 
+          a(class="flex flex-col lg:flex-1 flex-[0_0_auto] relative" href="#") 
             div(class="relative")
               img(class="object-cover object-center w-full h-full lg:max-h-[380px] max-h-[273px]" src=`./images/index/limited1.png` alt="")
               div(class="absolute top-0 flex items-center w-full h-10 bg-red-700")
@@ -108,7 +108,7 @@ html(lang="zh-Hant-TW")
               p(class="font-semibold text-gray-700 line-through")
                 span(class="text-sm lg:text-base") NT$ 129
           // 樣式 2
-          a(class="flex flex-col lg:flex-1 flex-[0_0_auto] relative" href="/") 
+          a(class="flex flex-col lg:flex-1 flex-[0_0_auto] relative" href="#") 
             div(class="relative")
               img(class="object-cover object-center w-full h-full lg:max-h-[380px] max-h-[273px]" src=`./images/index/limited2.png` alt="")
               div(class="absolute bottom-0 flex justify-center w-full h-8 px-1 bg-origin-500")
@@ -126,7 +126,7 @@ html(lang="zh-Hant-TW")
               p(class="font-semibold text-gray-700 line-through")
                 span(class="text-sm lg:text-base") NT$ 129
           // 樣式 3
-          a(class="flex flex-col lg:flex-1 flex-[0_0_auto] relative" href="/") 
+          a(class="flex flex-col lg:flex-1 flex-[0_0_auto] relative" href="#") 
             div(class="relative")
               img(class="object-cover object-center w-full h-full lg:max-h-[380px] max-h-[273px]" src=`./images/index/limited3.png` alt="")
               div(class="absolute top-0 w-full")
@@ -149,7 +149,7 @@ html(lang="zh-Hant-TW")
               p(class="font-semibold text-gray-700 line-through")
                 span(class="text-sm lg:text-base") NT$ 129
           // 樣式 4
-          a(class="flex flex-col lg:flex-1 flex-[0_0_auto] relative" href="/") 
+          a(class="flex flex-col lg:flex-1 flex-[0_0_auto] relative" href="#") 
             div(class="relative")
               img(class="object-cover object-center w-full h-full lg:max-h-[380px] max-h-[273px]" src=`./images/index/limited4.png` alt="")
               div(class="absolute left-3 bottom-[44px] bg-gray-800 w-14 h-14 rounded-sm flex items-center justify-center")
@@ -177,7 +177,7 @@ html(lang="zh-Hant-TW")
                 | 光滑柔軟的人造纖維絨毛，帶給
                 br
                 | 你整日的舒適
-              a(class="xl:w-[160px] xl:h-[60px] lg:text-xl text-sm lg:w-[130px] lg:h-[50px] w-[104px] h-[44px] text-black flex items-center justify-center bg-white lg:mt-12 mt-[27px] rounded" href="/") 立即選購
+              a(class="xl:w-[160px] xl:h-[60px] lg:text-xl text-sm lg:w-[130px] lg:h-[50px] w-[104px] h-[44px] text-black flex items-center justify-center bg-white lg:mt-12 mt-[27px] rounded" href="#") 立即選購
 
     // 廣告版位
     section(class="mx-6 mb-10 lg:mx-auto max-w-screen-2xl lg:px-8")
@@ -191,7 +191,7 @@ html(lang="zh-Hant-TW")
           p(class="text-sm text-white lg:text-base") 橘焱胡同商城官網結帳再享9折即日起至12/13
            br
            | 限時7天把握一年一度雙12歡慶，將各種好物帶回家
-          a(class="xl:w-[160px] xl:h-[60px] lg:text-xl text-sm lg:w-[130px] lg:h-[50px] w-[104px] h-[44px] text-black flex items-center justify-center bg-white mt-8 rounded" href="/") 立即選購
+          a(class="xl:w-[160px] xl:h-[60px] lg:text-xl text-sm lg:w-[130px] lg:h-[50px] w-[104px] h-[44px] text-black flex items-center justify-center bg-white mt-8 rounded" href="#") 立即選購
         div(class="lg:max-w-[790px] flex-1")
           img(class="object-cover object-center w-full lg:h-full h-[288px]" src="./images/index/proposal.png", alt="")
 
@@ -202,7 +202,7 @@ html(lang="zh-Hant-TW")
         div(class="lg:!pl-10 !pl-6 !pb-[38px] !mt-[38px] swiper swiper-recommend")
           div(class="swiper-wrapper")
             each val in [1, 2, 3, 4, 5, 6]
-              a(class="lg:max-w-[320px] max-w-[270px] swiper-slide" href="/")
+              a(class="lg:max-w-[320px] max-w-[270px] swiper-slide" href="#")
                 img(class="lg:max-w-[320px] max-w-[270px] lg:max-h-[380px] max-h-[320px] w-full h-full object-cover" src=`./images/index/singleProduct${val}.png`, alt="")
                 p(class="mt-8 text-base text-black") 全站熱銷商品第二件五折  >
           div(class="2xl:max-w-[1300px] xl:max-w-[1000px] lg:max-w-[900px] md:max-w-[700px] max-w-[320px] !left-[51%] !bottom-0 !-translate-x-1/2 swiper-scrollbar swiper-recommend-scrollbar")
@@ -224,7 +224,7 @@ html(lang="zh-Hant-TW")
           span(class="flex items-center justify-center lg:text-2xl text-base font-medium text-white lg:w-7 w-4 lg:h-9 h-[22px]") ：
           span(class="flex items-center justify-center lg:text-2xl text-base font-medium text-white bg-orange-400 rounded lg:w-7 w-4 lg:h-9 h-[22px]") 0
           span(class="flex items-center justify-center lg:text-2xl text-base font-medium text-white bg-orange-400 rounded lg:w-7 w-4 lg:h-9 h-[22px]") 8
-        a(class="items-center hidden space-x-3 lg:flex" href="/")
+        a(class="items-center hidden space-x-3 lg:flex" href="#")
           p(class="text-sm text-white") 準點限時上新 馬上去搶購
           img(src="./images/arrows/defaults_bold__white_right.svg", alt="")
 
@@ -240,7 +240,7 @@ html(lang="zh-Hant-TW")
             img(class="object-cover object-center lg:max-w-[420px] lg:max-h-[500px] w-full h-auto" src="./images/index/flagship1.png", alt="")
             p(class="mt-5 text-sm font-semibold lg:mt-8 lg:text-xl") 冬日浪漫氛圍，歡慶年末
             p(class="lg:mt-6 mt-[15px] lg:text-base text-xs") 起源於調香師對大自然的領略與思緒，全然投注、鑽研於天然原料，心之所繫而成的芬芳詩篇。
-            a(class="xl:w-[160px] xl:h-[60px] lg:text-xl text-sm lg:w-[130px] lg:h-[50px] w-[104px] h-[44px] text-white flex items-center justify-center bg-black lg:mt-12 mt-[27px] rounded" href="/") 立即選購
+            a(class="xl:w-[160px] xl:h-[60px] lg:text-xl text-sm lg:w-[130px] lg:h-[50px] w-[104px] h-[44px] text-white flex items-center justify-center bg-black lg:mt-12 mt-[27px] rounded" href="#") 立即選購
           // 第二個 item 有標題
           div(class="lg:max-w-[420px]")
             // PC 版標題
@@ -250,17 +250,17 @@ html(lang="zh-Hant-TW")
             img(class="object-cover object-center lg:max-w-[420px] lg:max-h-[500px] w-full h-auto" src="./images/index/flagship2.png", alt="")
             p(class="mt-5 text-sm font-semibold lg:mt-8 lg:text-xl") 冬日浪漫氛圍，歡慶年末
             p(class="lg:mt-6 mt-[15px] lg:text-base text-xs") 起源於調香師對大自然的領略與思緒，全然投注、鑽研於天然原料，心之所繫而成的芬芳詩篇。
-            a(class="xl:w-[160px] xl:h-[60px] lg:text-xl text-sm lg:w-[130px] lg:h-[50px] w-[104px] h-[44px] text-white flex items-center justify-center bg-black lg:mt-12 mt-[27px] rounded" href="/") 立即選購
+            a(class="xl:w-[160px] xl:h-[60px] lg:text-xl text-sm lg:w-[130px] lg:h-[50px] w-[104px] h-[44px] text-white flex items-center justify-center bg-black lg:mt-12 mt-[27px] rounded" href="#") 立即選購
           div(class="lg:max-w-[420px]")
             img(class="object-cover object-center lg:max-w-[420px] lg:max-h-[500px] w-full h-auto" src="./images/index/flagship3.png", alt="")
             p(class="mt-5 text-sm font-semibold lg:mt-8 lg:text-xl") 冬日浪漫氛圍，歡慶年末
             p(class="lg:mt-6 mt-[15px] lg:text-base text-xs") 起源於調香師對大自然的領略與思緒，全然投注、鑽研於天然原料，心之所繫而成的芬芳詩篇。
-            a(class="xl:w-[160px] xl:h-[60px] lg:text-xl text-sm lg:w-[130px] lg:h-[50px] w-[104px] h-[44px] text-white flex items-center justify-center bg-black lg:mt-12 mt-[27px] rounded" href="/") 立即選購
+            a(class="xl:w-[160px] xl:h-[60px] lg:text-xl text-sm lg:w-[130px] lg:h-[50px] w-[104px] h-[44px] text-white flex items-center justify-center bg-black lg:mt-12 mt-[27px] rounded" href="#") 立即選購
           div(class="block lg:hidden")
             img(class="object-cover object-center lg:max-w-[420px] lg:max-h-[500px] w-full h-auto" src="./images/index/flagship4.png", alt="")
             p(class="mt-5 text-sm font-semibold lg:mt-8 lg:text-xl") 冬日浪漫氛圍，歡慶年末
             p(class="lg:mt-6 mt-[15px] lg:text-base text-xs") 起源於調香師對大自然的領略與思緒，全然投注、鑽研於天然原料，心之所繫而成的芬芳詩篇。
-            a(class="xl:w-[160px] xl:h-[60px] lg:text-xl text-sm lg:w-[130px] lg:h-[50px] w-[104px] h-[44px] text-white flex items-center justify-center bg-black lg:mt-12 mt-[27px] rounded" href="/") 立即選購
+            a(class="xl:w-[160px] xl:h-[60px] lg:text-xl text-sm lg:w-[130px] lg:h-[50px] w-[104px] h-[44px] text-white flex items-center justify-center bg-black lg:mt-12 mt-[27px] rounded" href="#") 立即選購
 
 
     // 網紅賣場
@@ -270,44 +270,44 @@ html(lang="zh-Hant-TW")
       div(class="grid lg:grid-cols-2")
         // 左區塊
         div(class="grid grid-cols-2")
-          a(class="relative max-h-[400px] h-full before:absolute before:w-full before:h-full before:bg-black before:bg-opacity-35" href="/")
+          a(class="relative max-h-[400px] h-full before:absolute before:w-full before:h-full before:bg-black before:bg-opacity-35" href="#")
             img(class="object-cover object-center w-full h-full" src=`./images/index/store1.png`, alt="")
             p(class="absolute flex flex-col w-full px-6 text-sm font-semibold leading-loose text-center text-white -translate-x-1/2 -translate-y-1/2 lg:leading-normal lg:text-xl left-1/2 top-1/2")
               span 胡同 x 吳淡如
               span Podcast推薦
-          a(class="relative max-h-[400px] h-full before:absolute before:w-full before:h-full before:bg-black before:bg-opacity-35" href="/")
+          a(class="relative max-h-[400px] h-full before:absolute before:w-full before:h-full before:bg-black before:bg-opacity-35" href="#")
             img(class="object-cover object-center w-full h-full" src=`./images/index/store2.png`, alt="")
             p(class="absolute flex flex-col w-full px-6 text-sm font-semibold leading-loose text-center text-white -translate-x-1/2 -translate-y-1/2 lg:leading-normal lg:text-xl left-1/2 top-1/2")
               span 胡同 x 吳淡如
               span Podcast推薦
-          a(class="relative max-h-[400px] h-full before:absolute before:w-full before:h-full before:bg-black before:bg-opacity-35" href="/")
+          a(class="relative max-h-[400px] h-full before:absolute before:w-full before:h-full before:bg-black before:bg-opacity-35" href="#")
             img(class="object-cover object-center w-full h-full" src=`./images/index/store3.png`, alt="")
             p(class="absolute flex flex-col w-full px-6 text-sm font-semibold leading-loose text-center text-white -translate-x-1/2 -translate-y-1/2 lg:leading-normal lg:text-xl left-1/2 top-1/2")
               span 胡同 x 吳淡如
               span Podcast推薦
-          a(class="relative max-h-[400px] h-full before:absolute before:w-full before:h-full before:bg-black before:bg-opacity-35" href="/")
+          a(class="relative max-h-[400px] h-full before:absolute before:w-full before:h-full before:bg-black before:bg-opacity-35" href="#")
             img(class="object-cover object-center w-full h-full" src=`./images/index/store4.png`, alt="")
             p(class="absolute flex flex-col w-full px-6 text-sm font-semibold leading-loose text-center text-white -translate-x-1/2 -translate-y-1/2 lg:leading-normal lg:text-xl left-1/2 top-1/2")
               span 胡同 x 吳淡如
               span Podcast推薦
         // 右區塊
         div(class="grid grid-cols-2")
-          a(class="relative max-h-[400px] h-full before:absolute before:w-full before:h-full before:bg-black before:bg-opacity-35" href="/")
+          a(class="relative max-h-[400px] h-full before:absolute before:w-full before:h-full before:bg-black before:bg-opacity-35" href="#")
             img(class="object-cover object-center w-full h-full" src=`./images/index/store5.png`, alt="")
             p(class="absolute flex flex-col w-full px-6 text-sm font-semibold leading-loose text-center text-white -translate-x-1/2 -translate-y-1/2 lg:leading-normal lg:text-xl left-1/2 top-1/2")
               span 胡同 x 吳淡如
               span Podcast推薦
-          a(class="relative max-h-[400px] h-full before:absolute before:w-full before:h-full before:bg-black before:bg-opacity-35" href="/")
+          a(class="relative max-h-[400px] h-full before:absolute before:w-full before:h-full before:bg-black before:bg-opacity-35" href="#")
             img(class="object-cover object-center w-full h-full" src=`./images/index/store6.png`, alt="")
             p(class="absolute flex flex-col w-full px-6 text-sm font-semibold leading-loose text-center text-white -translate-x-1/2 -translate-y-1/2 lg:leading-normal lg:text-xl left-1/2 top-1/2")
               span 胡同 x 吳淡如
               span Podcast推薦
-          a(class="relative max-h-[400px] h-full before:absolute before:w-full before:h-full before:bg-black before:bg-opacity-35" href="/")
+          a(class="relative max-h-[400px] h-full before:absolute before:w-full before:h-full before:bg-black before:bg-opacity-35" href="#")
             img(class="object-cover object-center w-full h-full" src=`./images/index/store7.png`, alt="")
             p(class="absolute flex flex-col w-full px-6 text-sm font-semibold leading-loose text-center text-white -translate-x-1/2 -translate-y-1/2 lg:leading-normal lg:text-xl left-1/2 top-1/2")
               span 胡同 x 吳淡如
               span Podcast推薦
-          a(class="relative max-h-[400px] h-full before:absolute before:w-full before:h-full before:bg-black" href="/")
+          a(class="relative max-h-[400px] h-full before:absolute before:w-full before:h-full before:bg-black" href="#")
             p(class="absolute flex flex-col items-start w-full px-6 text-sm font-semibold leading-loose text-center text-white -translate-x-1/2 -translate-y-1/2 lg:leading-normal lg:text-xl lg:left-6 left-1/2 lg:translate-x-0 top-1/2")
               span Let’s Go 
               span 更多賣場等你來逛逛
@@ -321,7 +321,7 @@ html(lang="zh-Hant-TW")
             a(class="text-xs font-semibold text-black lg:text-base" href="") 全部專欄 >
           div(class="lg:mt-10 mt-6 flex lg:flex-row flex-col xl:space-x-[118px] lg:space-x-10 lg:space-y-0 space-y-6")
             each val in [1, 2, 3]
-              a(class="flex lg:flex-col" href="/")
+              a(class="flex lg:flex-col" href="#")
                 img(class="object-cover object-center lg:w-full w-[140px] lg:h-[240px] h-auto" src=`./images/index/column${val}.png`, alt="")
                 div(class="flex flex-col py-4 space-y-5 lg:mt-6 lg:py-0 pl-4 lg:pl-0 lg:border-0 border-t border-b border-[#D7D7D7]")
                   p(class="text-sm font-semibold text-black lg:text-base") 簡易擺盤小撇步，遵守5要點，搖身變成讓你從此成為擺盤小天才！
