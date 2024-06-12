@@ -6,14 +6,14 @@ html(lang="zh-Hant-TW")
   body
     include ../components/common/header.pug
 
-    main(class="pb-[126px] lg:pb-[108px]")
+    main(class="pb-[126px] lg:pb-[108px] pt-6 lg:pt-0")
       section(class="px-6 mx-auto max-w-screen-2xl lg:px-12")
         // 麵包屑
-        ul(class="flex flex-wrap items-center px-6 space-x-1 lg:px-0")
+        ul(class="flex flex-wrap items-center space-x-1")
           li(class="breadCrumbLink")
             a(class="text-sm text-slate-600" href="#") 首頁
           li(class="breadCrumbLink")
-            a(class="text-sm ext-slate-600" href="#") 專欄
+            a(class="text-sm text-slate-600" href="#") 專欄
 
       section(class="mx-auto max-w-screen-2xl lg:mt-[100px] mt-[51px] px-6 lg:px-[78px] flex lg:flex-row flex-col lg:space-x-14")
         picture(class="block overflow-hidden rounded lg:w-3/5")

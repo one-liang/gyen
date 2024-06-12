@@ -34,4 +34,4 @@
 ### 專欄
 
 - [專欄列表頁](https://one-liang.github.io/gyen/dist/columnList)
-- 🚧[內容單頁](https://one-liang.github.io/gyen/dist/contentSingle)
+- [內容單頁](https://one-liang.github.io/gyen/dist/contentSingle)
