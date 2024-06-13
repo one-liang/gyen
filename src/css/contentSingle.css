@@ -5,3 +5,27 @@
 
   @apply pr-1;
 }
+
+.content {
+  @apply mt-8 lg:mt-12;
+}
+
+.content img {
+  @ppaly object-cover w-full h-auto rounded;
+}
+
+.content h2 {
+  @apply mt-10 text-xl font-semibold text-black lg:mt-16;
+}
+
+.content p {
+  @apply mt-8 text-base text-black lg:mt-8;
+}
+
+.content .two-column-images {
+  @apply flex mt-10 space-x-5 lg:mt-16 lg:space-x-12;
+}
+
+.content .two-column-images img {
+  @apply inline-block object-cover max-w-[calc(50%-10px)] w-full h-auto rounded;
+}
