@@ -21,7 +21,7 @@
 ### 購物流程
 
 - [購物車 1/2](https://one-liang.github.io/gyen/dist/cart1)
-- 🚧[購物車 2/2](https://one-liang.github.io/gyen/dist/cart2)
+- [購物車 2/2](https://one-liang.github.io/gyen/dist/cart2)
 
 ### 註冊/登入
 
