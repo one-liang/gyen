@@ -15,3 +15,16 @@
   content: "";
   background-image: url("../images/arrows/light_small_down.svg");
 }
+
+.round-checkbox {
+  @apply appearance-none h-5 w-5 border border-black rounded-full;
+}
+
+.round-checkbox:checked {
+  @apply bg-black flex items-center justify-center relative duration-150;
+}
+
+.round-checkbox:checked::before {
+  @apply absolute top-1 left-[7px] w-[5px] h-[10px] border-white border-solid border-t-0 border-l-0 border-r-2 border-b-2 rotate-45;
+  content: "";
+}

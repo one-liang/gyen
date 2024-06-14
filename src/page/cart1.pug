@@ -6,79 +6,154 @@ html(lang="zh-Hant-TW")
   body
     include ../components/common/header.pug
 
-    main(class="px-4 mx-auto max-w-screen-2xl lg:px-12 lg:pb-[118px] pb-10")
+    main
       // 麵包屑
-      ul(class="flex flex-wrap items-center px-6 space-x-1 lg:px-0")
+      ul(class="flex flex-wrap items-center px-6 mx-auto space-x-1 max-w-screen-2xl lg:px-12")
         li(class="breadCrumbLink")
           a(class="text-sm text-slate-600" href="#") 首頁
         li(class="breadCrumbLink")
           a(class="text-sm ext-slate-600" href="#") 購物車
       
-      section(class="px-4 pt-3 pb-5 bg-neutral-150 lg:mt-12 lg:px-10 lg:pt-6 lg:pb-10")
-
-        div(class="hidden border-b border-gray-200 lg:block")
-          div(class="flex p-4 mx-auto xl:px-10")
-            //- div(class="w-2/12 lg:px-4 xl:px-10")
-            div(class="flex flex-grow w-11/12")
-              div(class="w-2/6 text-lg font-normal text-gray-600 xl:w-6/12") 品名
-              div(class="flex-1 text-lg font-normal text-center text-gray-600") 單價
-              div(class="flex-1 text-lg font-normal text-center text-gray-600") 數量
-              div(class="flex-1 text-lg font-normal text-right text-gray-600") 小計
-            div(class="w-1/12")
-
-
-        div(class="mt-4 bg-white lg:mt-10")
-          each item in [1, 2]
-            div(class="flex flex-wrap items-center p-4 mx-auto bg-white lg:py-10 lg:px-10")
-              div(class="flex flex-wrap w-full mb-6 lg:mb-4")
-                div(class="w-3/12 md:w-2/12 lg:pr-4")
-                  img(class="object-cover object-center w-full max-w-[155px] max-h-[153px]" src="./images/cart/item.png")
-                div(class="flex flex-col justify-between w-7/12 px-4 md:w-9/12 lg:px-0")
-                  div(class="flex flex-wrap self-stretch")
-                    div(class="flex-col w-full lg:flex lg:h-full lg:w-2/6 xl:w-5/12")
-                      a(href="/products/2119801")
-                        h2(class="mb-4 font-bold text-neutral-600 lg:mb-0 lg:text-base") 【常溫】胡同肉鬆 純豬肉鬆 120g /1 罐
-                      // 狀態 1
-                      div(class="hidden lg:flex items-center lg:space-x-4 space-x-2 mt-[14px]")
-                        p(class="text-base text-slate-600") 三天內出貨
-                      // 狀態 2
-                      p(class="hidden mt-[14px] text-base text-red-500 lg:block") 贈品
-                      // 狀態 3
-                      div(class="hidden lg:flex items-center lg:space-x-4 space-x-2 mt-[14px]")
-                        // 限量新品: bg-red-400、常溫: bg-green-400、冷藏: bg-blue-400、冷凍: bg-purple-400
-                        span(class="px-2 py-1 text-white bg-purple-400 rounded-sm text-10") 冷凍
-                        p(class="text-base text-slate-600") 三天內出貨
-                      // 狀態 4
-                      div(class="hidden lg:flex items-center lg:space-x-4 space-x-2 mt-[14px]")
-                        // 限量新品: bg-red-400、常溫: bg-green-400、冷藏: bg-blue-400、冷凍: bg-purple-400
-                        span(class="px-2 py-1 text-white bg-purple-400 rounded-sm text-10") 冷凍
-                        p(class="text-base text-red-500") 預購
-                        p(class="text-base text-slate-600") 預計 2024 -05 -01 出貨
-                    p(class="hidden w-full text-base font-normal text-center text-neutral-550 lg:block lg:flex-1 lg:mt-[11px]") NT 864
-                    div(class="order-2 w-full text-center lg:flex-1 lg:order-1")
-                      div(class="flex items-center lg:justify-center")
-                        div(class="max-w-[112px] flex-1 select-wrapper")
-                          select(class="w-full h-10 px-3 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200")
+      section(class="pt-10 pb-[95px] bg-neutral-150 mt-3 lg:pt-12 lg:pb-[113px]")
+        div(class="flex flex-col px-6 mx-auto space-y-6 lg:flex-row max-w-screen-2xl lg:px-12 lg:space-x-6 lg:space-y-0")
+          // 左側
+          div(class="flex flex-col lg:flex-[1_1_840px] flex-auto space-y-6")
+            // 第一個區塊
+            div(class="px-4 pb-10 bg-white lg:p-10 pt-9")
+              div(class="flex items-center space-x-[18px] pb-3 border-b border-neutral-200")
+                input(class="round-checkbox" type="checkbox")
+                p(class="text-xl font-bold text-black") 胡同商城購物車商品 (3)
+              // 商品列表
+              each val in [1, 2, 3]
+                div(class="relative pt-[50px] lg:py-6 lg:border-b border-neutral-200 lg:last:border-b-0")
+                  div(class="flex items-start lg:space-x-10 space-x-[9px]")
+                    div(class="flex items-center space-x-4")
+                      input(class="round-checkbox" type="checkbox")
+                      img(class="object-cover object-center lg:w-[120px] w-[70px] lg:h-[120px] h-[70px]" src="https://fakeimg.pl/120x120/?text=Product" alt="")
+                    div(class="flex flex-col flex-1")
+                      div(class="flex items-start justify-between")
+                        a(class="text-sm font-bold text-black lg:text-base" href="#") 【常溫】胡同肉鬆 純豬肉鬆 120g /1 罐
+                        button(class="absolute right-0 lg:static top-4" type="button")
+                          img(src="./images/icon/close-gray.svg" alt="")
+                      div(class="flex justify-between lg:mr-[74px] lg:mt-[14px] mt-2")
+                        div(class="flex items-center space-x-4")
+                          // 限量新品: bg-red-400、常溫: bg-green-400、冷藏: bg-blue-400、冷凍: bg-purple-400
+                          span(class="px-2 py-1 text-white bg-purple-400 rounded-sm text-10") 冷凍
+                          p(class="text-sm text-black lg:text-base") 三天內出貨
+                        div(class="max-w-[112px] flex-1 select-wrapper lg:block hidden")
+                          select(class="w-full h-12 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200")
                             each item in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
                               option(value=item)= item
-                    p(class="order-1 w-full mb-3 text-neutral-550 lg:mb-0 lg:text-right lg:order-2 lg:flex-1 lg:mt-[11px]") NT 864
-                  // 狀態 1
-                  div(class="mt-2")
-                    p(class="text-sm text-gray-400") 提醒您注意，本商品為食品，不提供試吃，一經拆封即無法退換，敬請見諒與配合。商品退貨時必須保持原狀，不可拆封，亦即必須回復至您收到商品的原始狀態。（包含包裝, 附件, 內外包裝, 隨機文件, 贈品等完整性）。
-                  // 狀態 2
-                  div(class="flex justify-between mt-2")
-                    p(class="text-sm text-red-500") Frenature富紐翠  全面 79折
-                    p(class="text-base text-red-500") NT -30
-                  // 狀態 3
-                  div(class="flex items-center mt-2")
-                    img(class="object-cover object-center w-full max-w-[63px] max-h-[63px]" src="./images/cart/item.png")
-                    div(class="flex ml-[9px] space-x-4")
-                      p(class="hidden text-base text-red-500 lg:block") 贈品
-                      p(class="text-base text-gray-400") 預計 2024 -05 -01 出貨
-                div(class="w-2/12 text-right md:w-1/12 lg:mt-[11px]")
-                  button(class="text-base font-normal text-blue-650" type="button") 刪除
-                //- p(class="mt-6 text-sm text-slate-600 lg:hidden") 三天內出貨
+                      p(class="mt-4 text-sm text-black lg:mt-8 lg:text-base") NT 864
+                      p(class="hidden text-gray-400 lg:mt-8 text-10 lg:text-xs lg:block") 提醒您注意，本商品為食品，不提供試吃，一經拆封即無法退換，敬請見諒與配合。商品退貨時必須保持原狀，不可拆封，亦即必須回復至您收到商品的原始狀態。（包含包裝, 附件, 內外包裝, 隨機文件, 贈品等完整性）。
+                  // 手機版 select & description
+                  div(class="block mt-4 lg:hidden pl-9")
+                    p(class="block text-gray-400 text-10") 提醒您注意，本商品為食品，不提供試吃，一經拆封即無法退換，敬請見諒與配合。商品退貨時必須保持原狀，不可拆封，亦即必須回復至您收到商品的原始狀態。（包含包裝, 附件, 內外包裝, 隨機文件, 贈品等完整性）。
+                    div(class="max-w-[112px] flex-1 select-wrapper mt-6")
+                      select(class="w-full h-12 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200")
+                        each item in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+                          option(value=item)= item
 
-    //- include ../components/common/cookieBanner.pug
+            // 第二個區塊
+            div(class="px-4 pb-10 bg-white lg:p-10 pt-9")
+              div(class="pb-3 border-b border-neutral-200")
+                p(class="text-xl font-bold text-black") 加購商品
+              each val in [1, 2, 3]
+                div(class="relative pt-[50px] lg:py-6 lg:border-b border-neutral-200 lg:last:border-b-0")
+                  div(class="flex items-start lg:space-x-5 space-x-[9px]")
+                    div(class="flex items-center space-x-4")
+                      input(class="round-checkbox" type="checkbox")
+                      img(class="object-cover object-center lg:w-[120px] w-[70px] lg:h-[120px] h-[70px]" src="https://fakeimg.pl/120x120/?text=Product" alt="")
+                    div(class="flex flex-col flex-1")
+                      div(class="")
+                        a(class="text-sm text-black lg:text-base" href="#") 『胡同嚴選』海苔肉鬆
+                      div(class="mt-2 lg:mt-3")
+                        p(class="text-base font-bold text-red-500 lg:text-xl") $109
+                      div(class="flex mt-2 space-x-3 lg:mt-3")
+                        div(class="max-w-[166px] flex-1 select-wrapper lg:block hidden")
+                          select(class="w-full h-12 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200")
+                            option(value="none" selected disabled hidden) 請選擇規格
+                            each item in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+                              option(value=`規格${item}`)= `規格${item}`
+                        div(class="max-w-[112px] flex-1 select-wrapper lg:block hidden")
+                          select(class="w-full h-12 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200")
+                            each item in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+                              option(value=item)= item
+                  // 手機版 select
+                  div(class="block mt-4 space-y-3 lg:hidden pl-9")
+                    div(class="max-w-[166px] flex-1 select-wrapper block lg:hidden")
+                      select(class="w-full h-12 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200")
+                        option(value="none" selected disabled hidden) 請選擇規格
+                        each item in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+                          option(value=`規格${item}`)= `規格${item}`
+                    div(class="max-w-[112px] flex-1 select-wrapper block lg:hidden")
+                      select(class="w-full h-12 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200")
+                        each item in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+                          option(value=item)= item
+
+            // 第三個區塊
+            div(class="px-4 pb-10 bg-white lg:p-10 pt-9")
+              textarea(class="w-full min-h-[103px] px-5 py-3 text-sm border rounded border-neutral-200 resize-none" name="" placeholder="訂單備註")
+
+          // 右側
+          div(class="flex flex-col lg:flex-[1_1_480px] flex-auto space-y-6")
+            div(class="px-4 pb-10 bg-white lg:px-6 lg:py-10 pt-9")
+              // 折扣碼
+              div(class="")
+                div(class="mb-[31px]")
+                  p(class="text-xl font-bold text-black") 折扣碼
+                div(class="flex items-start space-x-4")
+                  div(class="flex-1")
+                    // 錯誤樣式: !border-red-500
+                    input(class="w-full h-[52px] px-6 py-4 text-base border rounded border-neutral-200" type="text" placeholder="請輸入折扣碼")
+                    p(class="mt-2 text-sm text-red-500") *不正確的折扣碼，請再輸入一次
+                  button(class="w-20 h-[52px] text-base text-slate-800 bg-neutral-200 rounded" type="button") 確認
+              // 優惠卷
+              div(class="mt-[52px]")
+                div(class="mb-[22px]")
+                  p(class="text-xl font-bold text-black") 優惠卷
+                div(class="select-wrapper")
+                  select(class="w-full h-12 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200")
+                    option(value="none" selected disabled hidden) 請選擇欲使用的優惠卷
+                    each item in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+                      option(value=`優惠卷${item}`)= `優惠卷${item}`
+
+            // 結帳清單
+            div(class="bg-white px-6 lg:pt-[58px] lg:pb-[43px] pt-[27px] pb-1 lg:static fixed left-0 bottom-0 w-full z-30")
+              //  結帳明細
+              div(class="hidden pb-4 mb-4 border-b lg:block lg:border-b-0 border-neutral-200 lg:pb-0" id="detailMenu")
+                div(class="flex items-center justify-between pb-2 mb-5 border-b lg:hidden border-neutral-200")
+                  p(class="text-base font-bold text-black") 結帳明細
+                  button(id="detailCloseBtn" type="button")
+                    img(src="./images/icon/close-gray.svg" alt="")
+                div(class="flex items-center justify-between")
+                  p(class="text-sm text-black lg:text-xl lg:font-bold") 商品總價
+                  p(class="text-sm font-bold text-black lg:text-xl") NT 5,684
+                ul(class="flex flex-col mt-4 space-y-3 lg:mt-10 lg:space-y-8")
+                  li(class="flex items-center justify-between")
+                    p(class="text-sm text-red-500 lg:text-xl") 全館滿百送千
+                    p(class="text-sm text-red-500 lg:text-xl") -NT 400
+                  li(class="flex items-center justify-between")
+                    p(class="text-sm text-red-500 lg:text-xl") 開幕全館免運
+                    p(class="text-sm text-red-500 lg:text-xl") -NT 700
+                  li(class="flex items-center justify-between")
+                    p(class="text-sm text-red-500 lg:text-xl") 好口碑折扣碼
+                    p(class="text-sm text-red-500 lg:text-xl") -NT 100
+                  li(class="flex items-center justify-between")
+                    p(class="text-sm text-red-500 lg:text-xl") 新會員優惠卷
+                    p(class="text-sm text-red-500 lg:text-xl") -NT 100
+                div(class="flex items-center justify-between mt-4 lg:mt-10")
+                  p(class="text-sm font-bold text-black lg:text-xl") 總計
+                  p(class="text-xl font-bold text-black lg:text-2xl") NT 4,384
+              // 結帳金額
+              div(class="lg:mt-[57px] mt-0 flex space-x-[37px] lg:space-x-0")
+                div(class="lg:hidden flex flex-col space-y-1.5")
+                  p(class="text-sm font-bold text-black") 結帳金額
+                  div(class="flex space-x-[25px]")
+                    p(class="text-xl font-bold text-black") NT 4,384
+                    button(id="detailOpenBtn" type="button")
+                      img(src="./images/arrows/light_small_up.svg" alt="")
+                button(class="flex-1 w-full text-base text-white rounded lg:text-xl lg:h-14 h-[52px] bg-origin-600" type="button") 結帳
+
     include ../components/common/gotop.pug
     include ../components/common/footer.pug
