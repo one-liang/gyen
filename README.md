@@ -36,7 +36,7 @@
 - [已登錄](https://one-liang.github.io/gyen/dist/member)
 - [我的資料](https://one-liang.github.io/gyen/dist/member/information)
 - [修改密碼](https://one-liang.github.io/gyen/dist/member/password)
-- 🚧[付款資訊](https://one-liang.github.io/gyen/dist/member/payment)
+- [付款資訊](https://one-liang.github.io/gyen/dist/member/payment)
 - 🚧[常用地址](https://one-liang.github.io/gyen/dist/member/address)
 - 🚧[發票歸戶](https://one-liang.github.io/gyen/dist/member/invoice)
 - 🚧[訂單資料-選單](https://one-liang.github.io/gyen/dist/member/order-menu)
