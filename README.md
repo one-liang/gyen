@@ -33,8 +33,8 @@
 
 ### 會員中心
 
-- 🚧[已登錄](https://one-liang.github.io/gyen/dist/member)
-- 🚧[我的資料](https://one-liang.github.io/gyen/dist/member/information)
+- [已登錄](https://one-liang.github.io/gyen/dist/member)
+- [我的資料](https://one-liang.github.io/gyen/dist/member/information)
 - 🚧[修改密碼](https://one-liang.github.io/gyen/dist/member/password)
 - 🚧[付款資訊](https://one-liang.github.io/gyen/dist/member/payment)
 - 🚧[常用地址](https://one-liang.github.io/gyen/dist/member/address)
