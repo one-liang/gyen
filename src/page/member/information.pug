@@ -6,9 +6,9 @@ html(lang="zh-Hant-TW")
   body
     include ../../components/member/header.pug
 
-    main(class="flex flex-col mx-auto max-w-screen-2xl pt-10 pb-[120px] lg:pb-[194px]")
+    main(class="flex flex-col mx-auto max-w-screen-2xl pt-6 pb-[120px] lg:pb-[194px]")
       // 麵包屑
-      ul(class="flex-wrap items-center hidden px-6 mx-0 space-x-1 lg:flex lg:mx-12 lg:px-0")
+      ul(class="flex flex-wrap items-center px-6 mx-0 space-x-1 lg:mx-12 lg:px-0")
         li(class="breadCrumbLink")
           a(class="text-sm text-slate-600" href="#") 首頁
         li(class="breadCrumbLink")
@@ -16,7 +16,7 @@ html(lang="zh-Hant-TW")
         li(class="breadCrumbLink")
           a(class="text-sm text-slate-600" href="#") 我的資料
 
-      div(class="flex mx-0 xl:space-x-[100px] lg:space-x-12 lg:mx-12 lg:mt-10")
+      div(class="flex mx-0 xl:space-x-[100px] lg:space-x-12 lg:mx-12 mt-10")
         // 左邊選單
         section(class="flex-1 max-w-[182px] lg:block hidden")
           p(class="text-xl font-semibold text-slate-600") 會員中心
@@ -55,7 +55,7 @@ html(lang="zh-Hant-TW")
           div(class="flex flex-col space-y-10 lg:space-y-16")
             // 我的資料
             div
-              div(class="border-b border-neutral-200 lg:pb-[26px] pb-4 lg:mt-0 mt-[47px]")
+              div(class="border-b border-neutral-200 lg:pb-[26px] pb-4")
                 p(class="text-xl font-bold text-black") 我的資料
               div(class="py-10 border-b border-neutral-200")
                 div
@@ -76,7 +76,7 @@ html(lang="zh-Hant-TW")
                 input(class="max-w-[455px] w-full h-[52px] border border-neutral-200 rounded px-6" id="email" type="text" value="peter***@ne-plus.com")
             // 編輯郵寄地址
             div
-              div(class="border-b border-neutral-200 lg:pb-[26px] pb-4 lg:mt-0 mt-[47px]")
+              div(class="border-b border-neutral-200 lg:pb-[26px] pb-4")
                 p(class="text-xl font-bold text-black") 編輯郵寄地址
               div(class="py-10 border-b border-neutral-200")
                 div(class="flex flex-col space-y-8 lg:flex-row lg:space-x-5 lg:space-y-0")
