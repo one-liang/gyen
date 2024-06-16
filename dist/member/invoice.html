@@ -95,7 +95,88 @@
         </div>
       </div>
     </header>
-    <div>member invoice</div>
+    <main class="flex flex-col mx-auto max-w-screen-2xl pt-6 pb-[120px] lg:pb-[194px]">
+      <!-- 麵包屑-->
+      <ul class="flex-wrap items-center hidden px-6 mx-0 space-x-1 lg:flex lg:mx-12 lg:px-0">
+        <li class="breadCrumbLink"><a class="text-sm text-slate-600" href="#">首頁</a></li>
+        <li class="breadCrumbLink"><a class="text-sm text-slate-600" href="#">會員中心</a></li>
+        <li class="breadCrumbLink"><a class="text-sm text-slate-600" href="#">發票歸戶</a></li>
+      </ul>
+      <!-- 回上一頁--><a class="inline-block px-4 text-base text-slate-600 lg:hidden" href="#">< 回上一頁</a>
+      <div class="flex mx-0 xl:space-x-[100px] lg:space-x-12 lg:mx-12 mt-10">
+        <!-- 左邊選單-->
+        <section class="flex-1 max-w-[182px] lg:block hidden">
+          <p class="text-xl font-semibold text-slate-600">會員中心</p>
+          <ul class="flex flex-col mt-10 space-y-4" id="dropdownMenu">
+            <li class="relative">
+              <button class="flex items-center justify-between w-full text-base dropdownButton text-slate-600"><span>我的資料</span><img class="dropdwonIcon" src="../images/arrows/light_small_down.svg" alt=""><img class="hidden dropupIcon" src="../images/arrows/light_small_up.svg" alt=""></button>
+              <div class="hidden flex-col mt-[10px] border-t border-b bg-neutral-50 border-neutral-200 dropdownList"><a class="px-5 py-3" href="#">
+                  <!-- active 狀態: before:absolute before:-bottom-1 before:left-0 before:w-full before:border-b before:border-black--><span class="relative">修改密碼</span></a><a class="px-5 py-3" href="#"><span class="relative">付款資訊</span></a><a class="px-5 py-3" href="#"> <span class="relative">常用地址</span></a><a class="px-5 py-3" href="#"> 
+                  <!-- active 狀態: before:absolute before:-bottom-1 before:left-0 before:w-full before:border-b before:border-black--><span class="relative before:absolute before:-bottom-1 before:left-0 before:w-full before:border-b before:border-black">發票歸戶</span></a></div>
+            </li>
+            <li class="relative">
+              <button class="flex items-center justify-between w-full text-base dropdownButton text-slate-600"><span>訂單資料</span><img class="dropdwonIcon" src="../images/arrows/light_small_down.svg" alt=""><img class="hidden dropupIcon" src="../images/arrows/light_small_up.svg" alt=""></button>
+            </li>
+            <li class="relative">
+              <button class="flex items-center justify-between w-full text-base dropdownButton text-slate-600"><span>點數紀錄</span><img class="dropdwonIcon" src="../images/arrows/light_small_down.svg" alt=""><img class="hidden dropupIcon" src="../images/arrows/light_small_up.svg" alt=""></button>
+            </li>
+            <li class="relative">
+              <button class="flex items-center justify-between w-full text-base dropdownButton text-slate-600"><span>優惠卷</span><img class="dropdwonIcon" src="../images/arrows/light_small_down.svg" alt=""><img class="hidden dropupIcon" src="../images/arrows/light_small_up.svg" alt=""></button>
+            </li>
+            <li class="relative">
+              <button class="flex items-center justify-between w-full text-base dropdownButton text-slate-600"><span>登出</span></button>
+            </li>
+          </ul>
+        </section>
+        <!-- 右邊區塊-->
+        <section class="flex-1 mx-6 lg:mx-0">
+          <!-- 對齊 Figma 會員中心-發票歸戶-0-->
+          <div class="border-b border-neutral-200 lg:pb-[26px] pb-4">
+            <p class="text-base font-bold text-black lg:text-xl">發票歸戶</p>
+          </div>
+          <div class="py-10 border-b border-neutral-200">
+            <p class="text-sm text-black lg:text-base">
+              你目前沒有任何發票，<a class="underline" href="#">新增發票項目</a></p>
+          </div>
+          <!-- 對齊 Figma 會員中心-發票歸戶-->
+          <!-- div(class="border-b border-neutral-200 lg:pb-[26px] pb-4 flex justify-between items-end")-->
+          <!--   p(class="text-xl font-bold text-black") 發票歸戶-->
+          <!--   button(class="bg-gray-150 px-6 py-[10px] flex space-x-[10px] text-slate-800 text-base rounded items-center duration-150 group hover:bg-slate-800 hover:text-white" type="button")-->
+          <!--     svg(class="fill-current" width="13" height="13" viewbox="0 0 13 13" xmlns="http://www.w3.org/2000/svg")-->
+          <!--       path(d="M5.77778 5.77778H0.722222C0.32335 5.77778 0 6.10113 0 6.5C0 6.89887 0.32335 7.22222 0.722222 7.22222H5.77778V12.2778C5.77778 12.6767 6.10113 13 6.5 13C6.89887 13 7.22222 12.6767 7.22222 12.2778V7.22222H12.2778C12.6767 7.22222 13 6.89887 13 6.5C13 6.10113 12.6767 5.77778 12.2778 5.77778H7.22222V0.722222C7.22222 0.32335 6.89887 0 6.5 0C6.10113 0 5.77778 0.32335 5.77778 0.722222V5.77778Z")-->
+          <!--     span 新增發票-->
+          <!-- div(class="py-10 border-b border-neutral-200 flex lg:space-x-[88px] lg:space-y-0 space-y-8")-->
+          <!--   div(class="flex flex-col space-y-3")-->
+          <!--     p(class="text-base text-black") 手機條碼載具-->
+          <!--     p(class="text-base text-black") /K.1TI+P-->
+          <!--   div(class="flex flex-col space-y-3")-->
+          <!--     p(class="text-base text-black") 公司用統一編號-->
+          <!--     p(class="text-base text-black") 80903090-->
+          <!--   div(class="flex flex-col space-y-3")-->
+          <!--     p(class="text-base text-black") 公司抬頭-->
+          <!--     p(class="text-base text-black") 奈普互動股份有限公司-->
+          <!-- 對齊 Figma 會員中心-發票歸戶-新增發票-->
+          <!-- div(class="flex flex-col mx-auto space-y-10")-->
+          <!--   div(class="border-b border-neutral-200 lg:pb-[26px] pb-4")-->
+          <!--     p(class="text-xl font-bold text-black") 發票歸戶-新增發票項目-->
+          <!--   div(class="flex flex-col justify-between max-w-[455px] w-full mx-auto")-->
+          <!--     div(class="flex flex-col w-full space-y-3")-->
+          <!--       label(class="text-sm text-slate-800" for="mobilePhoneCarrier") 手機條碼載具-->
+          <!--       input(class="max-w-[455px] w-full h-[52px] border border-neutral-200 rounded px-6" id="mobilePhoneCarrier" type="text" placeholder="請輸入手機條碼載具")-->
+          <!--     div(class="flex flex-col w-full mt-8 space-y-3 lg:mt-10")-->
+          <!--       label(class="text-sm text-slate-800" for="naturalPerson") 自然人憑證載具-->
+          <!--       input(class="max-w-[455px] w-full h-[52px] border border-neutral-200 rounded px-6" id="naturalPerson" type="text" placeholder="請輸入自然人憑證載具")-->
+          <!--     div(class="flex flex-col w-full mt-8 space-y-3 lg:mt-10")-->
+          <!--       label(class="text-sm text-slate-800") 公司用-->
+          <!--       div(class="flex flex-col items-center space-x-0 space-y-8 lg:space-x-6 lg:flex-row lg:space-y-0")-->
+          <!--         input(class="max-w-[455px] lg:max-w-[182px] w-full h-[52px] border border-neutral-200 rounded px-6" type="text" placeholder="統一編號")-->
+          <!--         input(class="max-w-[455px] lg:max-w-[249px] w-full h-[52px] border border-neutral-200 rounded px-6" type="text" placeholder="公司抬頭")-->
+          <!--     div(class="flex items-center w-full mt-10 space-x-5 lg:mt-14")-->
+          <!--       button(class="text-center rounded max-w-[218px] h-[52px] w-full bg-gray-150 text-slate-800 text-base" type="button") 取消-->
+          <!--       button(class="text-center rounded max-w-[218px] h-[52px] w-full bg-origin-600 text-white text-base" type="button") 儲存-->
+        </section>
+      </div>
+    </main>
     <footer class="px-6 bg-black lg:px-0">
       <div class="flex flex-col-reverse justify-center py-8 mx-auto max-w-screen-2xl lg:px-8 lg:py-16 xl:space-x-20 lg:space-x-6 lg:flex-row">
         <div class="relative flex pt-8 mt-10 border-t-2 border-gray-500 divide-gray-500 lg:pt-0 lg:divide-x-2 lg:mt-0 lg:border-t-0">
