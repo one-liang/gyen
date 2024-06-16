@@ -5,6 +5,123 @@ html(lang="zh-Hant-TW")
   +head("order-menu")
   body
     include ../../components/member/header.pug
-    div member order-menu
+
+    main(class="flex flex-col mx-auto max-w-screen-2xl pt-6 pb-[120px] lg:pb-[194px]")
+      // 麵包屑
+      ul(class="flex-wrap items-center hidden px-6 mx-0 space-x-1 lg:flex lg:mx-12 lg:px-0")
+        li(class="breadCrumbLink")
+          a(class="text-sm text-slate-600" href="#") 首頁
+        li(class="breadCrumbLink")
+          a(class="text-sm text-slate-600" href="#") 會員中心
+        li(class="breadCrumbLink")
+          a(class="text-sm text-slate-600" href="#") 訂單資料
+      
+      // 回上一頁
+      a(class="inline-block px-4 text-base text-slate-600 lg:hidden" href="#") < 回上一頁
+
+      div(class="flex mx-0 xl:space-x-[100px] lg:space-x-12 lg:mx-12 mt-10")
+        // 左邊選單
+        section(class="flex-1 max-w-[182px] lg:block hidden")
+          p(class="text-xl font-semibold text-slate-600") 會員中心
+          ul(id="dropdownMenu" class="flex flex-col mt-10 space-y-4")
+            li(class="relative")
+              button(class="flex items-center justify-between w-full text-base dropdownButton text-slate-600")
+                span 我的資料
+                img(class="dropdwonIcon" src="../images/arrows/light_small_down.svg" alt="")
+                img(class="hidden dropupIcon" src="../images/arrows/light_small_up.svg" alt="")
+              div(class="hidden flex-col mt-[10px] border-t border-b bg-neutral-50 border-neutral-200 dropdownList")
+                a(class="px-5 py-3" href="#")
+                  // active 狀態: before:absolute before:-bottom-1 before:left-0 before:w-full before:border-b before:border-black
+                  span(class="relative") 修改密碼
+                a(class="px-5 py-3" href="#")
+                  span(class="relative") 付款資訊
+                a(class="px-5 py-3" href="#") 
+                  span(class="relative") 常用地址
+                a(class="px-5 py-3" href="#") 
+                  span(class="relative") 發票歸戶
+            li(class="relative")
+              button(class="flex items-center justify-between w-full text-base dropdownButton text-slate-600")
+                // active 狀態: before:absolute before:-bottom-1 before:left-0 before:w-full before:border-b before:border-black
+                span(class="relative before:absolute before:-bottom-1 before:left-0 before:w-full before:border-b before:border-black") 訂單資料
+                img(class="dropdwonIcon" src="../images/arrows/light_small_down.svg" alt="")
+                img(class="hidden dropupIcon" src="../images/arrows/light_small_up.svg" alt="")
+            li(class="relative")
+              button(class="flex items-center justify-between w-full text-base dropdownButton text-slate-600")
+                span 點數紀錄
+                img(class="dropdwonIcon" src="../images/arrows/light_small_down.svg" alt="")
+                img(class="hidden dropupIcon" src="../images/arrows/light_small_up.svg" alt="")
+            li(class="relative")
+              button(class="flex items-center justify-between w-full text-base dropdownButton text-slate-600")
+                span 優惠卷
+                img(class="dropdwonIcon" src="../images/arrows/light_small_down.svg" alt="")
+                img(class="hidden dropupIcon" src="../images/arrows/light_small_up.svg" alt="")
+            li(class="relative")
+              button(class="flex items-center justify-between w-full text-base dropdownButton text-slate-600")
+                span 登出
+
+        // 右邊區塊
+        section(class="flex-1 mx-6 lg:mx-0")
+          div(class="border-b border-neutral-200 lg:pb-[26px] pb-4")
+            p(class="text-base font-bold text-black lg:text-xl") 訂單資料
+          div(class="py-10 border-b border-neutral-200")
+            div(class="flex flex-col space-y-8 lg:flex-row lg:space-y-0 lg:space-x-10 lg:items-end")
+              div(class="flex flex-col space-y-3 max-w-[315px] w-full")
+                label(class="text-sm text-slate-800" for="startDate") 開始日期
+                input(class="w-full h-[52px] border border-neutral-200 rounded px-6" id="startDate" type="date" value="")
+              div(class="flex flex-col space-y-3 max-w-[315px] w-full")
+                label(class="text-sm text-slate-800" for="startDate") 結束日期
+                input(class="w-full h-[52px] border border-neutral-200 rounded px-6" id="startDate" type="date" value="")
+              button(class="flex items-center justify-between max-w-[81px] h-[52px] px-6 bg-gray-150 text-slate-800 text-base rounded" type="button") 查詢
+
+          div(class="mt-10 lg:mt-14")
+            p(class="text-base text-slate-800") 您的查詢區間為
+              span(class="mx-3 text-red-500") 2021-02-01
+              | 至
+              span(class="mx-3 text-red-500") 2021-02-28
+              | 結果如下：
+
+          // 對齊 Figma 會員中心-訂單資料
+          table(class="order")
+            thead
+              tr
+                th(class="w-2/12") 訂單編號
+                th(class="w-2/12") 訂單日期
+                th(class="w-2/12") 總金額
+                th(class="w-2/12") 付款狀態
+                th(class="w-2/12") 發票
+                th(class="w-2/12") 訂單狀態
+            tbody
+              each val in [1, 2, 3, 4, 5]
+                tr
+                  td(class="text-left xl:text-center" data-label="訂單編號")
+                    p(class="text-sm flex-2 text-slate-800") DC2021050300001
+                  td(class="text-left xl:text-center" data-label="訂單日期")
+                    p(class="text-sm flex-2 text-slate-800") 2021/05/03
+                  td(class="text-left xl:text-center" data-label="總金額")
+                    p(class="text-sm flex-2 text-slate-800") $20,000
+                  td(class="text-left xl:text-center" data-label="付款狀態")
+                    p(class="text-sm flex-2 text-[#1B71E9]") 等待付款
+                    // p(class="text-sm flex-2 text-slate-800") 已付款
+                  td(class="text-left break-all xl:text-center" data-label="發票")
+                    div(class="flex flex-col text-right lg:block lg:text-center")
+                      p(class="text-sm flex-2 text-[#E9841B]") NH80325690
+                      p(class="text-sm flex-2 text-[#E9841B]") NP00581856
+                  td(class="text-left xl:text-center" data-label="訂單狀態")
+                    p(class="text-sm flex-2 text-slate-800") 已完成
+
+          // 分頁
+          div(class="lg:mt-[66px] mt-10 flex items-center justify-center space-x-4")
+            button(class="flex items-center justify-center w-5 h-5 text-sm font-medium rounded-sm text-slate-800" type="button") <
+            // active 狀態為 "text-white bg-origin-500"，非 active 狀態為 "text-slate-800"
+            button(class="flex items-center justify-center w-5 h-5 text-sm font-medium text-white rounded-sm bg-origin-500" type="button") 1
+            button(class="flex items-center justify-center w-5 h-5 text-sm font-medium rounded-sm text-slate-800" type="button") 2
+            button(class="flex items-center justify-center w-5 h-5 text-sm font-medium rounded-sm text-slate-800" type="button") 3
+            button(class="flex items-center justify-center w-5 h-5 text-sm font-medium rounded-sm text-slate-800" type="button") ...
+            button(class="flex items-center justify-center w-5 h-5 text-sm font-medium rounded-sm text-slate-800" type="button") 10
+            button(class="flex items-center justify-center w-5 h-5 text-sm font-medium rounded-sm text-slate-800" type="button") >
+
+          // 對齊 Figma 會員中心-訂單資料-無
+          // div(class="lg:mt-[109px] mt-10")
+          //   p(class="text-xl text-center text-gray-400") 查無購買紀錄
 
     include ../../components/member/footer.pug

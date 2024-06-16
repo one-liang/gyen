@@ -1,1 +1,63 @@
 @import url("../tailwind.css");
+
+.breadCrumbLink:not(:first-child):before {
+  content: ">";
+
+  @apply pr-1;
+}
+
+.order {
+  @apply w-full mb-6 mt-10;
+}
+
+.order thead {
+  @apply hidden;
+}
+
+.order tbody {
+  @apply space-y-8;
+}
+
+.order th {
+  @apply text-slate-800 font-normal;
+}
+
+.order tr {
+  @apply block space-y-3 border-t border-gray-200 pt-8;
+}
+
+.order td {
+  @apply text-slate-800 flex min-h-[26px];
+}
+
+.order td::before {
+  @apply flex-1 text-slate-800;
+
+  content: attr(data-label);
+}
+
+@screen xl {
+  .order {
+    @apply w-full;
+  }
+
+  .order thead {
+    @apply table-header-group;
+  }
+
+  .order tr {
+    @apply table-row border-b text-center border-gray-200;
+  }
+
+  .order th {
+    @apply px-2 py-3;
+  }
+
+  .order td {
+    @apply table-cell px-2 py-3;
+
+    &::before {
+      content: "";
+    }
+  }
+}

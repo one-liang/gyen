@@ -39,7 +39,7 @@
 - [付款資訊](https://one-liang.github.io/gyen/dist/member/payment)
 - [常用地址](https://one-liang.github.io/gyen/dist/member/address)
 - [發票歸戶(包含新增發票)](https://one-liang.github.io/gyen/dist/member/invoice)
-- 🚧[訂單資料-選單](https://one-liang.github.io/gyen/dist/member/order-menu)
+- [訂單資料-選單](https://one-liang.github.io/gyen/dist/member/order-menu)
 - 🚧[訂單資料-訂單記錄](https://one-liang.github.io/gyen/dist/member/order-records)
 
 ### 專欄
