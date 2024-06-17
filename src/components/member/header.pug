@@ -36,7 +36,7 @@ header(class="sticky top-0 z-50")
         button(class="absolute -translate-y-1/2 left-3 top-1/2" type="button")
           img(src="../images/main/search.svg" alt="")
         input(class="w-[169px] h-12 text-sm text-gray-400 border border-gray-200 rounded-full lg:pl-12 pr-7" type="text" placeholder="找商品  聖誕節")
-      a(href="#")
+      button(id="memberMenuButton" type="button")
         img(src="../images/main/user.svg" alt="")
       a(class="relative" href="#")
         img(src="../images/main/cart.svg" alt="")
@@ -87,3 +87,39 @@ header(class="sticky top-0 z-50")
           a(class="text-sm text-black" href="#") 聯名首發
         li
           a(class="text-sm text-black" href="#") 聖誕大餐烤雞
+
+  // member list
+  div(id="memberList" class="absolute z-10 w-full duration-150 ease-out bg-white lg:drop-shadow-md lg:max-w-full max-w-[95%] lg:opacity-0 lg:-translate-y-full translate-y-0 lg:translate-x-0 -translate-x-[101%]")
+    div(class="flex lg:h-[480px] h-full lg:min-h-full min-h-screen")
+      div(class="flex-1 bg-white w-full lg:min-w-[340px] lg:px-12 px-5 lg:py-[57px] py-[26px]")
+        ul
+          li(class="mb-8 lg:mb-6")
+            a(class="flex items-center justify-between w-full text-sm text-gray-400 lg:text-black hover:text-black group" href="#")
+              span(class="pb-1 duration-200 border-b border-transparent group-hover:border-black") 我的資料
+              img(class="hidden w-3 h-2 lg:block" src="./images/arrows/light_large_right.svg" alt="")
+          li(class="mb-8 lg:mb-6")
+            a(class="flex items-center justify-between w-full text-sm text-gray-400 lg:text-black hover:text-black group" href="#")
+              span(class="pb-1 duration-200 border-b border-transparent group-hover:border-black") 發票歸戶
+              img(class="hidden w-3 h-2 lg:block" src="./images/arrows/light_large_right.svg" alt="")
+          li(class="mb-8 lg:mb-6")
+            a(class="flex items-center justify-between w-full text-sm text-gray-400 lg:text-black hover:text-black group" href="#")
+              span(class="pb-1 duration-200 border-b border-transparent group-hover:border-black") 購買紀錄
+              img(class="hidden w-3 h-2 lg:block" src="./images/arrows/light_large_right.svg" alt="")
+          li(class="mb-8 lg:mb-6")
+            a(class="flex items-center justify-between w-full text-sm text-gray-400 lg:text-black hover:text-black group" href="#")
+              span(class="pb-1 duration-200 border-b border-transparent group-hover:border-black") 優惠券
+              img(class="hidden w-3 h-2 lg:block" src="./images/arrows/light_large_right.svg" alt="")
+          li(class="mb-8 lg:mb-6")
+            a(class="flex items-center justify-between w-full text-sm text-gray-400 lg:text-black hover:text-black group" href="#")
+              span(class="pb-1 duration-200 border-b border-transparent group-hover:border-black") 登出
+              img(class="hidden w-3 h-2 lg:block" src="./images/arrows/light_large_right.svg" alt="")
+      div(class="lg:flex-1 flex-[2_2_0%] bg-gray-100 w-full lg:min-w-[340px] lg:px-12 px-[34px] lg:py-[57px] py-[26px]")
+        ul(class="space-y-6")
+          li
+            a(class="flex items-center justify-between w-full pb-1 text-sm text-black" href="#") 修改密碼
+          li
+            a(class="flex items-center justify-between w-full pb-1 text-sm text-black" href="#") 付款資訊
+          li
+            a(class="flex items-center justify-between w-full pb-1 text-sm text-black" href="#") 常用地址
+          li
+            a(class="flex items-center justify-between w-full pb-1 text-sm text-black" href="#") 發票歸戶

@@ -2,9 +2,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const navButtons = document.querySelectorAll("#navMenu button");
   const menuList = document.querySelector("#menuList");
   const menuListItems = document.querySelectorAll("#menuListItem a");
+  const memberList = document.querySelector("#memberList");
   const body = document.querySelector("body");
   const header = document.querySelector("header");
   const burgerMenuButton = document.querySelector("#burgerMenuButton");
+  const memberMenuButton = document.querySelector("#memberMenuButton");
   const searchInput = document.querySelector(".searchInput");
   const searchMenuButton = document.querySelector("#searchMenuButton");
   const searchList = document.querySelector("#searchList");
@@ -49,6 +51,15 @@ document.addEventListener("DOMContentLoaded", function () {
     if (window.innerWidth < 1024) {
       body.classList.toggle("overflow-hidden");
       menuList.classList.toggle("!translate-x-0");
+    }
+  });
+
+  // 手機版
+  memberMenuButton.addEventListener("click", function () {
+    // 視窗寬度小於 1024px，則切換 memberList 的顯示狀態
+    if (window.innerWidth < 1024) {
+      body.classList.toggle("overflow-hidden");
+      memberList.classList.toggle("!translate-x-0");
     }
   });
 
