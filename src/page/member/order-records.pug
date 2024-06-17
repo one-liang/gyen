@@ -5,6 +5,176 @@ html(lang="zh-Hant-TW")
   +head("order-records")
   body
     include ../../components/member/header.pug
-    div member order-records
+
+    main(class="flex flex-col mx-auto max-w-screen-2xl pt-6 pb-[120px] lg:pb-[194px]")
+      // 麵包屑
+      ul(class="flex-wrap items-center hidden px-6 mx-0 space-x-1 lg:flex lg:mx-12 lg:px-0")
+        li(class="breadCrumbLink")
+          a(class="text-sm text-slate-600" href="#") 首頁
+        li(class="breadCrumbLink")
+          a(class="text-sm text-slate-600" href="#") 會員中心
+        li(class="breadCrumbLink")
+          a(class="text-sm text-slate-600" href="#") 訂單資料
+        li(class="breadCrumbLink")
+          a(class="text-sm text-slate-600" href="#") 04BAKC20210817
+      
+      // 回上一頁
+      a(class="inline-block px-4 text-base text-slate-600 lg:hidden" href="#") < 回上一頁
+
+      div(class="flex mx-0 xl:space-x-[100px] lg:space-x-12 lg:mx-12 mt-10")
+        // 左邊選單
+        section(class="flex-1 max-w-[182px] lg:block hidden")
+          p(class="text-xl font-semibold text-slate-600") 會員中心
+          ul(id="dropdownMenu" class="flex flex-col mt-10 space-y-4")
+            li(class="relative")
+              button(class="flex items-center justify-between w-full text-base dropdownButton text-slate-600")
+                span 我的資料
+                img(class="dropdwonIcon" src="../images/arrows/light_small_down.svg" alt="")
+                img(class="hidden dropupIcon" src="../images/arrows/light_small_up.svg" alt="")
+              div(class="hidden flex-col mt-[10px] border-t border-b bg-neutral-50 border-neutral-200 dropdownList")
+                a(class="px-5 py-3" href="#")
+                  // active 狀態: before:absolute before:-bottom-1 before:left-0 before:w-full before:border-b before:border-black
+                  span(class="relative") 修改密碼
+                a(class="px-5 py-3" href="#")
+                  span(class="relative") 付款資訊
+                a(class="px-5 py-3" href="#") 
+                  span(class="relative") 常用地址
+                a(class="px-5 py-3" href="#") 
+                  span(class="relative") 發票歸戶
+            li(class="relative")
+              button(class="flex items-center justify-between w-full text-base dropdownButton text-slate-600")
+                span 訂單資料
+                img(class="dropdwonIcon" src="../images/arrows/light_small_down.svg" alt="")
+                img(class="hidden dropupIcon" src="../images/arrows/light_small_up.svg" alt="")
+            li(class="relative")
+              button(class="flex items-center justify-between w-full text-base dropdownButton text-slate-600")
+                // active 狀態: before:absolute before:-bottom-1 before:left-0 before:w-full before:border-b before:border-black
+                span(class="relative before:absolute before:-bottom-1 before:left-0 before:w-full before:border-b before:border-black") 購買紀錄
+                img(class="dropdwonIcon" src="../images/arrows/light_small_down.svg" alt="")
+                img(class="hidden dropupIcon" src="../images/arrows/light_small_up.svg" alt="")
+            li(class="relative")
+              button(class="flex items-center justify-between w-full text-base dropdownButton text-slate-600")
+                span 點數紀錄
+                img(class="dropdwonIcon" src="../images/arrows/light_small_down.svg" alt="")
+                img(class="hidden dropupIcon" src="../images/arrows/light_small_up.svg" alt="")
+            li(class="relative")
+              button(class="flex items-center justify-between w-full text-base dropdownButton text-slate-600")
+                span 優惠卷
+                img(class="dropdwonIcon" src="../images/arrows/light_small_down.svg" alt="")
+                img(class="hidden dropupIcon" src="../images/arrows/light_small_up.svg" alt="")
+            li(class="relative")
+              button(class="flex items-center justify-between w-full text-base dropdownButton text-slate-600")
+                span 登出
+
+        // 右邊區塊
+        section(class="flex-1 mx-6 lg:mx-0")
+          div(class="flex flex-col justify-between px-4 py-6 space-y-8 border rounded lg:flex-row border-neutral-200 lg:px-12 lg:space-y-0")
+            // 左側區塊
+            div(class="flex flex-col justify-between space-y-3")
+              ul(class="flex flex-col space-y-3")
+                li(class="flex justify-between space-x-4 lg:justify-normal")
+                  p(class="text-base text-black") 訂單編號：
+                  p(class="text-base text-black") 04BAKC20210817
+                li(class="flex justify-between space-x-4 lg:justify-normal")
+                  p(class="text-base text-black") 訂單日期：
+                  p(class="text-base text-black") 2021/ 05/ 03  14:23
+                li(class="flex justify-between space-x-4 lg:justify-normal")
+                  p(class="text-base text-black") 支付方式：
+                  div(class="flex flex-col space-y-1")
+                    img(class="object-contain w-12 h-8" src="../images/member/logo_visa.png" alt="")
+                    p(class="text-base text-black") 信用卡末四碼 5647
+              div(class="flex justify-between space-x-5 lg:justify-normal")
+                p(class="text-base text-green-500") 運送中
+                p(class="text-base text-slate-800") 訂單共分為
+                  |
+                  span(class="px-1 text-red-700") 2
+                  | 張送貨單送達
+
+            // 右側區塊
+            ul(class="flex flex-col space-y-3")
+              li(class="flex justify-between space-x-4 lg:space-x-12")
+                p(class="text-base text-black") 小計
+                p(class="text-base text-black") $45,900
+              li(class="flex justify-between space-x-4 lg:space-x-12")
+                p(class="text-base text-black") 運費
+                p(class="text-base text-black") $80
+              li(class="flex justify-between space-x-4 lg:space-x-12")
+                p(class="text-base text-black") 夏日早鳥滿萬折千
+                p(class="text-base text-black") - $1,000
+              li(class="flex justify-between space-x-4 lg:space-x-12")
+                p(class="text-base text-black") 全館滿萬送千
+                p(class="text-base text-black") - $1,000
+              li(class="flex justify-between space-x-4 lg:space-x-12")
+                p(class="text-base text-black") 折扣優惠碼
+                p(class="text-base text-black") $80
+              li(class="flex justify-between space-x-4 lg:space-x-12")
+                p(class="text-base text-black") 折扣優惠碼
+                p(class="text-base text-black")  - $200
+              li(class="flex justify-between space-x-4 lg:space-x-12")
+                p(class="text-base text-black") 總計
+                p(class="text-base font-semibold text-black") $24,500
+
+          // 送貨資訊
+          div(class="px-4 py-6 border rounded border-neutral-200 lg:px-12 mt-[52px]")
+            div(class="flex flex-col space-y-3")
+              p(class="text-base text-black") 送貨單號：203kj22222
+              p(class="text-base text-black") 宅配到府：新北市深坑區深南路172號9樓
+              div(class="flex items-start space-x-[7px]")
+                img(src="../images/member/icon_car.svg" alt="")
+                p(class="text-base text-origin-800 whitespace-nowrap") 追蹤單號：
+                ul(class="flex flex-col flex-wrap space-y-1 lg:flex-row lg:space-x-2 lg:space-y-0")
+                  li 
+                    a(class="text-base underline text-origin-800" href="#") 8592945841 
+                  li 
+                    a(class="text-base underline text-origin-800" href="#") 2352621871
+
+            // 進度條
+            div(class="lg:mt-[60px] mt-10 flex items-center justify-center xl:space-x-[225px] lg:space-x-[140px] sm:space-x-[90px] space-x-[40px]")
+              div(class="flex flex-col items-center space-y-2")
+                div(class="flex items-center justify-center w-8 h-8 rounded-full bg-green-850")
+                  svg(class="w-4 h-4 text-white" fill='none' stroke='currentColor' stroke-width='2' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+                    path(stroke-linecap='round' stroke-linejoin='round' d='M5 13l4 4L19 7')
+                span(class="mt-2 text-sm") 成立
+              div(class="flex flex-col items-center space-y-2")
+                // active 狀態: bg-green-850、before:bg-green-850，disabled 狀態: bg-green-200、before:bg-green-200
+                div(class="relative flex items-center justify-center w-8 h-8 rounded-full bg-green-850 before:absolute before:xl:-left-[235px] before:lg:-left-[150px] before:sm:-left-[100px] before:-left-[50px] before:top-1/2 before:-translate-y-1/2 before:xl:w-[235px] before:lg:w-[150px] before:sm:w-[100px] before:w-[50px] before:h-[7px] before:bg-green-850")
+                  svg(class="w-4 h-4 text-white" fill='none' stroke='currentColor' stroke-width='2' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+                    path(stroke-linecap='round' stroke-linejoin='round' d='M5 13l4 4L19 7')
+                span(class="mt-2 text-sm") 撿貨中
+              div(class="flex flex-col items-center space-y-2")
+                // active 狀態: bg-green-850、before:bg-green-850，disabled 狀態: bg-green-200、before:bg-green-200
+                div(class="relative flex items-center justify-center w-8 h-8 rounded-full bg-green-200 before:absolute before:xl:-left-[235px] before:lg:-left-[150px] before:sm:-left-[100px] before:-left-[50px] before:top-1/2 before:-translate-y-1/2 before:xl:w-[235px] before:lg:w-[150px] before:sm:w-[100px] before:w-[50px] before:h-[7px] before:bg-green-200")
+                  svg(class="w-4 h-4 text-white" fill='none' stroke='currentColor' stroke-width='2' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+                    path(stroke-linecap='round' stroke-linejoin='round' d='M5 13l4 4L19 7')
+                span(class="mt-2 text-sm") 運送中
+              div(class="flex flex-col items-center space-y-2")
+                // active 狀態: bg-green-850、before:bg-green-850，disabled 狀態: bg-green-200、before:bg-green-200
+                div(class="relative flex items-center justify-center w-8 h-8 rounded-full bg-green-200 before:absolute before:xl:-left-[235px] before:lg:-left-[150px] before:sm:-left-[100px] before:-left-[50px] before:top-1/2 before:-translate-y-1/2 before:xl:w-[235px] before:lg:w-[150px] before:sm:w-[100px] before:w-[50px] before:h-[7px] before:bg-green-200")
+                  svg(class="w-4 h-4 text-white" fill='none' stroke='currentColor' stroke-width='2' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+                    path(stroke-linecap='round' stroke-linejoin='round' d='M5 13l4 4L19 7')
+                span(class="mt-2 text-sm") 已送達
+
+            // 商品列表
+            table(class="order lg:mt-[60px] mt-10")
+              thead
+                tr
+                  th(class="w-2/12") 商品編號
+                  th(class="w-2/12") 類別
+                  th(class="w-4/12 text-left") 名稱
+                  th(class="w-2/12") 數量
+                  th(class="w-2/12") 狀態
+              tbody
+                each val in [1, 2, 3, 4, 5]
+                  tr
+                    td(class="text-left xl:text-center" data-label="商品編號")
+                      p(class="text-sm lg:text-base flex-2 text-slate-800") 22099407
+                    td(class="text-left xl:text-center" data-label="類別")
+                      p(class="text-sm lg:text-base flex-2 text-slate-800") 贈品
+                    td(class="text-left" data-label="名稱")
+                      p(class="text-sm lg:text-base flex-2 text-slate-800") Dyson 涼風空氣清淨機白 TP00(W)
+                    td(class="text-left xl:text-center" data-label="數量")
+                      p(class="text-sm lg:text-base flex-2 text-slate-800") 9
+                    td(class="text-left xl:text-center" data-label="訂單狀態")
+                      p(class="text-sm lg:text-base flex-2 text-slate-800") 撿貨中
 
     include ../../components/member/footer.pug
