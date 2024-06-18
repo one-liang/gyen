@@ -19,43 +19,43 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // modal
+  // addressModal
   const openModalBtn = document.getElementById("openModal");
   const cancelModalBtn = document.getElementById("cancelModal");
   const finishModalBtn = document.getElementById("finishModal");
-  const modal = document.getElementById("myModal");
+  const addressModal = document.getElementById("addressModal");
 
   openModalBtn.addEventListener("click", () => {
-    modal.classList.add("fade-in");
-    modal.showModal();
+    addressModal.classList.add("fade-in");
+    addressModal.showModal();
   });
 
   cancelModalBtn.addEventListener("click", () => {
-    modal.classList.replace("fade-in", "fade-out");
-    modal.addEventListener(
+    addressModal.classList.replace("fade-in", "fade-out");
+    addressModal.addEventListener(
       "animationend",
       () => {
-        modal.classList.remove("fade-out");
-        modal.close();
+        addressModal.classList.remove("fade-out");
+        addressModal.close();
       },
       { once: true }
     );
   });
 
   finishModalBtn.addEventListener("click", () => {
-    modal.classList.replace("fade-in", "fade-out");
-    modal.addEventListener(
+    addressModal.classList.replace("fade-in", "fade-out");
+    addressModal.addEventListener(
       "animationend",
       () => {
-        modal.classList.remove("fade-out");
-        modal.close();
+        addressModal.classList.remove("fade-out");
+        addressModal.close();
       },
       { once: true }
     );
   });
 
-  modal.addEventListener("click", (event) => {
-    if (event.target === modal) {
+  addressModal.addEventListener("click", (event) => {
+    if (event.target === addressModal) {
       cancelModalBtn.click();
     }
   });

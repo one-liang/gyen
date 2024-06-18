@@ -18,4 +18,26 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  // phoneModal
+  const sendModalBtn = document.getElementById("sendModal");
+  const phoneModal = document.getElementById("phoneModal");
+
+  // 打開 phoneModal 方式
+  // phoneModal.showModal();
+
+  sendModalBtn.addEventListener("click", () => {
+    phoneModal.close();
+  });
+
+  // phoneModal
+  const sendVerifyModalBtn = document.getElementById("sendVerifyModal");
+  const verifyModal = document.getElementById("verifyModal");
+
+  // 打開 verifyModal 方式
+  // verifyModal.showModal();
+
+  sendVerifyModalBtn.addEventListener("click", () => {
+    verifyModal.close();
+  });
 });

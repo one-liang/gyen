@@ -106,4 +106,28 @@ html(lang="zh-Hant-TW")
                   button(class="text-center rounded max-w-[218px] h-[52px] w-full bg-gray-150 text-slate-800 text-base" type="button") 取消
                   button(class="text-center rounded max-w-[218px] h-[52px] w-full bg-origin-600 text-white text-base" type="button") 儲存
 
+    // 更變/修改手機號碼 Modal
+    dialog(class="lg:w-[456px] w-full px-6 py-8 bg-white rounded shadow-lg lg:px-14 lg:py-16 backdrop:bg-black/50" id="phoneModal")
+      p(class="text-xl font-semibold text-center text-slate-800") 更變/修改手機號碼
+      div(class="flex flex-col mt-10")
+        div(class="")
+          // error 狀態 class: !border-red-650
+          input(class="w-full h-[52px] border border-neutral-200 rounded px-6 !border-red-650" type="text" placeholder="請輸入新的手機號碼")
+          span(class="block mt-2 text-sm text-red-650") 請輸入新的手機號碼
+        div(class="flex justify-end mt-[11px]")
+          button(class="max-w-[128px] w-full h-[44px] flex items-center justify-center text-slate-800 bg-gray-150 rounded" id="finishModal") 發送驗證碼
+        div(class="mt-6")
+          input(class="w-full h-[52px] border border-neutral-200 rounded px-6" type="text" placeholder="請輸入簡訊驗證碼")
+        div(class="mt-6")
+          button(class="w-full h-[52px] lg:h-[60px] flex items-center justify-center text-white bg-origin-600 rounded" id="sendModal") 送出
+
+    // 驗證Email Modal
+    dialog(class="lg:w-[456px] w-full px-6 py-8 bg-white rounded shadow-lg lg:px-14 lg:py-16 backdrop:bg-black/50" id="verifyModal")
+      p(class="text-xl font-semibold text-center text-slate-800") 驗證Email
+      div(class="flex flex-col mt-8 lg:mt-12")
+        p(class="text-base text-slate-800") 您的Email尚未進行驗證，我們已將驗證碼傳送至你的Email信箱：
+        p(class="mt-6 text-base text-center text-slate-800 lg:mt-8") peter***@ne-plus.com
+        div(class="mt-8")
+          button(class="w-full h-[52px] lg:h-[60px] flex items-center justify-center text-white bg-origin-600 rounded" id="sendVerifyModal") 發送驗證信
+
     include ../../components/member/footer.pug
