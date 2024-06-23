@@ -46,3 +46,7 @@
 
 - [專欄列表頁](https://one-liang.github.io/gyen/dist/columnList)
 - [內容單頁](https://one-liang.github.io/gyen/dist/contentSingle)
+
+### 備註
+
+- 會員中心-修改手機號碼、會員中心-驗證 email，目前沒有按鈕可以觸發，兩個 popup 切版放到會員中心-我的資料裡面
