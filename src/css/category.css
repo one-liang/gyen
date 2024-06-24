@@ -31,3 +31,7 @@
 .swiper-featured .swiper-button-featured-prev {
   @apply top-[calc(50%-56px)];
 }
+
+.menuMask {
+  @apply before:absolute before:top-0 before:left-[calc(-18%)] before:w-screen before:h-full before:bg-black before:bg-opacity-60 before:-z-1;
+}

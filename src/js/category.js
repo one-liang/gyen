@@ -41,4 +41,41 @@ document.addEventListener("DOMContentLoaded", function () {
       el: ".swiper-featured-scrollbar",
     },
   });
+
+  // 篩選選單
+  const body = document.querySelector("body");
+  const advancedMenu = document.querySelector("#advancedMenu");
+  const filterBtn = document.querySelector("#filterBtn");
+  const closeAdvancedMenuButton = document.querySelector(
+    "#closeAdvancedMenuButton"
+  );
+  const advanceDropdownButtons = document.querySelectorAll(
+    ".advanceDropdownButton"
+  );
+
+  if (window.innerWidth < 1024) {
+    filterBtn.addEventListener("click", () => {
+      body.classList.toggle("overflow-hidden");
+      advancedMenu.classList.toggle("!translate-x-0");
+      advancedMenu.classList.toggle("menuMask");
+    });
+
+    closeAdvancedMenuButton.addEventListener("click", () => {
+      body.classList.toggle("overflow-hidden");
+      advancedMenu.classList.toggle("!translate-x-0");
+      advancedMenu.classList.toggle("menuMask");
+    });
+
+    advanceDropdownButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const dropdownList = button.nextElementSibling;
+        const minusIcon = button.querySelector(".minusIcon");
+        const plusIcon = button.querySelector(".plusIcon");
+
+        dropdownList.classList.toggle("hidden");
+        minusIcon.classList.toggle("hidden");
+        plusIcon.classList.toggle("hidden");
+      });
+    });
+  }
 });
