@@ -133,9 +133,9 @@
               <div class="pb-3 border-b border-neutral-200">
                 <p class="text-xl font-bold text-black">配送資訊</p>
               </div>
-              <div class="flex lg:flex-row flex-col lg:space-y-0 space-y-16 items-center py-12 border-b border-neutral-200 lg:pl-2 lg:space-x-[60px]">
+              <div class="flex flex-col py-12 space-y-16 border-b lg:space-y-[57px] border-neutral-200 lg:pl-2">
                 <!-- 宅配到府-->
-                <div class="flex items-center justify-between flex-1">
+                <div class="flex items-center flex-1 lg:space-x-24">
                   <div class="flex flex-col">
                     <div class="flex space-x-5">
                       <input class="round-checkbox" id="home" type="radio" name="delivery">
@@ -154,7 +154,7 @@
                   </div>
                 </div>
                 <!-- 超商取貨-->
-                <div class="flex items-center justify-between flex-1">
+                <div class="flex items-center flex-1 lg:space-x-24">
                   <div class="flex flex-col">
                     <div class="flex space-x-5">
                       <input class="round-checkbox" id="supermarket" type="radio" name="delivery">
@@ -226,7 +226,7 @@
               <div class="pb-3 border-b border-neutral-200">
                 <p class="text-xl font-bold text-black">付款資訊</p>
               </div>
-              <div class="grid lg:grid-cols-2 grid-cols-1 lg:gap-y-[49px] gap-y-16 items-center pt-10 lg:py-12 lg:pl-2 lg:gap-x-[60px]">
+              <div class="grid grid-cols-1 lg:gap-y-[49px] gap-y-16 items-center pt-10 lg:py-12 lg:pl-2">
                 <!-- 信用卡付款-->
                 <div class="flex flex-col flex-1">
                   <div class="flex space-x-5">
@@ -273,16 +273,16 @@
               <div class="pb-3 border-b border-neutral-200">
                 <p class="text-xl font-bold text-black">發票資訊</p>
               </div>
-              <div class="grid lg:grid-cols-3 grid-cols-1 lg:gap-y-[49px] gap-y-16 items-center py-10 lg:py-12 lg:pl-2 lg:gap-x-[60px] border-b border-neutral-200">
+              <div class="grid grid-cols-1 lg:gap-y-[49px] gap-y-16 items-center py-10 lg:py-12 lg:pl-2 border-b border-neutral-200">
                 <!-- 個人載具-->
                 <div class="flex flex-col flex-1">
                   <div class="flex space-x-5">
                     <input class="round-checkbox" id="personalVehicle" type="radio" name="invoice">
                     <label class="text-base text-neutral-600" for="personalVehicle">個人載具</label>
                   </div>
-                  <div class="flex justify-between mt-12">
+                  <div class="flex mt-12">
                     <p class="text-base text-neutral-600">/T2HR5</p>
-                    <button class="text-base text-blue-650 lg:ml-[33px] ml-auto" type="button">編輯</button>
+                    <button class="text-base text-blue-650 lg:ml-[68px] ml-auto" type="button">編輯</button>
                   </div>
                 </div>
                 <!-- 公司發票-->
@@ -291,7 +291,7 @@
                     <input class="round-checkbox" id="companyInvoice" type="radio" name="invoice">
                     <label class="text-base text-neutral-600" for="companyInvoice">公司發票</label>
                   </div>
-                  <div class="lg:max-w-[260px] mt-9 select-wrapper">
+                  <div class="lg:max-w-[230px] mt-9 select-wrapper">
                     <select class="w-full h-12 lg:h-[52px] px-6 py-[9px] text-base border rounded appearance-none text-black border-neutral-200">
                       <option value="none" selected disabled hidden>請選擇分期期數</option>
                       <option value="1">1</option>
@@ -313,7 +313,7 @@
                     <input class="round-checkbox" id="donationInvoice" type="radio" name="invoice">
                     <label class="text-base text-neutral-600" for="donationInvoice">捐贈發票</label>
                   </div>
-                  <div class="lg:max-w-[260px] mt-9 select-wrapper">
+                  <div class="lg:max-w-[230px] mt-9 select-wrapper">
                     <select class="w-full h-12 lg:h-[52px] px-6 py-[9px] text-base border rounded appearance-none text-black border-neutral-200">
                       <option value="none" selected disabled hidden>請選擇發票捐贈對象</option>
                       <option value="捐贈對象1">捐贈對象1</option>
@@ -323,17 +323,16 @@
                   </div>
                 </div>
               </div>
-              <div class="grid lg:grid-cols-3 grid-cols-1 lg:gap-y-[49px] gap-y-16 items-center pt-10 lg:py-12 lg:pl-2 lg:gap-x-[60px]">
-                <div class="hidden lg:block"></div>
+              <div class="grid grid-cols-1 lg:gap-y-[49px] gap-y-16 items-center pt-10 lg:py-12 lg:pl-2">
                 <!-- 統一編號-->
                 <div>
                   <label class="block text-sm text-slate-800" for="uniformNumber">統一編號</label>
-                  <input class="w-full h-[52px] mt-3 px-6 py-4 text-black text-base border border-neutral-200 rounded" id="uniformNumber" type="text" placeholder="請輸入統一編號">
+                  <input class="lg:max-w-[230px] w-full h-[52px] mt-3 px-6 py-4 text-black text-base border border-neutral-200 rounded" id="uniformNumber" type="text" placeholder="請輸入統一編號">
                 </div>
                 <!-- 公司名稱-->
                 <div>
                   <label class="block text-sm text-slate-800" for="companyName">公司名稱</label>
-                  <input class="w-full h-[52px] mt-3 px-6 py-4 text-black text-base border border-neutral-200 rounded" id="companyName" type="text" placeholder="請輸入公司名稱">
+                  <input class="lg:max-w-[230px] w-full h-[52px] mt-3 px-6 py-4 text-black text-base border border-neutral-200 rounded" id="companyName" type="text" placeholder="請輸入公司名稱">
                 </div>
               </div>
             </div>
