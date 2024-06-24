@@ -17,11 +17,11 @@
 }
 
 .round-checkbox {
-  @apply appearance-none h-5 w-5 border border-black rounded-full;
+  @apply appearance-none h-5 w-5 border border-neutral-500;
 }
 
 .round-checkbox:checked {
-  @apply bg-black flex items-center justify-center relative duration-150;
+  @apply bg-origin-600 flex items-center justify-center relative duration-150;
 }
 
 .round-checkbox:checked::before {

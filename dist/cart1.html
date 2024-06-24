@@ -138,19 +138,178 @@
               <div class="relative pt-[50px] lg:py-6 lg:border-b border-neutral-200 lg:last:border-b-0">
                 <div class="flex items-start lg:space-x-10 space-x-[9px]">
                   <div class="flex items-center space-x-4">
-                    <input class="round-checkbox" type="checkbox"><img class="object-cover object-center lg:w-[120px] w-[70px] lg:h-[120px] h-[70px]" src="https://fakeimg.pl/120x120/?text=Product" alt="">
+                    <input class="round-checkbox" type="checkbox">
+                    <div class="relative flex flex-col items-center"><img class="object-cover object-center lg:w-[120px] w-[70px] lg:h-[120px] h-[70px]" src="https://fakeimg.pl/120x120/?text=Product" alt="">
+                      <!-- 加購: bg-gray-800、贈品: bg-red-300-->
+                      <p class="absolute lg:-bottom-[42px] -bottom-7 lg:px-4 px-[14px] py-[3px] lg:text-sm text-xs text-white bg-gray-800 rounded">加購</p>
+                      <!-- p(class="absolute lg:-bottom-[42px] -bottom-7 lg:px-4 px-[14px] py-[3px] lg:text-sm text-xs text-white bg-red-300 rounded") 贈品-->
+                    </div>
                   </div>
                   <div class="flex flex-col flex-1">
                     <div class="flex items-start justify-between"><a class="text-sm font-bold text-black lg:text-base" href="#">【常溫】胡同肉鬆 純豬肉鬆 120g /1 罐</a>
-                      <button class="absolute right-0 lg:static top-4" type="button"><img src="./images/icon/close-gray.svg" alt=""></button>
+                      <button class="absolute right-0 lg:static top-4 flex-[0_0_24px]" type="button"><img src="./images/icon/close-gray.svg" alt=""></button>
                     </div>
-                    <div class="flex justify-between lg:mr-[74px] lg:mt-[14px] mt-2">
+                    <div class="flex justify-between lg:mt-[14px] mt-2">
                       <div class="flex items-center space-x-4">
                         <!-- 限量新品: bg-red-400、常溫: bg-green-400、冷藏: bg-blue-400、冷凍: bg-purple-400--><span class="px-2 py-1 text-white bg-purple-400 rounded-sm text-10">冷凍</span>
                         <p class="text-sm text-black lg:text-base">三天內出貨</p>
                       </div>
-                      <div class="max-w-[112px] flex-1 select-wrapper lg:block hidden">
-                        <select class="w-full h-12 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                      <div class="flex justify-end flex-1 space-x-4">
+                        <div class="max-w-[190px] flex-1 select-wrapper lg:block hidden">
+                          <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                            <option value="1">24包/一箱</option>
+                            <option value="2">24包/一箱</option>
+                            <option value="3">24包/一箱</option>
+                            <option value="4">24包/一箱</option>
+                            <option value="5">24包/一箱</option>
+                            <option value="6">24包/一箱</option>
+                            <option value="7">24包/一箱</option>
+                            <option value="8">24包/一箱</option>
+                            <option value="9">24包/一箱</option>
+                            <option value="10">24包/一箱</option>
+                          </select>
+                        </div>
+                        <div class="max-w-[112px] flex-1 select-wrapper lg:block hidden">
+                          <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="mt-4 text-sm font-bold text-red-500 lg:mt-8 lg:text-base">NT 864</p>
+                    <p class="hidden text-gray-400 lg:mt-8 text-10 lg:text-xs lg:block">提醒您注意，本商品為食品，不提供試吃，一經拆封即無法退換，敬請見諒與配合。商品退貨時必須保持原狀，不可拆封，亦即必須回復至您收到商品的原始狀態。（包含包裝, 附件, 內外包裝, 隨機文件, 贈品等完整性）。</p>
+                    <div class="hidden mt-6 lg:block">
+                      <p class="text-base text-black">『胡同嚴選』海苔肉鬆</p>
+                      <div class="flex space-x-4 mt-[6px]">
+                        <div class="max-w-[144px] flex-1 select-wrapper">
+                          <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                            <option value="1">原味</option>
+                            <option value="2">原味</option>
+                            <option value="3">原味</option>
+                            <option value="4">原味</option>
+                            <option value="5">原味</option>
+                            <option value="6">原味</option>
+                            <option value="7">原味</option>
+                            <option value="8">原味</option>
+                            <option value="9">原味</option>
+                            <option value="10">原味</option>
+                          </select>
+                        </div>
+                        <div class="max-w-[112px] flex-1 select-wrapper">
+                          <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hidden mt-6 lg:block">
+                      <p class="text-base text-black">『胡同嚴選』海苔肉鬆</p>
+                      <div class="flex space-x-4 mt-[6px]">
+                        <div class="max-w-[144px] flex-1 select-wrapper">
+                          <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                            <option value="1">原味</option>
+                            <option value="2">原味</option>
+                            <option value="3">原味</option>
+                            <option value="4">原味</option>
+                            <option value="5">原味</option>
+                            <option value="6">原味</option>
+                            <option value="7">原味</option>
+                            <option value="8">原味</option>
+                            <option value="9">原味</option>
+                            <option value="10">原味</option>
+                          </select>
+                        </div>
+                        <div class="max-w-[112px] flex-1 select-wrapper">
+                          <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 手機版 description-->
+                <div class="block mt-4 lg:hidden pl-9">
+                  <p class="block text-gray-400 text-10">提醒您注意，本商品為食品，不提供試吃，一經拆封即無法退換，敬請見諒與配合。商品退貨時必須保持原狀，不可拆封，亦即必須回復至您收到商品的原始狀態。（包含包裝, 附件, 內外包裝, 隨機文件, 贈品等完整性）。</p>
+                </div>
+                <!-- 手機版 select-->
+                <div class="block mt-6 lg:hidden">
+                  <div class="flex flex-1 space-x-3">
+                    <div class="max-w-[190px] flex-1 select-wrapper">
+                      <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                        <option value="1">24包/一箱</option>
+                        <option value="2">24包/一箱</option>
+                        <option value="3">24包/一箱</option>
+                        <option value="4">24包/一箱</option>
+                        <option value="5">24包/一箱</option>
+                        <option value="6">24包/一箱</option>
+                        <option value="7">24包/一箱</option>
+                        <option value="8">24包/一箱</option>
+                        <option value="9">24包/一箱</option>
+                        <option value="10">24包/一箱</option>
+                      </select>
+                    </div>
+                    <div class="max-w-[112px] flex-1 select-wrapper">
+                      <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="block mt-6 lg:hidden">
+                    <p class="text-base text-black">『胡同嚴選』海苔肉鬆</p>
+                    <div class="flex space-x-4 mt-[6px]">
+                      <div class="max-w-[190px] flex-1 select-wrapper">
+                        <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                          <option value="1">原味</option>
+                          <option value="2">原味</option>
+                          <option value="3">原味</option>
+                          <option value="4">原味</option>
+                          <option value="5">原味</option>
+                          <option value="6">原味</option>
+                          <option value="7">原味</option>
+                          <option value="8">原味</option>
+                          <option value="9">原味</option>
+                          <option value="10">原味</option>
+                        </select>
+                      </div>
+                      <div class="max-w-[112px] flex-1 select-wrapper">
+                        <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
                           <option value="1">1</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
@@ -164,45 +323,217 @@
                         </select>
                       </div>
                     </div>
-                    <p class="mt-4 text-sm text-black lg:mt-8 lg:text-base">NT 864</p>
-                    <p class="hidden text-gray-400 lg:mt-8 text-10 lg:text-xs lg:block">提醒您注意，本商品為食品，不提供試吃，一經拆封即無法退換，敬請見諒與配合。商品退貨時必須保持原狀，不可拆封，亦即必須回復至您收到商品的原始狀態。（包含包裝, 附件, 內外包裝, 隨機文件, 贈品等完整性）。</p>
                   </div>
-                </div>
-                <!-- 手機版 select & description-->
-                <div class="block mt-4 lg:hidden pl-9">
-                  <p class="block text-gray-400 text-10">提醒您注意，本商品為食品，不提供試吃，一經拆封即無法退換，敬請見諒與配合。商品退貨時必須保持原狀，不可拆封，亦即必須回復至您收到商品的原始狀態。（包含包裝, 附件, 內外包裝, 隨機文件, 贈品等完整性）。</p>
-                  <div class="max-w-[112px] flex-1 select-wrapper mt-6">
-                    <select class="w-full h-12 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-                    </select>
+                  <div class="block mt-6 lg:hidden">
+                    <p class="text-base text-black">『胡同嚴選』海苔肉鬆</p>
+                    <div class="flex space-x-4 mt-[6px]">
+                      <div class="max-w-[190px] flex-1 select-wrapper">
+                        <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                          <option value="1">原味</option>
+                          <option value="2">原味</option>
+                          <option value="3">原味</option>
+                          <option value="4">原味</option>
+                          <option value="5">原味</option>
+                          <option value="6">原味</option>
+                          <option value="7">原味</option>
+                          <option value="8">原味</option>
+                          <option value="9">原味</option>
+                          <option value="10">原味</option>
+                        </select>
+                      </div>
+                      <div class="max-w-[112px] flex-1 select-wrapper">
+                        <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                        </select>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="relative pt-[50px] lg:py-6 lg:border-b border-neutral-200 lg:last:border-b-0">
                 <div class="flex items-start lg:space-x-10 space-x-[9px]">
                   <div class="flex items-center space-x-4">
-                    <input class="round-checkbox" type="checkbox"><img class="object-cover object-center lg:w-[120px] w-[70px] lg:h-[120px] h-[70px]" src="https://fakeimg.pl/120x120/?text=Product" alt="">
+                    <input class="round-checkbox" type="checkbox">
+                    <div class="relative flex flex-col items-center"><img class="object-cover object-center lg:w-[120px] w-[70px] lg:h-[120px] h-[70px]" src="https://fakeimg.pl/120x120/?text=Product" alt="">
+                      <!-- 加購: bg-gray-800、贈品: bg-red-300-->
+                      <p class="absolute lg:-bottom-[42px] -bottom-7 lg:px-4 px-[14px] py-[3px] lg:text-sm text-xs text-white bg-gray-800 rounded">加購</p>
+                      <!-- p(class="absolute lg:-bottom-[42px] -bottom-7 lg:px-4 px-[14px] py-[3px] lg:text-sm text-xs text-white bg-red-300 rounded") 贈品-->
+                    </div>
                   </div>
                   <div class="flex flex-col flex-1">
                     <div class="flex items-start justify-between"><a class="text-sm font-bold text-black lg:text-base" href="#">【常溫】胡同肉鬆 純豬肉鬆 120g /1 罐</a>
-                      <button class="absolute right-0 lg:static top-4" type="button"><img src="./images/icon/close-gray.svg" alt=""></button>
+                      <button class="absolute right-0 lg:static top-4 flex-[0_0_24px]" type="button"><img src="./images/icon/close-gray.svg" alt=""></button>
                     </div>
-                    <div class="flex justify-between lg:mr-[74px] lg:mt-[14px] mt-2">
+                    <div class="flex justify-between lg:mt-[14px] mt-2">
                       <div class="flex items-center space-x-4">
                         <!-- 限量新品: bg-red-400、常溫: bg-green-400、冷藏: bg-blue-400、冷凍: bg-purple-400--><span class="px-2 py-1 text-white bg-purple-400 rounded-sm text-10">冷凍</span>
                         <p class="text-sm text-black lg:text-base">三天內出貨</p>
                       </div>
-                      <div class="max-w-[112px] flex-1 select-wrapper lg:block hidden">
-                        <select class="w-full h-12 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                      <div class="flex justify-end flex-1 space-x-4">
+                        <div class="max-w-[190px] flex-1 select-wrapper lg:block hidden">
+                          <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                            <option value="1">24包/一箱</option>
+                            <option value="2">24包/一箱</option>
+                            <option value="3">24包/一箱</option>
+                            <option value="4">24包/一箱</option>
+                            <option value="5">24包/一箱</option>
+                            <option value="6">24包/一箱</option>
+                            <option value="7">24包/一箱</option>
+                            <option value="8">24包/一箱</option>
+                            <option value="9">24包/一箱</option>
+                            <option value="10">24包/一箱</option>
+                          </select>
+                        </div>
+                        <div class="max-w-[112px] flex-1 select-wrapper lg:block hidden">
+                          <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="mt-4 text-sm font-bold text-red-500 lg:mt-8 lg:text-base">NT 864</p>
+                    <p class="hidden text-gray-400 lg:mt-8 text-10 lg:text-xs lg:block">提醒您注意，本商品為食品，不提供試吃，一經拆封即無法退換，敬請見諒與配合。商品退貨時必須保持原狀，不可拆封，亦即必須回復至您收到商品的原始狀態。（包含包裝, 附件, 內外包裝, 隨機文件, 贈品等完整性）。</p>
+                    <div class="hidden mt-6 lg:block">
+                      <p class="text-base text-black">『胡同嚴選』海苔肉鬆</p>
+                      <div class="flex space-x-4 mt-[6px]">
+                        <div class="max-w-[144px] flex-1 select-wrapper">
+                          <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                            <option value="1">原味</option>
+                            <option value="2">原味</option>
+                            <option value="3">原味</option>
+                            <option value="4">原味</option>
+                            <option value="5">原味</option>
+                            <option value="6">原味</option>
+                            <option value="7">原味</option>
+                            <option value="8">原味</option>
+                            <option value="9">原味</option>
+                            <option value="10">原味</option>
+                          </select>
+                        </div>
+                        <div class="max-w-[112px] flex-1 select-wrapper">
+                          <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hidden mt-6 lg:block">
+                      <p class="text-base text-black">『胡同嚴選』海苔肉鬆</p>
+                      <div class="flex space-x-4 mt-[6px]">
+                        <div class="max-w-[144px] flex-1 select-wrapper">
+                          <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                            <option value="1">原味</option>
+                            <option value="2">原味</option>
+                            <option value="3">原味</option>
+                            <option value="4">原味</option>
+                            <option value="5">原味</option>
+                            <option value="6">原味</option>
+                            <option value="7">原味</option>
+                            <option value="8">原味</option>
+                            <option value="9">原味</option>
+                            <option value="10">原味</option>
+                          </select>
+                        </div>
+                        <div class="max-w-[112px] flex-1 select-wrapper">
+                          <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 手機版 description-->
+                <div class="block mt-4 lg:hidden pl-9">
+                  <p class="block text-gray-400 text-10">提醒您注意，本商品為食品，不提供試吃，一經拆封即無法退換，敬請見諒與配合。商品退貨時必須保持原狀，不可拆封，亦即必須回復至您收到商品的原始狀態。（包含包裝, 附件, 內外包裝, 隨機文件, 贈品等完整性）。</p>
+                </div>
+                <!-- 手機版 select-->
+                <div class="block mt-6 lg:hidden">
+                  <div class="flex flex-1 space-x-3">
+                    <div class="max-w-[190px] flex-1 select-wrapper">
+                      <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                        <option value="1">24包/一箱</option>
+                        <option value="2">24包/一箱</option>
+                        <option value="3">24包/一箱</option>
+                        <option value="4">24包/一箱</option>
+                        <option value="5">24包/一箱</option>
+                        <option value="6">24包/一箱</option>
+                        <option value="7">24包/一箱</option>
+                        <option value="8">24包/一箱</option>
+                        <option value="9">24包/一箱</option>
+                        <option value="10">24包/一箱</option>
+                      </select>
+                    </div>
+                    <div class="max-w-[112px] flex-1 select-wrapper">
+                      <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="block mt-6 lg:hidden">
+                    <p class="text-base text-black">『胡同嚴選』海苔肉鬆</p>
+                    <div class="flex space-x-4 mt-[6px]">
+                      <div class="max-w-[190px] flex-1 select-wrapper">
+                        <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                          <option value="1">原味</option>
+                          <option value="2">原味</option>
+                          <option value="3">原味</option>
+                          <option value="4">原味</option>
+                          <option value="5">原味</option>
+                          <option value="6">原味</option>
+                          <option value="7">原味</option>
+                          <option value="8">原味</option>
+                          <option value="9">原味</option>
+                          <option value="10">原味</option>
+                        </select>
+                      </div>
+                      <div class="max-w-[112px] flex-1 select-wrapper">
+                        <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
                           <option value="1">1</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
@@ -216,45 +547,217 @@
                         </select>
                       </div>
                     </div>
-                    <p class="mt-4 text-sm text-black lg:mt-8 lg:text-base">NT 864</p>
-                    <p class="hidden text-gray-400 lg:mt-8 text-10 lg:text-xs lg:block">提醒您注意，本商品為食品，不提供試吃，一經拆封即無法退換，敬請見諒與配合。商品退貨時必須保持原狀，不可拆封，亦即必須回復至您收到商品的原始狀態。（包含包裝, 附件, 內外包裝, 隨機文件, 贈品等完整性）。</p>
                   </div>
-                </div>
-                <!-- 手機版 select & description-->
-                <div class="block mt-4 lg:hidden pl-9">
-                  <p class="block text-gray-400 text-10">提醒您注意，本商品為食品，不提供試吃，一經拆封即無法退換，敬請見諒與配合。商品退貨時必須保持原狀，不可拆封，亦即必須回復至您收到商品的原始狀態。（包含包裝, 附件, 內外包裝, 隨機文件, 贈品等完整性）。</p>
-                  <div class="max-w-[112px] flex-1 select-wrapper mt-6">
-                    <select class="w-full h-12 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-                    </select>
+                  <div class="block mt-6 lg:hidden">
+                    <p class="text-base text-black">『胡同嚴選』海苔肉鬆</p>
+                    <div class="flex space-x-4 mt-[6px]">
+                      <div class="max-w-[190px] flex-1 select-wrapper">
+                        <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                          <option value="1">原味</option>
+                          <option value="2">原味</option>
+                          <option value="3">原味</option>
+                          <option value="4">原味</option>
+                          <option value="5">原味</option>
+                          <option value="6">原味</option>
+                          <option value="7">原味</option>
+                          <option value="8">原味</option>
+                          <option value="9">原味</option>
+                          <option value="10">原味</option>
+                        </select>
+                      </div>
+                      <div class="max-w-[112px] flex-1 select-wrapper">
+                        <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                        </select>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="relative pt-[50px] lg:py-6 lg:border-b border-neutral-200 lg:last:border-b-0">
                 <div class="flex items-start lg:space-x-10 space-x-[9px]">
                   <div class="flex items-center space-x-4">
-                    <input class="round-checkbox" type="checkbox"><img class="object-cover object-center lg:w-[120px] w-[70px] lg:h-[120px] h-[70px]" src="https://fakeimg.pl/120x120/?text=Product" alt="">
+                    <input class="round-checkbox" type="checkbox">
+                    <div class="relative flex flex-col items-center"><img class="object-cover object-center lg:w-[120px] w-[70px] lg:h-[120px] h-[70px]" src="https://fakeimg.pl/120x120/?text=Product" alt="">
+                      <!-- 加購: bg-gray-800、贈品: bg-red-300-->
+                      <p class="absolute lg:-bottom-[42px] -bottom-7 lg:px-4 px-[14px] py-[3px] lg:text-sm text-xs text-white bg-gray-800 rounded">加購</p>
+                      <!-- p(class="absolute lg:-bottom-[42px] -bottom-7 lg:px-4 px-[14px] py-[3px] lg:text-sm text-xs text-white bg-red-300 rounded") 贈品-->
+                    </div>
                   </div>
                   <div class="flex flex-col flex-1">
                     <div class="flex items-start justify-between"><a class="text-sm font-bold text-black lg:text-base" href="#">【常溫】胡同肉鬆 純豬肉鬆 120g /1 罐</a>
-                      <button class="absolute right-0 lg:static top-4" type="button"><img src="./images/icon/close-gray.svg" alt=""></button>
+                      <button class="absolute right-0 lg:static top-4 flex-[0_0_24px]" type="button"><img src="./images/icon/close-gray.svg" alt=""></button>
                     </div>
-                    <div class="flex justify-between lg:mr-[74px] lg:mt-[14px] mt-2">
+                    <div class="flex justify-between lg:mt-[14px] mt-2">
                       <div class="flex items-center space-x-4">
                         <!-- 限量新品: bg-red-400、常溫: bg-green-400、冷藏: bg-blue-400、冷凍: bg-purple-400--><span class="px-2 py-1 text-white bg-purple-400 rounded-sm text-10">冷凍</span>
                         <p class="text-sm text-black lg:text-base">三天內出貨</p>
                       </div>
-                      <div class="max-w-[112px] flex-1 select-wrapper lg:block hidden">
-                        <select class="w-full h-12 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                      <div class="flex justify-end flex-1 space-x-4">
+                        <div class="max-w-[190px] flex-1 select-wrapper lg:block hidden">
+                          <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                            <option value="1">24包/一箱</option>
+                            <option value="2">24包/一箱</option>
+                            <option value="3">24包/一箱</option>
+                            <option value="4">24包/一箱</option>
+                            <option value="5">24包/一箱</option>
+                            <option value="6">24包/一箱</option>
+                            <option value="7">24包/一箱</option>
+                            <option value="8">24包/一箱</option>
+                            <option value="9">24包/一箱</option>
+                            <option value="10">24包/一箱</option>
+                          </select>
+                        </div>
+                        <div class="max-w-[112px] flex-1 select-wrapper lg:block hidden">
+                          <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="mt-4 text-sm font-bold text-red-500 lg:mt-8 lg:text-base">NT 864</p>
+                    <p class="hidden text-gray-400 lg:mt-8 text-10 lg:text-xs lg:block">提醒您注意，本商品為食品，不提供試吃，一經拆封即無法退換，敬請見諒與配合。商品退貨時必須保持原狀，不可拆封，亦即必須回復至您收到商品的原始狀態。（包含包裝, 附件, 內外包裝, 隨機文件, 贈品等完整性）。</p>
+                    <div class="hidden mt-6 lg:block">
+                      <p class="text-base text-black">『胡同嚴選』海苔肉鬆</p>
+                      <div class="flex space-x-4 mt-[6px]">
+                        <div class="max-w-[144px] flex-1 select-wrapper">
+                          <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                            <option value="1">原味</option>
+                            <option value="2">原味</option>
+                            <option value="3">原味</option>
+                            <option value="4">原味</option>
+                            <option value="5">原味</option>
+                            <option value="6">原味</option>
+                            <option value="7">原味</option>
+                            <option value="8">原味</option>
+                            <option value="9">原味</option>
+                            <option value="10">原味</option>
+                          </select>
+                        </div>
+                        <div class="max-w-[112px] flex-1 select-wrapper">
+                          <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hidden mt-6 lg:block">
+                      <p class="text-base text-black">『胡同嚴選』海苔肉鬆</p>
+                      <div class="flex space-x-4 mt-[6px]">
+                        <div class="max-w-[144px] flex-1 select-wrapper">
+                          <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                            <option value="1">原味</option>
+                            <option value="2">原味</option>
+                            <option value="3">原味</option>
+                            <option value="4">原味</option>
+                            <option value="5">原味</option>
+                            <option value="6">原味</option>
+                            <option value="7">原味</option>
+                            <option value="8">原味</option>
+                            <option value="9">原味</option>
+                            <option value="10">原味</option>
+                          </select>
+                        </div>
+                        <div class="max-w-[112px] flex-1 select-wrapper">
+                          <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 手機版 description-->
+                <div class="block mt-4 lg:hidden pl-9">
+                  <p class="block text-gray-400 text-10">提醒您注意，本商品為食品，不提供試吃，一經拆封即無法退換，敬請見諒與配合。商品退貨時必須保持原狀，不可拆封，亦即必須回復至您收到商品的原始狀態。（包含包裝, 附件, 內外包裝, 隨機文件, 贈品等完整性）。</p>
+                </div>
+                <!-- 手機版 select-->
+                <div class="block mt-6 lg:hidden">
+                  <div class="flex flex-1 space-x-3">
+                    <div class="max-w-[190px] flex-1 select-wrapper">
+                      <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                        <option value="1">24包/一箱</option>
+                        <option value="2">24包/一箱</option>
+                        <option value="3">24包/一箱</option>
+                        <option value="4">24包/一箱</option>
+                        <option value="5">24包/一箱</option>
+                        <option value="6">24包/一箱</option>
+                        <option value="7">24包/一箱</option>
+                        <option value="8">24包/一箱</option>
+                        <option value="9">24包/一箱</option>
+                        <option value="10">24包/一箱</option>
+                      </select>
+                    </div>
+                    <div class="max-w-[112px] flex-1 select-wrapper">
+                      <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="block mt-6 lg:hidden">
+                    <p class="text-base text-black">『胡同嚴選』海苔肉鬆</p>
+                    <div class="flex space-x-4 mt-[6px]">
+                      <div class="max-w-[190px] flex-1 select-wrapper">
+                        <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                          <option value="1">原味</option>
+                          <option value="2">原味</option>
+                          <option value="3">原味</option>
+                          <option value="4">原味</option>
+                          <option value="5">原味</option>
+                          <option value="6">原味</option>
+                          <option value="7">原味</option>
+                          <option value="8">原味</option>
+                          <option value="9">原味</option>
+                          <option value="10">原味</option>
+                        </select>
+                      </div>
+                      <div class="max-w-[112px] flex-1 select-wrapper">
+                        <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
                           <option value="1">1</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
@@ -268,48 +771,97 @@
                         </select>
                       </div>
                     </div>
-                    <p class="mt-4 text-sm text-black lg:mt-8 lg:text-base">NT 864</p>
-                    <p class="hidden text-gray-400 lg:mt-8 text-10 lg:text-xs lg:block">提醒您注意，本商品為食品，不提供試吃，一經拆封即無法退換，敬請見諒與配合。商品退貨時必須保持原狀，不可拆封，亦即必須回復至您收到商品的原始狀態。（包含包裝, 附件, 內外包裝, 隨機文件, 贈品等完整性）。</p>
                   </div>
-                </div>
-                <!-- 手機版 select & description-->
-                <div class="block mt-4 lg:hidden pl-9">
-                  <p class="block text-gray-400 text-10">提醒您注意，本商品為食品，不提供試吃，一經拆封即無法退換，敬請見諒與配合。商品退貨時必須保持原狀，不可拆封，亦即必須回復至您收到商品的原始狀態。（包含包裝, 附件, 內外包裝, 隨機文件, 贈品等完整性）。</p>
-                  <div class="max-w-[112px] flex-1 select-wrapper mt-6">
-                    <select class="w-full h-12 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-                    </select>
+                  <div class="block mt-6 lg:hidden">
+                    <p class="text-base text-black">『胡同嚴選』海苔肉鬆</p>
+                    <div class="flex space-x-4 mt-[6px]">
+                      <div class="max-w-[190px] flex-1 select-wrapper">
+                        <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                          <option value="1">原味</option>
+                          <option value="2">原味</option>
+                          <option value="3">原味</option>
+                          <option value="4">原味</option>
+                          <option value="5">原味</option>
+                          <option value="6">原味</option>
+                          <option value="7">原味</option>
+                          <option value="8">原味</option>
+                          <option value="9">原味</option>
+                          <option value="10">原味</option>
+                        </select>
+                      </div>
+                      <div class="max-w-[112px] flex-1 select-wrapper">
+                        <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                        </select>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
             <!-- 加購商品-->
-            <div class="px-4 pt-10 pb-10 bg-white rounded-sm lg:p-10">
-              <div class="pb-3 border-b border-neutral-200">
-                <p class="text-xl font-bold text-black">加購商品</p>
-              </div>
-              <div class="relative pt-[50px] lg:py-6 lg:border-b border-neutral-200 lg:last:border-b-0">
-                <div class="flex items-start lg:space-x-5 space-x-[9px]">
-                  <div class="flex items-center space-x-4">
-                    <input class="round-checkbox" type="checkbox"><img class="object-cover object-center lg:w-[120px] w-[70px] lg:h-[120px] h-[70px]" src="https://fakeimg.pl/120x120/?text=Product" alt="">
-                  </div>
-                  <div class="flex flex-col flex-1">
-                    <div><a class="text-sm text-black lg:text-base" href="#">『胡同嚴選』海苔肉鬆</a></div>
-                    <div class="mt-2 lg:mt-3">
-                      <p class="text-base font-bold text-red-500 lg:text-xl">$109</p>
+            <div>
+              <div class="px-4 pt-10 pb-10 bg-white rounded-sm lg:p-10">
+                <div class="pb-3 border-b border-neutral-200">
+                  <p class="text-xl font-bold text-black">加購商品</p>
+                </div>
+                <div class="relative pt-[50px] lg:py-6 lg:border-b border-neutral-200 lg:last:border-b-0">
+                  <div class="flex items-start lg:space-x-5 space-x-[9px]"><img class="object-cover object-center lg:w-[120px] w-[70px] lg:h-[120px] h-[70px]" src="https://fakeimg.pl/120x120/?text=Product" alt="">
+                    <div class="flex flex-col flex-1">
+                      <div><a class="text-sm text-black lg:text-base" href="#">『胡同嚴選』海苔肉鬆</a></div>
+                      <div class="mt-2 lg:mt-3">
+                        <p class="text-base font-bold text-red-500 lg:text-xl">$109</p>
+                      </div>
+                      <div class="items-center justify-between hidden mt-2 space-x-4 lg:mt-3 lg:flex">
+                        <div class="flex flex-1 space-x-3">
+                          <div class="max-w-[166px] flex-1 select-wrapper">
+                            <select class="w-full h-12 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                              <option value="none" selected disabled hidden>請選擇規格</option>
+                              <option value="規格1">規格1</option>
+                              <option value="規格2">規格2</option>
+                              <option value="規格3">規格3</option>
+                              <option value="規格4">規格4</option>
+                              <option value="規格5">規格5</option>
+                              <option value="規格6">規格6</option>
+                              <option value="規格7">規格7</option>
+                              <option value="規格8">規格8</option>
+                              <option value="規格9">規格9</option>
+                              <option value="規格10">規格10</option>
+                            </select>
+                          </div>
+                          <div class="max-w-[112px] flex-1 select-wrapper">
+                            <select class="w-full h-12 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                            </select>
+                          </div>
+                        </div>
+                        <button class="xl:max-w-[199px] lg:max-w-[120px] w-full h-14 flex items-center justify-center text-origin-600 border border-origin-600 rounded text-xl" type="button">加入購物車</button>
+                      </div>
                     </div>
-                    <div class="flex mt-2 space-x-3 lg:mt-3">
-                      <div class="max-w-[166px] flex-1 select-wrapper lg:block hidden">
-                        <select class="w-full h-12 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                  </div>
+                  <!-- 手機版 select-->
+                  <div class="flex flex-col mt-4 space-y-6 lg:hidden">
+                    <div class="flex space-x-3">
+                      <div class="max-w-[166px] flex-1 select-wrapper block lg:hidden">
+                        <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
                           <option value="none" selected disabled hidden>請選擇規格</option>
                           <option value="規格1">規格1</option>
                           <option value="規格2">規格2</option>
@@ -323,8 +875,8 @@
                           <option value="規格10">規格10</option>
                         </select>
                       </div>
-                      <div class="max-w-[112px] flex-1 select-wrapper lg:block hidden">
-                        <select class="w-full h-12 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                      <div class="max-w-[112px] flex-1 select-wrapper block lg:hidden">
+                        <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
                           <option value="1">1</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
@@ -338,54 +890,57 @@
                         </select>
                       </div>
                     </div>
+                    <button class="flex items-center justify-center w-full text-base border rounded h-14 text-origin-600 border-origin-600" type="button">加入購物車</button>
                   </div>
                 </div>
-                <!-- 手機版 select-->
-                <div class="block mt-4 space-y-3 lg:hidden pl-9">
-                  <div class="max-w-[166px] flex-1 select-wrapper block lg:hidden">
-                    <select class="w-full h-12 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
-                      <option value="none" selected disabled hidden>請選擇規格</option>
-                      <option value="規格1">規格1</option>
-                      <option value="規格2">規格2</option>
-                      <option value="規格3">規格3</option>
-                      <option value="規格4">規格4</option>
-                      <option value="規格5">規格5</option>
-                      <option value="規格6">規格6</option>
-                      <option value="規格7">規格7</option>
-                      <option value="規格8">規格8</option>
-                      <option value="規格9">規格9</option>
-                      <option value="規格10">規格10</option>
-                    </select>
-                  </div>
-                  <div class="max-w-[112px] flex-1 select-wrapper block lg:hidden">
-                    <select class="w-full h-12 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="relative pt-[50px] lg:py-6 lg:border-b border-neutral-200 lg:last:border-b-0">
-                <div class="flex items-start lg:space-x-5 space-x-[9px]">
-                  <div class="flex items-center space-x-4">
-                    <input class="round-checkbox" type="checkbox"><img class="object-cover object-center lg:w-[120px] w-[70px] lg:h-[120px] h-[70px]" src="https://fakeimg.pl/120x120/?text=Product" alt="">
-                  </div>
-                  <div class="flex flex-col flex-1">
-                    <div><a class="text-sm text-black lg:text-base" href="#">『胡同嚴選』海苔肉鬆</a></div>
-                    <div class="mt-2 lg:mt-3">
-                      <p class="text-base font-bold text-red-500 lg:text-xl">$109</p>
+                <div class="relative pt-[50px] lg:py-6 lg:border-b border-neutral-200 lg:last:border-b-0">
+                  <div class="flex items-start lg:space-x-5 space-x-[9px]"><img class="object-cover object-center lg:w-[120px] w-[70px] lg:h-[120px] h-[70px]" src="https://fakeimg.pl/120x120/?text=Product" alt="">
+                    <div class="flex flex-col flex-1">
+                      <div><a class="text-sm text-black lg:text-base" href="#">『胡同嚴選』海苔肉鬆</a></div>
+                      <div class="mt-2 lg:mt-3">
+                        <p class="text-base font-bold text-red-500 lg:text-xl">$109</p>
+                      </div>
+                      <div class="items-center justify-between hidden mt-2 space-x-4 lg:mt-3 lg:flex">
+                        <div class="flex flex-1 space-x-3">
+                          <div class="max-w-[166px] flex-1 select-wrapper">
+                            <select class="w-full h-12 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                              <option value="none" selected disabled hidden>請選擇規格</option>
+                              <option value="規格1">規格1</option>
+                              <option value="規格2">規格2</option>
+                              <option value="規格3">規格3</option>
+                              <option value="規格4">規格4</option>
+                              <option value="規格5">規格5</option>
+                              <option value="規格6">規格6</option>
+                              <option value="規格7">規格7</option>
+                              <option value="規格8">規格8</option>
+                              <option value="規格9">規格9</option>
+                              <option value="規格10">規格10</option>
+                            </select>
+                          </div>
+                          <div class="max-w-[112px] flex-1 select-wrapper">
+                            <select class="w-full h-12 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                            </select>
+                          </div>
+                        </div>
+                        <button class="xl:max-w-[199px] lg:max-w-[120px] w-full h-14 flex items-center justify-center text-origin-600 border border-origin-600 rounded text-xl" type="button">加入購物車</button>
+                      </div>
                     </div>
-                    <div class="flex mt-2 space-x-3 lg:mt-3">
-                      <div class="max-w-[166px] flex-1 select-wrapper lg:block hidden">
-                        <select class="w-full h-12 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                  </div>
+                  <!-- 手機版 select-->
+                  <div class="flex flex-col mt-4 space-y-6 lg:hidden">
+                    <div class="flex space-x-3">
+                      <div class="max-w-[166px] flex-1 select-wrapper block lg:hidden">
+                        <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
                           <option value="none" selected disabled hidden>請選擇規格</option>
                           <option value="規格1">規格1</option>
                           <option value="規格2">規格2</option>
@@ -399,8 +954,8 @@
                           <option value="規格10">規格10</option>
                         </select>
                       </div>
-                      <div class="max-w-[112px] flex-1 select-wrapper lg:block hidden">
-                        <select class="w-full h-12 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                      <div class="max-w-[112px] flex-1 select-wrapper block lg:hidden">
+                        <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
                           <option value="1">1</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
@@ -414,54 +969,57 @@
                         </select>
                       </div>
                     </div>
+                    <button class="flex items-center justify-center w-full text-base border rounded h-14 text-origin-600 border-origin-600" type="button">加入購物車</button>
                   </div>
                 </div>
-                <!-- 手機版 select-->
-                <div class="block mt-4 space-y-3 lg:hidden pl-9">
-                  <div class="max-w-[166px] flex-1 select-wrapper block lg:hidden">
-                    <select class="w-full h-12 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
-                      <option value="none" selected disabled hidden>請選擇規格</option>
-                      <option value="規格1">規格1</option>
-                      <option value="規格2">規格2</option>
-                      <option value="規格3">規格3</option>
-                      <option value="規格4">規格4</option>
-                      <option value="規格5">規格5</option>
-                      <option value="規格6">規格6</option>
-                      <option value="規格7">規格7</option>
-                      <option value="規格8">規格8</option>
-                      <option value="規格9">規格9</option>
-                      <option value="規格10">規格10</option>
-                    </select>
-                  </div>
-                  <div class="max-w-[112px] flex-1 select-wrapper block lg:hidden">
-                    <select class="w-full h-12 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="relative pt-[50px] lg:py-6 lg:border-b border-neutral-200 lg:last:border-b-0">
-                <div class="flex items-start lg:space-x-5 space-x-[9px]">
-                  <div class="flex items-center space-x-4">
-                    <input class="round-checkbox" type="checkbox"><img class="object-cover object-center lg:w-[120px] w-[70px] lg:h-[120px] h-[70px]" src="https://fakeimg.pl/120x120/?text=Product" alt="">
-                  </div>
-                  <div class="flex flex-col flex-1">
-                    <div><a class="text-sm text-black lg:text-base" href="#">『胡同嚴選』海苔肉鬆</a></div>
-                    <div class="mt-2 lg:mt-3">
-                      <p class="text-base font-bold text-red-500 lg:text-xl">$109</p>
+                <div class="relative pt-[50px] lg:py-6 lg:border-b border-neutral-200 lg:last:border-b-0">
+                  <div class="flex items-start lg:space-x-5 space-x-[9px]"><img class="object-cover object-center lg:w-[120px] w-[70px] lg:h-[120px] h-[70px]" src="https://fakeimg.pl/120x120/?text=Product" alt="">
+                    <div class="flex flex-col flex-1">
+                      <div><a class="text-sm text-black lg:text-base" href="#">『胡同嚴選』海苔肉鬆</a></div>
+                      <div class="mt-2 lg:mt-3">
+                        <p class="text-base font-bold text-red-500 lg:text-xl">$109</p>
+                      </div>
+                      <div class="items-center justify-between hidden mt-2 space-x-4 lg:mt-3 lg:flex">
+                        <div class="flex flex-1 space-x-3">
+                          <div class="max-w-[166px] flex-1 select-wrapper">
+                            <select class="w-full h-12 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                              <option value="none" selected disabled hidden>請選擇規格</option>
+                              <option value="規格1">規格1</option>
+                              <option value="規格2">規格2</option>
+                              <option value="規格3">規格3</option>
+                              <option value="規格4">規格4</option>
+                              <option value="規格5">規格5</option>
+                              <option value="規格6">規格6</option>
+                              <option value="規格7">規格7</option>
+                              <option value="規格8">規格8</option>
+                              <option value="規格9">規格9</option>
+                              <option value="規格10">規格10</option>
+                            </select>
+                          </div>
+                          <div class="max-w-[112px] flex-1 select-wrapper">
+                            <select class="w-full h-12 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                            </select>
+                          </div>
+                        </div>
+                        <button class="xl:max-w-[199px] lg:max-w-[120px] w-full h-14 flex items-center justify-center text-origin-600 border border-origin-600 rounded text-xl" type="button">加入購物車</button>
+                      </div>
                     </div>
-                    <div class="flex mt-2 space-x-3 lg:mt-3">
-                      <div class="max-w-[166px] flex-1 select-wrapper lg:block hidden">
-                        <select class="w-full h-12 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                  </div>
+                  <!-- 手機版 select-->
+                  <div class="flex flex-col mt-4 space-y-6 lg:hidden">
+                    <div class="flex space-x-3">
+                      <div class="max-w-[166px] flex-1 select-wrapper block lg:hidden">
+                        <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
                           <option value="none" selected disabled hidden>請選擇規格</option>
                           <option value="規格1">規格1</option>
                           <option value="規格2">規格2</option>
@@ -475,8 +1033,8 @@
                           <option value="規格10">規格10</option>
                         </select>
                       </div>
-                      <div class="max-w-[112px] flex-1 select-wrapper lg:block hidden">
-                        <select class="w-full h-12 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
+                      <div class="max-w-[112px] flex-1 select-wrapper block lg:hidden">
+                        <select class="w-full h-10 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
                           <option value="1">1</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
@@ -490,40 +1048,14 @@
                         </select>
                       </div>
                     </div>
+                    <button class="flex items-center justify-center w-full text-base border rounded h-14 text-origin-600 border-origin-600" type="button">加入購物車</button>
                   </div>
                 </div>
-                <!-- 手機版 select-->
-                <div class="block mt-4 space-y-3 lg:hidden pl-9">
-                  <div class="max-w-[166px] flex-1 select-wrapper block lg:hidden">
-                    <select class="w-full h-12 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
-                      <option value="none" selected disabled hidden>請選擇規格</option>
-                      <option value="規格1">規格1</option>
-                      <option value="規格2">規格2</option>
-                      <option value="規格3">規格3</option>
-                      <option value="規格4">規格4</option>
-                      <option value="規格5">規格5</option>
-                      <option value="規格6">規格6</option>
-                      <option value="規格7">規格7</option>
-                      <option value="規格8">規格8</option>
-                      <option value="規格9">規格9</option>
-                      <option value="規格10">規格10</option>
-                    </select>
-                  </div>
-                  <div class="max-w-[112px] flex-1 select-wrapper block lg:hidden">
-                    <select class="w-full h-12 px-6 py-[9px] text-base border rounded appearance-none text-neutral-600 border-neutral-200">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-                    </select>
-                  </div>
-                </div>
+              </div>
+              <!-- 加購商品結帳清單-->
+              <div class="flex items-center justify-center px-10 py-5 mt-0 space-x-8 bg-yellow-200 lg:justify-end lg:space-x-16">
+                <p class="text-base font-semibold text-black lg:text-xl">運費  NT 200</p>
+                <p class="text-base font-semibold text-black lg:text-xl">小計  NT 2440</p>
               </div>
             </div>
             <!-- 訂單備註-->
